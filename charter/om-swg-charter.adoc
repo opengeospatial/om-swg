@@ -320,7 +320,7 @@ data visualization, analytics and phenomenon detection.
 It is important to involve experts with experience from the using the OGC Abstract Specification Topic 20 conceptual models and its
 XML implementation as defined in the OGC 10-025r1 as well as people familiar with the modern Web API use cases.
 
-In order to ensure seamless mutual co-operation and information flow in making the requested changes in OGC Abstract Specification Topic 206
+In order to ensure seamless mutual co-operation and information flow in making the requested changes in OGC Abstract Specification Topic 20
 and its OGC Implementation Standards, the O&M SWG chair is also acting as the project lead in the ISO 19156
 revision project. The  O&M SWG also encourages those of its members interested in the revision the O&M conceptual models
 to also join the ISO 19156 project team either via nomination through their national standardization bodies or the
