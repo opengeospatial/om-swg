@@ -61,7 +61,7 @@ The SWG proposal provided in this document meets the requirements of the OGC TC 
 
 The SWG name, statement of purpose, scope, list of deliverables, audience, and language specified in the proposal will constitute the SWG's official charter. Technical discussions may occur no sooner than the SWG's first meeting.
 
-This SWG will operate under the OGC 2007 IPR Policy. The eligibility requirements for becoming a participant in the SWG at the first meeting (see details below) are that:
+This SWG will operate under the OGC IPR Policy. The eligibility requirements for becoming a participant in the SWG at the first meeting (see details below) are that:
 
 * You must be an employee of an OGC member organization or an individual
 member of OGC;
@@ -86,15 +86,13 @@ toc::[]
 ////
 Proposers will describe the purpose of the Standards Working Group and its overall mission in relation to OGC processes, the OGC standards baseline, and OGC’s business plan.
 ////
-The revision work of the ISO Observations and measurements Standard (ISO 19156:2011, O&M), also published as the
-OGC Abstract Specification Topic 20, has been initiated within the ISO/TC 211 in July 2018.
-While this work is carried out within the ISO/TC 211, the O&M SWG is working closely with the ISO/TC 211 to ensure that
+The revision work of OGC Abstract Specification Topic 20, also published as ISO Observations and measurements Standard (ISO 19156:2011, O&M), has been agreed to by both OGC and ISO. The revision was approved by ISO/TC 211 in July 2018. This work will be jointly carried out within ISO/TC 211 and the O&M SWG to ensure that:
 
-* the concerns and requirements identified by OCG members are attended to,
-* the final document is suitable as an OGC Standard as well as an ISO Standard, and
-* the revised ISO 19156 document gets published as a revised version OGC Abstract Specification Topic 20.
+* the concerns and requirements identified by OCG and ISO members are attended to;
+* the final document is suitable as an OGC Standard as well as an ISO Standard; and
+* the revised version of OGC Abstract Specification Topic 20 gets published as a revised ISO 19156 document.
 
-In addition to moitoring the ISO 19156 revision, the purpose of the OGC Observations and measurements SWG is to revise existing and draft new
+In addition to joint work with ISO, the purpose of the OGC Observations and measurements SWG is to revise existing and draft new
 OGC Standards considering the encoding of the O&M conceptual models.
 
 This Standards Working Group evaluates and resolves submitted Change Request Proposals (CRPs)
@@ -110,19 +108,19 @@ This section provides a statement describing the value of this standards activit
 ////
 
 Standards based exchange of environmental observation and prediction data are key enablers for many critical online
-consumer and governmental services. The ISO 19156 "Observations and measurements" standard defines a the conceptual
+consumer and governmental services. The OGC Abstract Specification Topic 20 "Observations and measurements" standard defines a the conceptual
 level data model for these datasets. Both the Observations and Measurements conceptual data model and its
-standardised XML encoding (OGC 10-025r1) are used extensively in Spatial Data Infrastructures such as in the EU INSPIRE.
+standardized XML encoding (OGC 10-025r1) are used extensively in Spatial Data Infrastructures such as in the EU INSPIRE.
 
-The latest revision of ISO 19156 standard is from 2010, and it requires revising to accommodate technical issues
-discovered in various standard implementations and harmonisation with recent W3C/OGC standardisation work on sensor
+The latest revision of OGC Abstract Specification Topic 20 is from 2013, and requires revising to accommodate technical issues
+discovered in various standard implementations and harmonization with recent W3C/OGC standardization work on sensor
 network terminology and concepts defined in the Semantic Sensor Network (SSN) and Sensor, Observation, Sample,
 and Actuator (SOSA) ontologies.
 
 The OGC Observations and Measurements - XML Implementation (OGC 10-025r1) Standard defines an XML encoding for the
-concepts defined in the ISO 19156 Standard and thus needs to be revised to accommodate the changes made in the
-revised ISO 19156. In addition to the revision of the O&M XML Implementation Standard, there is an identified need
-to standardise an O&M data encodings for the formats like JSON/GeoJSON preferred in modern Web APIs including the
+concepts defined in OGC Abstract Specification Topic 20 and thus needs to be revised to accommodate the changes made in the
+revised OGC Abstract Specification Topic 20. In addition to the revision of the O&M XML Implementation Standard, there is an identified need
+to standardize an O&M data encodings for the formats like JSON/GeoJSON preferred in modern Web APIs including the
 ones conforming to the OGC API - Features - Part 1: Core Standard (OGC 17-069).
 
 == Scope of Work
@@ -153,14 +151,13 @@ consideration by the membership for adoption.
 In all cases, the SWG Charter shall provide a basic timeline plan for their activities.
 ////
 
-The Scope of Work of the O&M SWG is to
+The Scope of Work of the O&M SWG is described as follows.
 
-* Monitor the progress of the ISO 19156 revision, review changes proposed to the standard, and respond to ISO/TC 211 in a timely manner,
-* Collect Change Request Proposals (CRPs) submitted by OGC members, evaluate each of these proposals, and dispose of them in a manner which is consistent with OGC processes respecting the liaison arrangement with ISO/TC 211. This shall be achieved by either
-** referring the change request content to relevant group of ISO/TC 211 for disposal if the CRP is found to impact on O&M conceptual models, or
-** considering the change request within the SWG if the CRP impacts an extension, encoding or profile of the core O&M concepts.
-* Define and document new OGC candidate standards for encoding O&M concepts defined in the ISO 19156 applicable for use cases
-which not supported well by the existing encoding standards.
+* Review changes proposed to the standard and cooperate with ISO/TC 211 in a timely manner.
+* Collect Change Request Proposals (CRPs) submitted by OGC members, evaluate each of these proposals, and dispose of them in a manner which is consistent with OGC processes respecting the liaison arrangement with ISO/TC 211. This shall be achieved by either:
+** conferring on the change request content with the relevant group of ISO/TC 211 for disposal if the CRP is found to impact the O&M conceptual model; or
+** considering the change request within the SWG if the CRP impacts an extension, encoding, or profile of the core O&M concepts.
+* Define and document new OGC candidate standards for encoding O&M concepts defined in the OGC Abstract Specification Topic 20 applicable for use cases which not supported well by the existing encoding standards.
 
 For the revised OGC Standards, the SWG will make edits to the standard documents based on CRPs and related decisions of the SWG membership.
 The SWG, at their discretion, may also ask the membership for any additional change requests that have not been previous
@@ -178,8 +175,8 @@ If processing change requests and performing a revision to an existing standard,
 
 If processing a draft submission of a specification developed outside the OGC process, a clear statement of the relationship to the existing standards baseline including statements related to overlap (if any) with existing OGC standards functionality, harmonization issues, and so forth. This information is provided to allow a focus of the discussion on criteria for considering any new solution that may be incompatible with older ones, overlaps existing functionality in the current baseline, and criteria for either deprecating older solutions, or simultaneously endorsing more than one option.
 ////
-As regards to the revision of the OGC Observations and Measurements - XML Implementation (OGC 10-025r1) Standard, the
-both the changes in the O&M conceptual models defined in the revised ISO 19156 and any OGC CRPs
+As regards to the revision of the OGC Observations and Measurements - XML Implementation (OGC 10-025r1) Standard,
+both the changes in the O&M conceptual model defined in the revised OGC Abstract Specification Topic 20 and any OGC CRPs
 targeting 10-025r1 and submitted before the cut-off date of 30 September 2019 will be considered. The Sensor Observation
 Service Interface Standard (SOS) directly refers to the OGC 10-025r1 and its
 XML Schemas. Revising the SOS standard is out-of-scope of the O&M SWG, but the O&M SWG will keep the SWE Umbrella SWG
@@ -188,8 +185,8 @@ updated on the changes proposed for the O&M XML Implementation Standard.
 Other encodings of the O&M concepts have been discussed in OGC Observations and Measurements – JSON
 implementation Discussion Paper (15-100r1) and informally in the OGC Observations and Measurements -
 Simple Feature model & encodings project (OMSF).
-OGC SensorThings API Part 1: Sensing (15-078r6) also includes an JSON encodings for O&M concepts defined in the ISO 19156:2011
-conceptual models. These and any other documents considered relevant by the SWG membership
+OGC SensorThings API Part 1: Sensing (15-078r6) also includes an JSON encodings for O&M concepts defined in the OGC Abstract Specification Topic 20
+conceptual model. These and any other documents considered relevant by the SWG membership
 will be used as inputs for drafting the OGC candidate standard O&M JSON encoding.
 
 === What is Out of Scope?
@@ -197,7 +194,7 @@ will be used as inputs for drafting the OGC candidate standard O&M JSON encoding
 A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
 ////
 
-The ISO 19156 Standard is normatively referred to in several OGC Standards and other documents, including,
+The OGC Abstract Specification Topic 20 / ISO 19156 Standard is normatively referred to in several OGC Standards and other documents, including,
 but not limited to the following:
 
 * Sensor Observation Service Interface Standard (12-006),
@@ -211,10 +208,10 @@ but not limited to the following:
 * OGC WaterML 2: Part 4 – GroundWaterML 2 (GWML2) (16-032r2)
 * OGC® Geoscience Markup Language 4.1 (GeoSciML) (16-008)
 
-The O&M SWG will summarize the changes made in the revised ISO 19156 Standard and make this information available to
+The O&M SWG will summarize the changes made in the revised OGC Abstract Specification Topic 20 and make this information available to
 the OGC TC and/or SWGs responsible for maintaining these Standards. However, suggesting or making revisions to
-the existing OGC Standards normatively referring to the ISO 19156:2011
-apart OGC Observations and Measurements - XML Implementation (10-025r1) is out-of-scope of the O&M SWG.
+the existing OGC Standards normatively referring to the OGC Abstract Specification Topic 20,
+apart OGC Observations and Measurements - XML Implementation (10-025r1), is out-of-scope of the O&M SWG.
 
 The O&M SWG will not consider Change Request Proposals submitted for the the Abstract Specification Topic 20 (10-004r3)
 or OGC Observations and Measurements - XML Implementation (10-025r1) after the cut-off date of 30 September 2019.
@@ -236,9 +233,9 @@ The following documents are relevant to the work of the O&M SWG (see References 
 
 === Is This a Persistent SWG
 
-[ ] YES
+[x] YES
 
-[x] NO
+[ ] NO
 
 === When can the SWG be Inactivated
 The O&M SWG can be inactivated when all of the deliverables described below have been have been published or abandoned by the SWG decision.
@@ -263,35 +260,35 @@ Describe the initial standard(s) to be developed by the SWG.
 image:OM_SWG_timeline_Aug2019.png[Timeline] Image 1: Overview timeline for the initial deliverables
 
 ==== ISO 19156 / OGC Abstract Specification Topic 20 revision
-The current ISO/TC 211 target dates for the revision of the ISO 19156 are as follows:
+The current ISO/TC 211 target dates for the revision of ISO 19156 are as follows:
 
-* End of December 2019: Committee draft (CD) registered
-* July 2020: Draft International Standard (DIS) registered
-* July 2021: International Standard (IS) published
+* End of December 2019: Committee draft (CD) registered;
+* July 2020: Draft International Standard (DIS) registered; and
+* July 2021: International Standard (IS) published.
 
 Thus it is likely that the final version of the OGC Abstract Specification Topic 20 will be ready for publishing in Summer 2021.
 
 ==== O&M XML Implementation Standard revision
 The preliminary timeline for the revision of the O&M XML Implementation Standard (10-025) is as follows:
 
-* September 2019: Start of the revision work
-* February 2019: First draft version made publicly available.
-* April - November 2020: Validating the feasibility of the proposed changes in the OGC Testbed 16 interoperability experiment.
-* September 2020: OAB review and release of the revised standard for the public comment period.
-* October 2020: Public commenting period comments consolidated.
-* November 2020: Final edits made based on the public commenting period and the experiences and feedback from the Testbed 16.
-* December 2020: Target date recommending the release of the revised Standard referring to the DIS version of the revised ISO 19156.
+* September 2019: Start of the revision work;
+* February 2019: First draft version made publicly available;
+* April - November 2020: Validating the feasibility of the proposed changes in an OGC Innovation Program activity;
+* September 2020: OAB review and release of the revised standard for the public comment period;
+* October 2020: Public commenting period comments consolidated;
+* November 2020: Final edits made based on the public commenting period and the experiences and feedback from the OGC Innovation Program activity;
+* December 2020: Target date recommending the release of the revised Standard referring to the DIS version of the revised ISO 19156; and
 * September 2021: Corrigendum with references to the DIS version changed to point to the IS version of the revised ISO 19156.
 
 ==== O&M JSON Implementation Candidate Standard
 The preliminary timeline for the revision of the O&M JSON Implementation Candidate Standard is as follows:
 
-* August 2020: Start of the drafting work
-* February 2021: First draft version made publicly available.
-* April - November 2021: Validating the feasibility of the proposed encoding(s) in the OGC Testbed 17 interoperability experiment.
-* September 2021: OAB Review and release of the standard for the public comment period.
-* October 2021: Public commenting period comments consolidated.
-* November 2021: Final edits made based on the public commenting period and the experiences and feedback from the Testbed 17.
+* August 2020: Start of the drafting work;
+* February 2021: First draft version made publicly available;
+* April - November 2021: Validating the feasibility of the proposed encoding(s) in an OGC Innovation Program activity;
+* September 2021: OAB Review and release of the standard for the public comment period;
+* October 2021: Public commenting period comments consolidated;
+* November 2021: Final edits made based on the public commenting period and the experiences and feedback from the OGC Innovation Program activity; and
 * December 2021: Target date recommending the release of the Candidate Standard.
 
 === Additional SWG Tasks
@@ -318,15 +315,15 @@ This is not meant as a limiting statement but instead is intended to provide gui
 
 People interested in capturing and exchange of environmental observation and prediction data. This includes data modelers,
 data owners and users of observation data from multiple sources and interfaces, including historical and near-real time
-data visualisation, analytics and phenomenon detection.
+data visualization, analytics and phenomenon detection.
 
-It is important to involve experts with experience from the using the ISO 19156:2011 O&M conceptual models and its
+It is important to involve experts with experience from the using the OGC Abstract Specification Topic 20 conceptual models and its
 XML implementation as defined in the OGC 10-025r1 as well as people familiar with the modern Web API use cases.
 
-In order to ensure seamless mutual co-operation and information flow in making the requested changes in the ISO 19156
+In order to ensure seamless mutual co-operation and information flow in making the requested changes in OGC Abstract Specification Topic 206
 and its OGC Implementation Standards, the O&M SWG chair is also acting as the project lead in the ISO 19156
 revision project. The  O&M SWG also encourages those of its members interested in the revision the O&M conceptual models
-to also join the ISO 19156 project team either via nomination through their national standardisation bodies or the
+to also join the ISO 19156 project team either via nomination through their national standardization bodies or the
 OGC - ISO/TC 211 liaison agreement.
 
 == Other informative information about the work of this SWG
