@@ -260,6 +260,8 @@ Describe the initial standard(s) to be developed by the SWG.
 * New version of the OGC Observations and Measurements - XML Implementation Standard document and the XML Schema. The version number of the new version will be decided after evaluating the backwards compatibility of the included changes.
 * New OGC Candidate Standard for OGC Observations and Measurements - JSON Implementation Standard document and the possible validation rules for JSON content.
 
+image:OM_SWG_timeline_Aug2019.png[Timeline] Image 1: Overview timeline for the initial deliverables
+
 ==== ISO 19156 / OGC Abstract Specification Topic 20 revision
 The current ISO/TC 211 target dates for the revision of the ISO 19156 are as follows:
 
@@ -273,7 +275,7 @@ Thus it is likely that the final version of the OGC Abstract Specification Topic
 The preliminary timeline for the revision of the O&M XML Implementation Standard (10-025) is as follows:
 
 * September 2019: Start of the revision work
-* End of December 2019: First draft version made publicly available.
+* February 2019: First draft version made publicly available.
 * April - November 2020: Validating the feasibility of the proposed changes in the OGC Testbed 16 interoperability experiment.
 * September 2020: OAB review and release of the revised standard for the public comment period.
 * October 2020: Public commenting period comments consolidated.
@@ -285,9 +287,7 @@ The preliminary timeline for the revision of the O&M XML Implementation Standard
 The preliminary timeline for the revision of the O&M JSON Implementation Candidate Standard is as follows:
 
 * August 2020: Start of the drafting work
-* October 2020: First draft version made publicly available.
-* March 2021: Public commenting period comments consolidated.
-* April 2021: Edits made based on the comments.
+* February 2021: First draft version made publicly available.
 * April - November 2021: Validating the feasibility of the proposed encoding(s) in the OGC Testbed 17 interoperability experiment.
 * September 2021: OAB Review and release of the standard for the public comment period.
 * October 2021: Public commenting period comments consolidated.
