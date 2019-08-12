@@ -107,8 +107,8 @@ The SWG SHALL ensure that all changes are consistent with the OGC standards base
 This section provides a statement describing the value of this standards activity in relation to the OGC Membership, the geospatial community, and the wider IT community. This statement can be in terms of the interoperability problem being solved, processing Change requests to meet market (and Member requirements), a policy requirement and/or some other business value proposition. The proposition described in this section does not have to be in economic terms.
 ////
 
-Standards based exchange of environmental observation and prediction data are key enablers for many critical online
-consumer and governmental services. The OGC Abstract Specification Topic 20 "Observations and measurements" standard defines a the conceptual
+Standards based exchange of observed, measured or modeled data are key enablers for many critical online
+consumer and governmental services. The OGC Abstract Specification Topic 20 "Observations and measurements" standard defines a conceptual
 level data model for these datasets. Both the Observations and Measurements conceptual data model and its
 standardized XML encoding (OGC 10-025r1) are used extensively in Spatial Data Infrastructures such as in the EU INSPIRE.
 
@@ -120,7 +120,7 @@ and Actuator (SOSA) ontologies.
 The OGC Observations and Measurements - XML Implementation (OGC 10-025r1) Standard defines an XML encoding for the
 concepts defined in OGC Abstract Specification Topic 20 and thus needs to be revised to accommodate the changes made in the
 revised OGC Abstract Specification Topic 20. In addition to the revision of the O&M XML Implementation Standard, there is an identified need
-to standardize an O&M data encodings for the formats like JSON/GeoJSON preferred in modern Web APIs including the
+to standardize an O&M data encoding for the formats like JSON/GeoJSON preferred in modern Web APIs including the
 ones conforming to the OGC API - Features - Part 1: Core Standard (OGC 17-069).
 
 == Scope of Work
@@ -154,8 +154,8 @@ In all cases, the SWG Charter shall provide a basic timeline plan for their acti
 The Scope of Work of the O&M SWG is described as follows.
 
 * Review changes proposed to the standard and cooperate with ISO/TC 211 in a timely manner.
-* Collect Change Request Proposals (CRPs) submitted by OGC members, evaluate each of these proposals, and dispose of them in a manner which is consistent with OGC processes respecting the liaison arrangement with ISO/TC 211. This shall be achieved by either:
-** conferring on the change request content with the relevant group of ISO/TC 211 for disposal if the CRP is found to impact the O&M conceptual model; or
+* Collect Change Request Proposals (CRPs) submitted by OGC members, evaluate each of these proposals, and handle of them in a manner which is consistent with OGC processes respecting the liaison arrangement with ISO/TC 211. This shall be achieved by either:
+** conferring on the change request content with the relevant group of ISO/TC 211 for processing if the CRP is found to impact the O&M conceptual model; or
 ** considering the change request within the SWG if the CRP impacts an extension, encoding, or profile of the core O&M concepts.
 * Define and document new OGC candidate standards for encoding O&M concepts defined in the OGC Abstract Specification Topic 20 applicable for use cases which not supported well by the existing encoding standards.
 
@@ -224,11 +224,12 @@ This section provides reference information relevant to the work of the SWG. For
 
 The following documents are relevant to the work of the O&M SWG (see References for precise reference information):
 
-* OGC Abstract Specification Topic 20: Observations and measurements (10-004r3) also known as ISO 19156:2011
-* OGC Observations and Measurements - XML Implementation, version 2.0 (10-025r1)
-* OGC Observations and Measurements – JSON implementation Discussion Paper (15-100r1)
-* W3C Semantic Sensor Network Ontology specification (SSN)
-* W3C Extensions to the Semantic Sensor Network Ontology proposal (SSN-extensions)
+* OGC Abstract Specification Topic 20: Observations and measurements (10-004r3) also known as ISO 19156:2011,
+* OGC Observations and Measurements - XML Implementation, version 2.0 (10-025r1),
+* OGC Observations and Measurements – JSON implementation Discussion Paper (15-100r1),
+* SensorThings API Part 1: Sensing (15-078r6),
+* W3C Semantic Sensor Network Ontology specification (SSN),
+* W3C Extensions to the Semantic Sensor Network Ontology proposal (SSN-extensions), and
 * OGC Observations and Measurements - Simple Feature model & encodings project (OMSF)
 
 === Is This a Persistent SWG
@@ -313,7 +314,7 @@ Description of the target participants in this SWG. For example, if the SWG were
 This is not meant as a limiting statement but instead is intended to provide guidance to interested potential participants as to whether they wish to participate in this SWG.
 ////
 
-People interested in capturing and exchange of environmental observation and prediction data. This includes data modelers,
+People interested in capturing and exchange observed, measured or modeled data. This includes data modelers,
 data owners and users of observation data from multiple sources and interfaces, including historical and near-real time
 data visualization, analytics and phenomenon detection.
 
