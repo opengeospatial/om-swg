@@ -9,6 +9,7 @@
 :numbered:
 :sectanchors:
 :source-highlighter: pygments
+:imagesdir: images
 
 <<<
 [cols = ">",frame = "none",grid = "none"]
