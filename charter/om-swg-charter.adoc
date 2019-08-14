@@ -87,14 +87,17 @@ toc::[]
 ////
 Proposers will describe the purpose of the Standards Working Group and its overall mission in relation to OGC processes, the OGC standards baseline, and OGC’s business plan.
 ////
-The revision work of OGC Abstract Specification Topic 20, also published as ISO Observations and measurements Standard (ISO 19156:2011, O&M), has been agreed to by both OGC and ISO. The revision was approved by ISO/TC 211 in July 2018. This work will be jointly carried out within ISO/TC 211 and the O&M SWG to ensure that:
+The revision work of OGC Abstract Specification Topic 20, also published as ISO Observations and measurements
+Standard (ISO 19156:2011, O&M), has been agreed to by both OGC and ISO.
+The revision was approved by ISO/TC 211 in July 2018.
+This work will be carried out within ISO/TC 211 with support from the O&M SWG to ensure that:
 
 * the concerns and requirements identified by OCG and ISO members are attended to;
 * the final document is suitable as an OGC Standard as well as an ISO Standard; and
 * the revised version of OGC Abstract Specification Topic 20 gets published as a revised ISO 19156 document.
 
-In addition to joint work with ISO, the purpose of the OGC Observations and measurements SWG is to revise existing and draft new
-OGC Standards considering the encoding of the O&M conceptual models.
+In addition to supporting the ISO 19156 revision work of ISO/TC 211, the purpose of the OGC Observations and measurements
+SWG is to revise existing and draft new OGC Standards considering the encoding of the O&M conceptual models.
 
 This Standards Working Group evaluates and resolves submitted Change Request Proposals (CRPs)
 considering the OGC O&M Implementation Standards and drafts new OGC Candidate Standards considering
@@ -219,21 +222,21 @@ the OGC TC and/or SWGs responsible for maintaining these Standards. However, sug
 the existing OGC Standards normatively referring to the OGC Abstract Specification Topic 20,
 apart OGC Observations and Measurements - XML Implementation (10-025r1), is out-of-scope of the O&M SWG.
 
-The O&M SWG will not consider Change Request Proposals submitted for the the Abstract Specification Topic 20 (10-004r3)
+The O&M SWG may not consider Change Request Proposals submitted for the the Abstract Specification Topic 20 (10-004r3)
 or OGC Observations and Measurements - XML Implementation (10-025r1) after the cut-off date of 30 September 2019.
 
 === Specific Existing Work Used as Starting Point
-
 ////
 This section provides reference information relevant to the work of the SWG. For example, a document reference for a draft submission or a list of CRPs for a SWG focused on revision to an adopted specification.
 ////
 
-The following documents are relevant to the work of the O&M SWG (see References for precise reference information):
+The following documents are relevant to the work of the O&M SWG (see <<References>> for precise reference information):
 
 * OGC Abstract Specification Topic 20: Observations and measurements (10-004r3) also known as ISO 19156:2011,
 * OGC Observations and Measurements - XML Implementation, version 2.0 (10-025r1),
 * OGC Observations and Measurements – JSON implementation Discussion Paper (15-100r1),
 * SensorThings API Part 1: Sensing (15-078r6),
+* Timeseries Profile of Observations and Measurements (15-043r3)
 * W3C Semantic Sensor Network Ontology specification (SSN),
 * W3C Extensions to the Semantic Sensor Network Ontology proposal (SSN-extensions), and
 * OGC Observations and Measurements - Simple Feature model & encodings project (OMSF)
@@ -270,14 +273,14 @@ The current ISO/TC 211 target dates for the revision of ISO 19156 are as follows
 * July 2020: Draft International Standard (DIS) registered; and
 * July 2021: International Standard (IS) published.
 
-Thus it is likely that the final version of the OGC Abstract Specification Topic 20 will be ready for publishing in Summer 2021.
+It is expected that the final version of the OGC Abstract Specification Topic 20 will be ready for publishing in summer 2021.
 
 ==== O&M XML Implementation Standard revision
 The preliminary timeline for the revision of the O&M XML Implementation Standard (10-025) is as follows:
 
 * September 2019: Start of the revision work;
 * February 2019: First draft version made publicly available;
-* April - November 2020: Validating the feasibility of the proposed changes in an OGC Innovation Program activity;
+* April - July 2020: Validating the feasibility of the proposed changes in an OGC Innovation Program activity;
 * September 2020: OAB review and release of the revised standard for the public comment period;
 * October 2020: Public commenting period comments consolidated;
 * November 2020: Final edits made based on the public commenting period and the experiences and feedback from the OGC Innovation Program activity;
@@ -289,7 +292,7 @@ The preliminary timeline for the revision of the O&M JSON Implementation Candida
 
 * August 2020: Start of the drafting work;
 * February 2021: First draft version made publicly available;
-* April - November 2021: Validating the feasibility of the proposed encoding(s) in an OGC Innovation Program activity;
+* April - July 2021: Validating the feasibility of the proposed encoding(s) in an OGC Innovation Program activity;
 * September 2021: OAB Review and release of the standard for the public comment period;
 * October 2021: Public commenting period comments consolidated;
 * November 2021: Final edits made based on the public commenting period and the experiences and feedback from the OGC Innovation Program activity; and
@@ -343,7 +346,6 @@ https://github.com/opengeospatial/om-swg. The minutes and recordings of the SWG 
 O&M SWG project folder of the OGC Portal and made publicly available.
 
 === Similar or Applicable Standards Work (OGC and Elsewhere)
-
 ////
 The following standards and projects may be relevant to the SWG's planned work, although none currently provide the functionality anticipated by this committee's deliverables:
 
@@ -353,7 +355,7 @@ IETF HTTP
 The SWG intends to seek and if possible maintain liaison with each of the organizations maintaining the above works.
 ////
 
-TBA
+See <<Specific Existing Work Used as Starting Point,Chapter 3.3>>
 
 === Details of first meeting
 
