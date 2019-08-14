@@ -194,6 +194,11 @@ will be used as inputs for drafting the OGC candidate standard O&M JSON encoding
 ////
 A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
 ////
+The scope of the O&M SWG is in data models and encodings. Thus activities aiming at standardization of
+data access patterns or services is out of scope. In the cases where programmatic access and management
+O&M data requires or would benefit from special treatment within the context of a particular OGC APIs or other
+access methods, the O&M SWG SHALL raise these issues in discussions with the SWGs responsible for these
+APIs or other access methods.
 
 The OGC Abstract Specification Topic 20 / ISO 19156 Standard is normatively referred to in several OGC Standards and other documents, including,
 but not limited to the following:
@@ -238,9 +243,6 @@ The following documents are relevant to the work of the O&M SWG (see References 
 [x] YES
 
 [ ] NO
-
-=== When can the SWG be Inactivated
-The O&M SWG can be inactivated when all of the deliverables described below have been have been published or abandoned by the SWG decision.
 
 == Description of Deliverables
 
