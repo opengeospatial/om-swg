@@ -223,7 +223,9 @@ the existing OGC Standards normatively referring to the OGC Abstract Specificati
 apart OGC Observations and Measurements - XML Implementation (10-025r1), is out-of-scope of the O&M SWG.
 
 The O&M SWG may not consider Change Request Proposals submitted for the the Abstract Specification Topic 20 (10-004r3)
-or OGC Observations and Measurements - XML Implementation (10-025r1) after the cut-off date of 30 September 2019.
+or OGC Observations and Measurements - XML Implementation (10-025r1) after the cut-off date of 30 September 2019. Any
+CRPs submitted after the cut-off date will be regarded as future work unless the O&M SWG explicitly decides to address 
+then as part of the revision work outlined in the <<Initial Deliverables>>.
 
 === Specific Existing Work Used as Starting Point
 ////
