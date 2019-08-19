@@ -37,20 +37,6 @@
 
 <<<
 
-////
-Version of 2018-12-12
-Some Instructions
-This document is the template to be used for proposing the formation of a new Standards Working Group (SWG).
-
-The first step is to complete the SWG Charter for the proposed new SWG.
-
-The next step is to email the draft SWG charter to the Technical Committee Chair (TCC).  The TCC will review the draft charter and make any necessary comments and provide guidance.
-
-Finally, once the Charter is ready, the SWG charter will be posted to the OGC Pending Documents and the vote process in the Technical Committee Policies and Procedures will start.
-
-Any questions, please contact OGC staff.
-////
-
 To: OGC members & interested parties
 
 A re-charter and re-naming of a OGC Standards Working Group is being proposed.
@@ -83,10 +69,6 @@ toc::[]
 <<<
 
 == Purpose of the Standards Working Group
-
-////
-Proposers will describe the purpose of the Standards Working Group and its overall mission in relation to OGC processes, the OGC standards baseline, and OGC’s business plan.
-////
 The revision work of OGC Abstract Specification Topic 20, also published as ISO Observations and measurements
 Standard (ISO 19156:2011, O&M), has been agreed to by both OGC and ISO.
 The revision was approved by ISO/TC 211 in July 2018.
@@ -107,10 +89,6 @@ The SWG SHALL ensure that all changes are consistent with the OGC standards base
 
 == Business Value Proposition
 
-////
-This section provides a statement describing the value of this standards activity in relation to the OGC Membership, the geospatial community, and the wider IT community. This statement can be in terms of the interoperability problem being solved, processing Change requests to meet market (and Member requirements), a policy requirement and/or some other business value proposition. The proposition described in this section does not have to be in economic terms.
-////
-
 Standards based exchange of observed, measured or modeled data are key enablers for many critical online
 consumer and governmental services. The OGC Abstract Specification Topic 20 "Observations and measurements" standard defines a conceptual
 level data model for these datasets. Both the Observations and Measurements conceptual data model and its
@@ -128,33 +106,6 @@ to standardize an O&M data encoding for the formats like JSON/GeoJSON preferred 
 ones conforming to the OGC API - Features - Part 1: Core Standard (OGC 17-069).
 
 == Scope of Work
-
-////
-This section describes the scope of work (SOW) for the work of the SWG. There are typically at least three (3) cases that justify the formation of a SWG: A group of members decide to develop a new OGC candidate standard from scratch, there is a draft submission being discussed by OGC members, or there are outstanding Change Requests for an existing OGC standard and a revision is required.
-
-The following describes the characteristics of a SOW for each of these cases.
-
-For a SWG focused on defining and documenting a new OGC candidate standard from “scratch,” the SOW SHALL include a
-statement of the requirements and use cases for the candidate standard being developed. The SOW SHALL also include a
-justification statement for developing a new candidate OGC standard. The SOW SHALL also describe how the new candidate
-standard is related to the existing OGC standards baseline and the OGC Reference Model. The final deliverable of a
-“from scratch” focused SWG SHALL be a candidate standard ready for submission using the OGC standards process.
-
-For a SWG focused on processing a draft submission such as a specification developed outside the OGC and submitted into
-the OGC for consideration, the SOW would include evaluation of the submission in terms of the relationship to the
-existing OGC standards baseline (see section below). The final deliverable of such a SWG SHALL be a candidate standard
-for consideration by the membership for adoption.
-
-For a SWG focused on revisions to an existing adopted standard, the SOW should include a statement that the SWG will
-collect all outstanding Change Request Proposals (CRPs), evaluate each of the proposals, and make edits to the standard
-based on CRPs and related decisions of the SWG membership.
-The SWG, at their discretion, may also ask the membership for any additional change requests that have not been previous
-submitted. Again, the final deliverable of a revision focused SWG SHALL be a revision of the candidate standard for
-consideration by the membership for adoption.
-
-In all cases, the SWG Charter shall provide a basic timeline plan for their activities.
-////
-
 The Scope of Work of the O&M SWG is described as follows.
 
 * Review changes proposed to the standard and cooperate with ISO/TC 211 in a timely manner.
@@ -171,14 +122,7 @@ The final deliverables of the SWG SHALL be revisions of an existing OGC Standard
 consideration by the membership for adoption.
 
 === Statement of relationship of planned work to the current OGC standards baseline
-////
-This section describes the relationship of the proposed standards activity to the existing standards baseline. For the 3 cases:
-If defining a new standard, a statement of the relationship to the existing standards baseline including statements related to overlap (if any) with existing OGC standards functionality, harmonization issues, and so forth.
 
-If processing change requests and performing a revision to an existing standard, a simple statement to this effect shall be made.
-
-If processing a draft submission of a specification developed outside the OGC process, a clear statement of the relationship to the existing standards baseline including statements related to overlap (if any) with existing OGC standards functionality, harmonization issues, and so forth. This information is provided to allow a focus of the discussion on criteria for considering any new solution that may be incompatible with older ones, overlaps existing functionality in the current baseline, and criteria for either deprecating older solutions, or simultaneously endorsing more than one option.
-////
 As regards to the revision of the OGC Observations and Measurements - XML Implementation (OGC 10-025r1) Standard,
 both the changes in the O&M conceptual model defined in the revised OGC Abstract Specification Topic 20 and any OGC CRPs
 targeting 10-025r1 and submitted before the cut-off date of 30 September 2019 will be considered. The Sensor Observation
@@ -194,9 +138,7 @@ conceptual model. These and any other documents considered relevant by the SWG m
 will be used as inputs for drafting the OGC candidate standard O&M JSON encoding.
 
 === What is Out of Scope?
-////
-A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
-////
+
 The scope of the O&M SWG is in data models and encodings. Thus activities aiming at standardization of
 data access patterns or services is out of scope. In the cases where programmatic access and management
 O&M data requires or would benefit from special treatment within the context of a particular OGC APIs or other
@@ -206,16 +148,16 @@ APIs or other access methods.
 The OGC Abstract Specification Topic 20 / ISO 19156 Standard is normatively referred to in several OGC Standards and other documents, including,
 but not limited to the following:
 
-* Sensor Observation Service Interface Standard (12-006),
-* SensorThings API Part 1: Sensing (15-078r6),
-* SensorThings API Part 2: Tasking Core (17-079r1),
-* Timeseries Profile of Observations and Measurements (15-043r3)
-* OGC Abstract Specification Topic 21: Discrete Global Grid Systems Abstract Specification (15-104r5)
-* OGC® WaterML 2.0: Part 1 - TimeseriesWaterML (10-126r4)
-* OGC® WaterML 2.0: Part 2 - Ratings, Gaugings and Sections (15-018r2)
-* OGC® WaterML 2: Part 3 - Surface Hydrology Features (HY_Features) - Conceptual Model (14-111r6)
-* OGC WaterML 2: Part 4 – GroundWaterML 2 (GWML2) (16-032r2)
-* OGC® Geoscience Markup Language 4.1 (GeoSciML) (16-008)
+* Sensor Observation Service Interface Standard (12-006);
+* SensorThings API Part 1: Sensing (15-078r6);
+* SensorThings API Part 2: Tasking Core (17-079r1);
+* Timeseries Profile of Observations and Measurements (15-043r3);
+* OGC Abstract Specification Topic 21: Discrete Global Grid Systems Abstract Specification (15-104r5);
+* OGC® WaterML 2.0: Part 1 - TimeseriesWaterML (10-126r4);
+* OGC® WaterML 2.0: Part 2 - Ratings, Gaugings and Sections (15-018r2);
+* OGC® WaterML 2: Part 3 - Surface Hydrology Features (HY_Features) - Conceptual Model (14-111r6);
+* OGC WaterML 2: Part 4 – GroundWaterML 2 (GWML2) (16-032r2); and
+* OGC® Geoscience Markup Language 4.1 (GeoSciML) (16-008).
 
 The O&M SWG will summarize the changes made in the revised OGC Abstract Specification Topic 20 and make this information available to
 the OGC TC and/or SWGs responsible for maintaining these Standards. However, suggesting or making revisions to
@@ -224,24 +166,23 @@ apart OGC Observations and Measurements - XML Implementation (10-025r1), is out-
 
 The O&M SWG may not consider Change Request Proposals submitted for the the Abstract Specification Topic 20 (10-004r3)
 or OGC Observations and Measurements - XML Implementation (10-025r1) after the cut-off date of 30 September 2019. Any
-CRPs submitted after the cut-off date will be regarded as future work unless the O&M SWG explicitly decides to address 
+CRPs submitted after the cut-off date will be regarded as future work unless the O&M SWG explicitly decides to address
 then as part of the revision work outlined in the <<Initial Deliverables>>.
 
 === Specific Existing Work Used as Starting Point
-////
-This section provides reference information relevant to the work of the SWG. For example, a document reference for a draft submission or a list of CRPs for a SWG focused on revision to an adopted specification.
-////
 
 The following documents are relevant to the work of the O&M SWG (see <<References>> for precise reference information):
 
-* OGC Abstract Specification Topic 20: Observations and measurements (10-004r3) also known as ISO 19156:2011,
-* OGC Observations and Measurements - XML Implementation, version 2.0 (10-025r1),
-* OGC Observations and Measurements – JSON implementation Discussion Paper (15-100r1),
-* SensorThings API Part 1: Sensing (15-078r6),
-* Timeseries Profile of Observations and Measurements (15-043r3)
-* W3C Semantic Sensor Network Ontology specification (SSN),
-* W3C Extensions to the Semantic Sensor Network Ontology proposal (SSN-extensions), and
-* OGC Observations and Measurements - Simple Feature model & encodings project (OMSF)
+* OGC Abstract Specification Topic 20: Observations and measurements (10-004r3) also known as ISO 19156:2011;
+* OGC Observations and Measurements - XML Implementation, version 2.0 (10-025r1);
+* OGC Observations and Measurements – JSON implementation Discussion Paper (15-100r1);
+* SensorThings API Part 1: Sensing (15-078r6);
+* Timeseries Profile of Observations and Measurements (15-043r3);
+* W3C Semantic Sensor Network Ontology specification (SSN);
+* W3C Extensions to the Semantic Sensor Network Ontology proposal (SSN-extensions);
+* OGC Observations and Measurements - Simple Feature model & encodings project (OMSF);
+* OGC Engineering report of the Environmental Linked Features Interoperability Experiment (ELFIE); and
+* OGC Engineering report of the Second Environmental Linked Features Interoperability Experiment (SELFIE, unpublished at the time of writing)
 
 === Is This a Persistent SWG
 
@@ -252,16 +193,8 @@ The following documents are relevant to the work of the O&M SWG (see <<Reference
 == Description of Deliverables
 
 The deliverables for the O&M SWG will consist of both revisions of an existing OGC Standards and new OGC Candidate Standards.
-////
-This section describes what the deliverables will be for this SWG activity. Deliverables could be a revision to an existing standard, including revisions to schemas. A deliverable could also be a best practices document.
-
-This section also includes a preliminary schedule of activities. For example, an RFC focused SWG schedule would provide a plan and schedule that includes the start date, target date for release of the candidate standard for public review, date for consolidation of comments, date for edits to document based on comments, and a final target date for making a recommendation to the Membership. This information will be made public and will also be used as input to a RoadMap for the document. Therefore, the more detail the better.
-////
 
 === Initial Deliverables
-////
-Describe the initial standard(s) to be developed by the SWG.
-////
 * New version of the OGC Abstract Specification Topic 20: Observations and measurements content-wise identical to the revised ISO 19156. The role of the O&M SWG in this task is to coordinate the co-publication with the ISO/TC 211 and the OGC Staff.
 * New version of the OGC Observations and Measurements - XML Implementation Standard document and the XML Schema. The version number of the new version will be decided after evaluating the backwards compatibility of the included changes.
 * New OGC Candidate Standard for OGC Observations and Measurements - JSON Implementation Standard document and the possible validation rules for JSON content.
@@ -302,10 +235,6 @@ The preliminary timeline for the revision of the O&M JSON Implementation Candida
 
 === Additional SWG Tasks
 
-////
-Describe each additional standard to be developed by the SWG as an additional task after the deliverables from the initial charter have been completed. This section is blank in a new charter, then is populated with each task approval request per the OGC TC Policies and Procedures.
-////
-
 To be added with each new task approval request per the OGC TC Policies and Procedures.
 
 == IPR Policy for this SWG
@@ -315,12 +244,6 @@ To be added with each new task approval request per the OGC TC Policies and Proc
 [ ] RAND for fee
 
 == Anticipated Audience / Participants
-
-////
-Description of the target participants in this SWG. For example, if the SWG were focused on a candidate spatial query language standard: Those involved in the design, development, implementation, or use of elements listed above in "Scope of the Work".  This includes search service providers, prospective users of search services exposed as XML, information architects and bibliographic, metadata, and content provider.
-
-This is not meant as a limiting statement but instead is intended to provide guidance to interested potential participants as to whether they wish to participate in this SWG.
-////
 
 People interested in capturing and exchange observed, measured or modeled data. This includes data modelers,
 data owners and users of observation data from multiple sources and interfaces, including historical and near-real time
@@ -339,42 +262,19 @@ OGC - ISO/TC 211 liaison agreement.
 
 === Collaboration
 
-////
-Describe the work environment of the SWG, including the use of GitHub or GitLab.
-////
-
 The O&M SWG document drafting and issue management will be done using public Github repository at
 https://github.com/opengeospatial/om-swg. The minutes and recordings of the SWG meetings will be uploaded into
 O&M SWG project folder of the OGC Portal and made publicly available.
 
 === Similar or Applicable Standards Work (OGC and Elsewhere)
-////
-The following standards and projects may be relevant to the SWG's planned work, although none currently provide the functionality anticipated by this committee's deliverables:
-
-OASIS BPEL
-IETF HTTP
-
-The SWG intends to seek and if possible maintain liaison with each of the organizations maintaining the above works.
-////
-
 See <<Specific Existing Work Used as Starting Point,Chapter 3.3>>
 
 === Details of first meeting
-
-////
-Example:
-The first meeting of the SWG will be held by telephone conference call at 10AM EDT on 1 October 2007. Call-in information will be provided to the SWG's e-mail list and on the portal calendar in advance of the meeting.
-////
 
 The first meeting the O&M SWG will take place on 14 August 2019 at 10:00 AM EEST (03:00 AM EDT) using GoToMeeting.
 Call-in information will be provided to the SWG's e-mail list and on the portal calendar in advance of the meeting.
 
 === Projected on-going meeting schedule
-
-////
-Example:
-The work of the SWG will be carried out primarily by email and conference calls, possibly every two weeks, with face-to-face meetings perhaps at each of the OGC TC meetings.
-////
 The work of the SWG will be carried out primarily by email and bi-weekly conference calls, with
 face-to-face meetings at each of the OGC TC meetings. The conference call times will be coordinated with the
 ISO/TC 211 project team responsible for revising the ISO 19156 Standard to ensure timely sharing of information and
@@ -385,8 +285,6 @@ efficient use of the time and resources of the involved group members.
 The following people support this proposal and are committed to the Charter and projected meeting schedule. These
 members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in
 this charter. The charter members have voting rights beginning the day the SWG is officially formed.
-
-//Charter Members are shown on the public SWG page. Extend the table as necessary.
 
 |===
 |Name |Organization
@@ -403,10 +301,6 @@ this charter. The charter members have voting rights beginning the day the SWG i
 |===
 
 === Conveners
-
-////
-Name of individual(s) who started the SWG process. Could be the lead for an RFC submission, an OGC staff person, or an individual who believes it is time for a revision to an adopted standard.
-////
 
 Ilkka Rinne, Spatineo Oy
 
@@ -426,7 +320,4 @@ Ilkka Rinne, Spatineo Oy
 * OGC SensorThings API Part 1: Sensing (OGC 15-078r6), 2016, http://docs.opengeospatial.org/is/15-078r6/15-078r6.html
 * OGC® Sensor Observation Service Interface Standard, version 2.0 (OGC 12-006), 2012, https://portal.opengeospatial.org/files/?artifact_id=47599
 * OGC Observations and Measurements - Simple Feature model & encodings project (OMSF), https://github.com/opengeospatial/omsf-profile
-
-////
-Optional list of references.
-////
+* OGC Environmental Linked Features Interoperability Experiment Engineering Report (OGC 18-097), 2019, https://docs.opengeospatial.org/per/18-097.html
