@@ -69,14 +69,19 @@ toc::[]
 <<<
 
 == Purpose of the Standards Working Group
-The revision work of OGC Abstract Specification Topic 20, also published as ISO Observations and measurements
-Standard (ISO 19156:2011, O&M), has been agreed to by both OGC and ISO.
-The revision was approved by ISO/TC 211 in July 2018.
-This work will be carried out within ISO/TC 211 with support from the O&M SWG to ensure that:
+The O&M standard was originally conceived within the OGC Sensor Web Enablement Initiative in 2003-2007 and
+version 2.0 was co-published as the OGC Abstract Specification Topic 20 and ISO 19156:2011.
+The latest version of OGC Abstract Specification Topic 20 is from 2013, and among other things, it
+requires revising to accommodate technical issues discovered in various standard implementations and
+harmonization with recent W3C/OGC standardization work on sensor network terminology and concepts defined
+in the Semantic Sensor Network (SSN) and Sensor, Observation, Sample, and Actuator (SOSA) ontologies.
+
+The revision work of OGC Abstract Specification Topic 20/ISO 19156 was agreed by both OGC and ISO/TC 211 in July 2018. This work will be carried out
+within ISO/TC 211 with support from the O&M SWG to ensure that:
 
 * the concerns and requirements identified by OCG and ISO members are attended to;
 * the final document is suitable as an OGC Standard as well as an ISO Standard; and
-* the revised version of OGC Abstract Specification Topic 20 gets published as a revised ISO 19156 document.
+* the revised version of the ISO 19156 Standard gets published as a revised OGC Abstract Specification Topic 20 document.
 
 In addition to supporting the ISO 19156 revision work of ISO/TC 211, the purpose of the OGC Observations and measurements
 SWG is to revise existing and draft new OGC Standards considering the encoding of the O&M conceptual models.
@@ -88,22 +93,25 @@ encoding of spatial data following the O&M conceptual models.
 The SWG SHALL ensure that all changes are consistent with the OGC standards baseline and business plan.
 
 == Business Value Proposition
-
-Standards based exchange of observed, measured or modeled data are key enablers for many critical online
-consumer and governmental services. The OGC Abstract Specification Topic 20 "Observations and measurements" standard defines a conceptual
-level data model for these datasets. Both the Observations and Measurements conceptual data model and its
-standardized XML encoding (OGC 10-025r1) are used extensively in Spatial Data Infrastructures such as in the EU INSPIRE.
-
-The latest revision of OGC Abstract Specification Topic 20 is from 2013, and requires revising to accommodate technical issues
-discovered in various standard implementations and harmonization with recent W3C/OGC standardization work on sensor
-network terminology and concepts defined in the Semantic Sensor Network (SSN) and Sensor, Observation, Sample,
-and Actuator (SOSA) ontologies.
+Standards based exchange of observed, measured or modeled data are key enablers for many critical online consumer
+and governmental services. Examples of these data sets include weather, air quality and other kinds of environmental
+observations and forecasts, traffic monitoring data, health monitoring, building and construction safety measurements,
+various remote sensing data, and industrial process monitoring. The Observations and measurements Standard
+(OGC Abstract Specification Topic 20/ISO 19156:2011, O&M) defines a conceptual level data model for these datasets.
 
 The OGC Observations and Measurements - XML Implementation (OGC 10-025r1) Standard defines an XML encoding for the
 concepts defined in OGC Abstract Specification Topic 20 and thus needs to be revised to accommodate the changes made in the
-revised OGC Abstract Specification Topic 20. In addition to the revision of the O&M XML Implementation Standard, there is an identified need
+revised OGC Abstract Specification Topic 20.
+
+In addition to the revision of the O&M XML Implementation Standard, there is an identified need
 to standardize an O&M data encoding for the formats like JSON/GeoJSON preferred in modern Web APIs including the
 ones conforming to the OGC API - Features - Part 1: Core Standard (OGC 17-069).
+
+Both the Observations and Measurements conceptual data model and its
+standardized XML encoding (OGC 10-025r1) are used extensively in Spatial Data Infrastructures such as in the EU INSPIRE.
+There is also an on-going work for providing INSPIRE O&M data sets also in JSON/GeoJSON based formats, but no standard
+has yet been identified describing an interoperable way of doing this.
+
 
 == Scope of Work
 The Scope of Work of the O&M SWG is described as follows.
