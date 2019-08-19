@@ -18,7 +18,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: 2019-08-19
 |Approval Date:   <yyyy-mm-dd>
-|Internal reference number of this OGC(R) document: 19-052
+|Internal reference number of this OGC(R) document: 19-052r1
 |Category: OGC(R) Standards Working Group Charter
 |Authors:   Ilkka Rinne
 |===
