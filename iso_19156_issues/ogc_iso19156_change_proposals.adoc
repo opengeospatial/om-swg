@@ -1,0 +1,81 @@
+:Title: Identifed issues and proposed changes for the ISO 19156:2011 Standard
+:titletext: {Title}
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc:
+:toc-placement!:
+:toclevels: 4
+:numbered:
+:sectanchors:
+:source-highlighter: pygments
+:imagesdir: images
+
+<<<
+[cols = ">",frame = "none",grid = "none"]
+|===
+|{set:cellbgcolor:#FFFFFF}
+|[big]*Open Geospatial Consortium*
+|*Observations and measurements Standards Working Group*
+|Date: <yyyy-mm-dd>
+|===
+
+[cols = "^", frame = "none"]
+|===
+|[big]*{titletext}*
+|===
+
+[cols = "^", frame = "none", grid = "none"]
+|===
+|*Copyright notice*
+|Copyright (C) 2019 Open Geospatial Consortium
+|To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
+|===
+
+[[toc]]
+<<<
+toc::[]
+
+<<<
+
+== Introduction
+
+== Background
+
+== Issues and suggestions
+
+=== Distinguishing the ultimate features-of-interest and the sampling feature
+
+==== Context and justification for change
+
+==== Proposed changes
+
+=== Efficient observation collections
+
+==== Context and justification
+
+==== Proposed changes
+
+=== Declaring observing capabilities
+
+==== Context and justification
+
+==== Proposed changes
+
+=== Observation events as coverage metadata
+
+==== Context and justification
+
+==== Proposed changes
+
+=== Distinguishing the stimulus and the capture times of observations
+
+==== Context and justification
+
+==== Proposed changes
+
+=== Terminology harmonization with W3C-OGC SSN/SOSA
+
+==== Context and justification
+
+==== Proposed changes
