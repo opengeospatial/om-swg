@@ -44,7 +44,7 @@ toc::[]
 
 == Issues and suggestions
 
-=== Distinguishing between the ultimate features-of-interest and the sampling feature
+=== Distinguishing between the ultimate feature-of-interest and the sampling feature
 
 ==== Context and justification for change
 
