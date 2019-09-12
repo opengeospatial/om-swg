@@ -44,7 +44,19 @@ toc::[]
 
 == Issues and suggestions
 
-=== Distinguishing the ultimate features-of-interest and the sampling feature
+=== Distinguishing between the ultimate features-of-interest and the sampling feature
+
+==== Context and justification for change
+
+==== Proposed changes
+
+=== Distinguishing between the stimulus and the capture times of observations
+
+==== Context and justification for change
+
+==== Proposed changes
+
+=== Distinguishing between the sensor and observing procedure
 
 ==== Context and justification for change
 
@@ -52,30 +64,26 @@ toc::[]
 
 === Efficient observation collections
 
-==== Context and justification
+==== Context and justification for change
 
 ==== Proposed changes
 
 === Declaring observing capabilities
 
-==== Context and justification
+==== Context and justification for change
 
 ==== Proposed changes
 
 === Observation events as coverage metadata
 
-==== Context and justification
+==== Context and justification for change
 
 ==== Proposed changes
 
-=== Distinguishing the stimulus and the capture times of observations
 
-==== Context and justification
-
-==== Proposed changes
 
 === Terminology harmonization with W3C-OGC SSN/SOSA
 
-==== Context and justification
+==== Context and justification for change
 
 ==== Proposed changes
