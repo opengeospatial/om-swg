@@ -18,7 +18,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: 2019-08-19
 |Approval Date:   <yyyy-mm-dd>
-|Internal reference number of this OGC(R) document: 19-052r1
+|Internal reference number of this OGC(R) document: 19-052r2
 |Category: OGC(R) Standards Working Group Charter
 |Authors:   Ilkka Rinne
 |===
@@ -323,7 +323,7 @@ Ilkka Rinne, Spatineo Oy
 * Geography Markup Language (GML) simple features profile (with Corrigendum) (OGC 10-100r3), 2012, http://portal.opengeospatial.org/files/?artifact_id=42729
 * RFC 7946: The GeoJSON Format, IETF, 2016, https://tools.ietf.org/html/rfc7946
 * RFC 7159: The JavaScript Object Notation (JSON) Data Interchange Format, IETF, 2014, https://tools.ietf.org/html/rfc7159
-* D2.9 Draft Guidelines for the use of Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE Annex II and III data specification development, version 2.0rc3, INSPIRE Cross Thematic Working Group on Observations & Measurements, 2013, https://inspire.ec.europa.eu/documents/Data_Specifications/D2.9_O&M_Guidelines_v2.0rc3.pdf
+* D2.9 Guidelines for the use of Observations & Measurements and Sensor Web Enablement-related standards, version 3.0, INSPIRE Cross Thematic Working Group on Observations & Measurements, 2016, https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe
 * OGC API - Features - Part 1: Core (version 1.0.0-draft.3), OGC 17-069r3), 2019, http://docs.opengeospatial.org/DRAFTS/17-069r3.html
 * OGC SensorThings API Part 1: Sensing (OGC 15-078r6), 2016, http://docs.opengeospatial.org/is/15-078r6/15-078r6.html
 * OGC® Sensor Observation Service Interface Standard, version 2.0 (OGC 12-006), 2012, https://portal.opengeospatial.org/files/?artifact_id=47599
