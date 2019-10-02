@@ -17,7 +17,7 @@ Participants (voting members in bold)
 * **Kathi Schleidt (KS)**
 * Scott Simmons (SS)
 
-Status: draft
+Status: approved (2019-09-26)
 
 ## 1. Quorum determination and patent call
 

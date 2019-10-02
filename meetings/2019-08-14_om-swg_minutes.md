@@ -11,7 +11,7 @@ Participants (voting members in bold)
 * **Hylke van der Schaaf (HS)**
 * **Alistair Ritchie (AR)**
 
-Status: draft
+Status: approved (2019-09-26)
 
 ## 1. Quorum determination and patent call
 
