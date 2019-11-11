@@ -11,8 +11,8 @@ The contributor understands that any contributions, if accepted by the OGC Membe
 | 2019-11-20  | O&M SWG pt. 2 at Toulouse TC     | Drafting the OGC Proposed changes to the ISO 19156
 | week 50     | ISO / TC 211 plenary at Omiya, Japan     | Highlights of the proposed ISO 19156 changes  
 | Early March 2020 | OGC TC Hong Kong (TBC) | Agreement on finalisation of the 19156 CD version
-| 2020-04-01  | 19156 CD Ballot submission deadline |
 | March 2020 | OMXML revision work starts |
+| 2020-04-01  | 19156 CD Ballot submission deadline |
 | April - June 2020 | Addressing the 19156 CD ballot comments |
 | June 2020 | OGC TC in Montreal, Canada (TBC) | Final review of the 19156 CD ballot comments, OMXML revision plan agreed |
 | June 2020   | ISO / TC 211 plenary  | 19156 CD ballot comments to be discussed |
