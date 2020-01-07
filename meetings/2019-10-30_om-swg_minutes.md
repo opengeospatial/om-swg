@@ -2,6 +2,7 @@
 
 Time: 2019-10-30 at 11:00 EET
 
+Place: Remotely (GoToMeeting), [recording](https://portal.opengeospatial.org/files/?artifact_id=90751) available in the OGC Portal (requires Portal access).
 
 Participants (voting members in bold):
 
@@ -13,7 +14,7 @@ Participants (voting members in bold):
 * **Linda van den Brink (LB)**
 * Li Qingyuan
 
-Status: draft
+Status: approved (2019-11-13)
 
 ## 1. Check for quorum, patent call
 IR noted that only two voting members were present, but with proxies from Hylke, Sylvain and Clemens the quorum was reached [Editor's note: SG joined in during point 5].
