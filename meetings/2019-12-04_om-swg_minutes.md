@@ -63,4 +63,4 @@ The discussion on this was done in within the previous topic.
 This topic was addressed due to lack of time.
 
 ## 6. Other issues
-Not other issues.
+No other issues.
