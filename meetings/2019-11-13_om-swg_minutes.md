@@ -13,7 +13,7 @@ Participants (voting members in bold):
 * **Sylvain Grellet (SG)**
 * Li Qingyuan
 
-Status: draft
+Status: approved (2020-01-22)
 
 ## 1. Check for quorum, patent call
 IR noted that the quorum has achieved due to Kathi's, and Hylke's proxies to Sylvain and Clemens' proxy to Ilkka. IR

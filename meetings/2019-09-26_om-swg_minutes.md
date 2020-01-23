@@ -13,7 +13,7 @@ Participants (voting members in bold):
 * Scott Simmons (SS)
 * Li Qingyuan (LQ)
 
-Status: draft
+Status: approved (2020-01-22)
 
 
 ## 1. Check for quorum, patent call

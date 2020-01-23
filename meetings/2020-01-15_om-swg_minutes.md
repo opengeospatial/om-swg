@@ -14,7 +14,7 @@ Participants (voting members in bold):
 * **Abdel Feliachi (AF)**
 * **Linda van den Brink** (by proxy to Ilkka)
 
-Status: draft
+Status: approved (2020-01-22)
 
 ## 1. Check for quorum, patent call
 Quorum reached, 7 voting members represented with Clemens' and Linda's proxies to Ilkka. Abdel Feliachi had requested a voting member status and was granted one after a 30-day period from joining the SWG.

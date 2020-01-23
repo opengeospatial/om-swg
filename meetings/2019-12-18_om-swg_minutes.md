@@ -15,7 +15,7 @@ Participants (voting members in bold):
 * **Linda van den Brink** (by proxy to Ilkka)
 
 
-Status: draft
+Status: approved (2020-01-22)
 
 ## 1. Check for quorum, patent call
 Quorum reached, 6 voting members represented with Sylvain's proxy to Kathi and Clemens' and Linda's proxies to Ilkka.

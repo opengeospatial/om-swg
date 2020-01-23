@@ -13,7 +13,7 @@ Participants (voting members in bold):
 * **Clemens Portele** (by proxy Ilkka)
 * **Alistair Ritchie (AR)**
 
-Status: draft
+Status: approved (2020-01-22)
 
 
 ## 1. Check for quorum, patent call
