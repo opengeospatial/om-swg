@@ -14,7 +14,7 @@ Participants (voting members in bold):
 * **Abdel Feliachi (AF)**
 * **Linda van den Brink** (by proxy to Ilkka)
 
-Status: draft
+Status: approved (2020-01-29)
 
 ## 1. Check for quorum, patent call
 Quorum reached, 7 participants from 6 voting member organisations represented with Clemens' and Linda's proxies to Ilkka.
