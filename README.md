@@ -10,7 +10,7 @@ Last updated 20 Jan 2020
 | ------------|-------|------------------------------ |-------|---------|
 | Mid Nov 2019  | OGC TC in Toulouse | Drafting the OGC Proposed changes to the ISO 19156 ||
 | 2019-12-09    | 19156 meeting at ISO / TC 211 plenary at Omiya, Japan     |Status of the OGC proposed  changes presented||
-| Early Mar 2020 | OGC TC Hong Kong | Observation core nailed down | | |
+| Early Mar 2020 | ~~OGC TC Hong Kong~~ | Observation core nailed down | | |
 | Jun 2020 | OGC TC in Montreal, Canada (TBC) | Agreement of finalisation of OGC proposals |OMXML work kicked off|  |
 | Jun 2020   | ISO / TC 211 plenary  | Status of the OGC proposed changes presented |
 | End of Jul 2020  | | OGC proposed changes submitted to the 19156 project team|
