@@ -11,13 +11,13 @@ Last updated 20 Jan 2020
 | Mid Nov 2019  | OGC TC in Toulouse | Drafting the OGC Proposed changes to the ISO 19156 ||
 | 2019-12-09    | 19156 meeting at ISO / TC 211 plenary at Omiya, Japan     |Status of the OGC proposed  changes presented||
 | Early Mar 2020 | ~~OGC TC Hong Kong~~ | Observation core nailed down | | |
-| Jun 2020 | OGC TC in Montreal, Canada (TBC) | Agreement of finalisation of OGC proposals |OMXML work kicked off|  |
+| Jun 2020 | OGC TC in Montreal, Canada | Agreement of finalisation of OGC proposals |OMXML work kicked off|  |
 | Jun 2020   | ISO / TC 211 plenary  | Status of the OGC proposed changes presented |
 | End of Jul 2020  | | OGC proposed changes submitted to the 19156 project team|
 | 2020-09-04  | | CD ballot submission deadline |
-| Sept 2020 | OGC TC in Munich, Germany (TBC) | | Revision plan for OMXML agreed on|
+| Sept 2020 | OGC TC in Munich, Germany | | Revision plan for OMXML agreed on|
 | Oct - Nov 2020 | | Addressing the CD ballot comments |
-| Dec 2020 | OGC TC in Palo Alto, CA USA (TBC) | | 1st full draft of revised OMXML. Validation & testing plan agreed|
+| Dec 2020 | OGC TC Atlanta, USA | | 1st full draft of revised OMXML. Validation & testing plan agreed|
 | Nov-Dec 2020 | ISO / TC 211 plenary | Editing Committee meeting for 19156 CD ballot comment resolution |
 | Feb-Mar 2021 | OGC TC in ? | |Validation & testing |OM-JSON standard drafting starts
 | May 2021 | | Submission deadline for the 19156 DIS version? |
