@@ -2,7 +2,7 @@
 
 Time: 2020-01-29 at 11:00 EET
 
-Place: Remotely (GoToMeeting)
+Place: Remotely (GoToMeeting),[recording](https://portal.opengeospatial.org/files/?artifact_id=91954) available in the OGC Portal (requires Portal access).
 
 Participants (voting members in bold):
 
@@ -14,7 +14,7 @@ Participants (voting members in bold):
 * **Linda van den Brink (LB)**
 * Simon Cox (SC, from point 3)
 
-Status: draft
+Status: approved (2020-02-05)
 
 ## 1. Check for quorum, patent call
 Quorum reached, 7 participants from 6 voting member organisations represented with Clemens' proxy to Ilkka.
