@@ -13,7 +13,7 @@ Participants (voting members in bold):
 * **Sylvain Grellet** (by proxy to Kathi)
 * **Linda van den Brink (LB)** (until the end of topic 4)
 
-Status: draft
+Status: approved (2020-02-26)
 
 ## 1. Check for quorum, patent call
 Quorum reached, 6 participants from 6 voting member organisations represented with Sylvain's proxy to Kathi and Clemens' proxy to Ilkka.
