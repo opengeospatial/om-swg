@@ -82,5 +82,5 @@ There was no time to discuss the other topics proposed in the agenda.
 The observation collections would be on the agenda again in the next week's meeting. IR asked the participants to try and review the latest discussion in the issue #2 in order to make good progress in the meeting. IR noted that a lot of time and effort had already been used for discussing the observation collections, and that the collection related part of the model already formed a big part of the entire UML model. He threw a question in the air for the next week about how detailed collection model should we actually include in the O&M model.
 
 ## 7. Other issues
-SG commented that there was no issue yet for drafting the textual class and association descriptions. This work would probably affect the UML model and some of the decicions already made by thw SWG. A generic umbrella issue for this work could later be split into smaller parts. IR promised to create an issue for this.
+SG commented that there was no issue yet for drafting the textual class and association descriptions. This work would probably affect the UML model and some of the decicions already made by the SWG. A generic umbrella issue for this work could later be split into smaller parts. IR promised to create an issue for this.
 
