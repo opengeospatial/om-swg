@@ -12,7 +12,7 @@
 | AbstractObservationBase | Any | Range | | | | result | N | 0..* |  S -> T |
 | Observer | Platform | | **system** |  N | 0..* |  platform |  N | 0..* |  S <-> T |
 | Platform | Platform | |   |   |   | relatedPlatform | N | 0..* |  S -> T |
-| Observer | ObservableProperty | |  observer |  N | 0..* | observableProperty | V | 0..* |  S -> T |
+| Observer | ObservableProperty | |  observer |  N | 0..* | observableProperty | N | 0..* |  S -> T |
 | ObservationCollection | AbstractObservation | | collection | N | 0..* | member | N | 0..* | S -> T |
 
 Note: the auto-associations between AbstractObservations and Platforms carry information. Still under discussion, but believe converging to:
