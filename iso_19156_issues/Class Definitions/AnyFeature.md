@@ -13,3 +13,13 @@ In an implementation this abstract class shall be substituted by a concrete clas
 TBD
 
 Note: based on current discussions, we may propose an interface to provide the link back to an Observation
+
+## SimpleFeatureOfInterest
+
+### UML Notes
+
+TBD
+
+### Definition
+
+TBD
