@@ -108,6 +108,8 @@ NOTE	ISO 19115-2:2008 provides MI_Instrument, LE_Processing and LE_Algorithm, wh
 
 *Note: this is taken from the V2 Observation, must be reworked.*
 
+New note: based on the assumption that the Observer is the sensor instance, class based information on the sensor type should be provided in the procedure
+
 ### Definition
 
 TBD
