@@ -7,3 +7,13 @@
 ### Definition
 
 TBD
+
+## SimpleObservationResult
+
+### UML Notes
+
+TBD
+
+### Definition
+
+TBD
