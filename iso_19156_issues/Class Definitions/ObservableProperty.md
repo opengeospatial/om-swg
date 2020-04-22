@@ -1,4 +1,4 @@
-## ObservableProperty
+## AbstractObservableProperty
 
 ### UML Notes
 
