@@ -13,3 +13,14 @@ New note: based on the assumption that the Observer is the sensor instance, clas
 ### Definition
 
 TBD
+
+## SimpleProcedure
+
+### UML Notes
+
+TBD
+
+### Definition
+
+TBD
+
