@@ -26,7 +26,11 @@ TBD
 
 ### Attributes
 documentation: DocumentCitation - CI_Citation
+
 name: String
+
+
 responsibleParty:
+
 Type: ?
 
