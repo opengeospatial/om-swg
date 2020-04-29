@@ -25,9 +25,11 @@ TBD
 TBD
 
 ### Attributes
-documentation: DocumentCitation - CI_Citation
+* documentation: DocumentCitation - CI_Citation
 
-name: String
+Definition -- Further information ( online/offline) associated with the  process .
+
+* name: String
 
 
 responsibleParty:
