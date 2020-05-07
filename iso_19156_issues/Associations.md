@@ -1,24 +1,22 @@
 
 
-| Source                  | Target                | Name   | Source Role         | SC   | Target Role                | TC   | Navigability | Association class  |
-| ----------------------- | --------------------- | ------ | ------------------- | ---- | -------------------------- | -----| ------------ | ------------------ |
-| AbstractObservationBase | AnyFeature            |        | observation*         | 0..* | proximateFeatureOfInterest | 0..* | S <-> T      |                    |
-| AbstractObservationBase | AnyFeature            |        | observation*         | 0..* | ultimateFeatureOfInterest  | 0..* | S <-> T      |                    | 
-| AbstractObservationBase | Procedure             |        | observation         | 0..* | procedure                  | 0..* | S <-> T      |                    | 
-| AbstractObservationBase | ObservableProperty    |        | observation         | 0..* | observedProperty           | 0..* | S <-> T      |                    |    
-| AbstractObservationBase | Observer              |        | observation         | 0..* | observer                   | 0..* | S <-> T      |                    |
-| AbstractObservationBase | Any                   |        | observation*         | 0..* | metadata                   | 0..* | S <-> T      |                    | 
-| AbstractObservationBase | Any                   | Range  | observation*         | 0..* | result                     | 0..* | S <-> T      |                    |
-| AbstractObservation     | AbstractObservation   |        | relatingObservation | 0..* | relatedObservation         | 0..* | S <-> T      | ObservationContext |
-| Observer                | Platform              |        | observer            | 0..* | platform                   | 0..* | S <-> T      | Deployment         | 
-| Platform                | Platform              |        | relatingPlatform    | 0..* | relatedPlatfom             | 0..* | S <-> T      | PlatformContext    |
-| Observer                | ObservableProperty    |        | observer            | 0..* | observableProperty         | 0..* | S <-> T      |                    |
-| ObservationCollection   | AbstractObservation   |        | collection          | 0..* | member                     | 0..* | S <-> T      |                    |
-| ObservationCollection   | MemberCharacteristics |        | collection          | 0..* | memberCharacteristics      | 0..* | S <-> T      |                    |
-
-Note: the auto-associations between AbstractObservations and Platforms carry information. Still under discussion, but believe converging to:
-* sourceRole
-* targetRole
-* ?name?
-
-*) These association roles may not be possible as AnyFeature and Any are defined outside the O&M model and have no such associations
+| Source                  | Target                | Name   | Source Role         | SC   | Target Role                | TC   | Navigability | Association class  | Source qualifiers | Target qualifiers |
+| ----------------------- | --------------------- | ------ | ------------------- | ---- | -------------------------- | -----| ------------ | ------------------ | - | - | 
+| AbstractObservationBase | AnyFeature            | DomainProxy? |               |      | proximateFeatureOfInterest | 0..* | S -> T       |                    | | | 
+| AbstractObservationBase | AnyFeature            | Domain? |                    |      | ultimateFeatureOfInterest  | 0..* | S -> T       |                    | | | 
+| AbstractObservationBase | AbstractProcedure     |        |                     |      | procedure                  | 0..* | S -> T       |                    | | |  
+| AbstractObservationBase | AbstractObservableProperty |   |                     |      | observedProperty           | 0..* | S -> T       |                    | | |     
+| AbstractObservationBase | AbstractObserver      |        |                     |      | observer                   | 0..* | S -> T       |                    | | | 
+| AbstractObservationBase | Any                   |        |                     |      | metadata                   | 0..* | S -> T       |                    | | |  
+| AbstractObservationBase | Any                   | Range  |                     |      | result                     | 0..* | S -> T       |                    | | | 
+| AbstractObserver        | AbstractPlatform      |        | observer            | 0..* | platformDeployment         | 0..* | S <-> T      | Deployment         | | |  
+| AbstractPlatform        | AbstractPlatform      |        | relatedPlatform     | 0..* | relatedPlatform            | 0..* | S <-> T      |                    | sourceRole, targetRole | sourceRole, targetRole | 
+| AbstractObserver        | AbstractObservableProperty |   |                     |      | observableProperty         | 0..* | S -> T       |                    | | | 
+| ObservationCollection   | AbstractObservation   |        |                     |      | member                     | 0..* | S -> T       |                    | | | 
+| ObservationCollection   | MemberCharacteristics |        | collection          | 0..* | memberCharacteristics      | 0..1 | S <-> T      |                    | | |
+| ObservationRelated (interface)   | AbstractObservation | |                     |      | relatedObservation         | 0..* | S -> T       |                    | | sourceRole, targetRole |
+| SimpleProcedure         | AbstractObservation (through ObservationRelated) | | |      | relatedObservation         | 0..* | S -> T       |                    | | sourceRole, targetRole |
+| SimpleObservableProperty | AbstractObservation (through ObservationRelated) | ||      | relatedObservation         | 0..* | S -> T       |                    | | sourceRole, targetRole |
+| SimpleObservableProperty | AbstractObserver     |        |                     |      | observer                   | 0..* | S -> T       |                    | | |
+| SimpleObserver           | AbstractObservation (through ObservationRelated) | ||      | relatedObservation         | 0..* | S -> T       |                    | | sourceRole, targetRole |
+| SimplePlatform           | AbstractObservation (through ObservationRelated) | ||      | relatedObservation         | 0..* | S -> T       |                    | | sourceRole, targetRole |
