@@ -2,7 +2,7 @@
 
 Time: 2020-04-29 at 11:00 EEST
 
-Place: Remotely (GoToMeeting), [recording]() available in the OGC Portal (requires Portal access).
+Place: Remotely (GoToMeeting), [recording](https://portal.ogc.org/files/?artifact_id=93196) available in the OGC Portal (requires Portal access).
 
 Participants (voting members in bold):
 
@@ -13,7 +13,7 @@ Participants (voting members in bold):
 * **Clemens Portele** (by proxy to Ilkka)
 * **Hylke van der Schaaf** (by proxy to Kathi)
 
-Status: draft
+Status: approved (2020-05-13)
 
 ## 1. Check for quorum, patent call
 Quorum reached, 6 participants from 6 voting member organisations represented with Hylke's proxy to Kathi and Clemens' proxy to Ilkka.
