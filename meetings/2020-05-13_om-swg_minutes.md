@@ -13,7 +13,7 @@ Participants (voting members in bold):
 * **Clemens Portele** (by proxy to Ilkka)
 * **Hylke van der Schaaf (HS)** 
 
-Status: draft
+Status: approved (2020-05-27)
 
 ## 1. Check for quorum, patent call
 Quorum reached, 6 participants from 6 voting member organisations represented Clemens' proxy to Ilkka.
