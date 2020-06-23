@@ -45,7 +45,7 @@ Add: Definition of the Observation concept and its associations
 ```
 Requirement 1: req/abstract-observation-schema/observation
 
-The System Under Test shall support the concept of an Observation as described in Figure 1 and Tables 1 and 2
+The System Under Test shall support the concept of an Observation as described in Figure 1 and in Tables 1 and 2.
 ```
 
 
@@ -64,7 +64,7 @@ Add: Definition of the ObservingProcedure concept and its associations
 ```
 Requirement 2: req/abstract-observation-schema/observing-procedure
 
-The System Under Test shall support the concept of an ObservingProcedure as described in Figure 2 and Table 3
+The System Under Test shall support the concept of an ObservingProcedure as described in Figure 2 and Table 3.
 ```
 
 ### X.3 ObservableProperty
@@ -82,7 +82,7 @@ Add: Definition of the ObservableProperty concept and its associations
 ```
 Requirement 3: req/abstract-observation-schema/observable-property
 
-The System Under Test shall support the concept of an ObservableProperty as described in Figure 3 and Table 4
+The System Under Test shall support the concept of an ObservableProperty as described in Figure 3 and Table 4.
 ```
 
 ### X.4 Observer
@@ -103,7 +103,7 @@ Add: Definition of the Observer concept and its associations
 ```
 Requirement 4: req/abstract-observation-schema/observer
 
-The System Under Test shall support the concept of an Observer as described in Figure 4 and Table 5
+The System Under Test shall support the concept of an Observer as described in Figure 4 and Table 5.
 ```
 
 ### X.5 Platform
@@ -121,7 +121,7 @@ Add: Definition of the Platform concept and its associations
 ```
 Requirement 5: req/abstract-observation-schema/platform
 
-The System Under Test shall support the concept of an Platform as described in Figure 5 and Table 6
+The System Under Test shall support the concept of an Platform as described in Figure 5 and Table 6.
 ```
 
 ### X.6 ObservingActivity
@@ -140,7 +140,7 @@ Add: Definition of the ObservingActivity concept and its associations
 ```
 Requirement 6: req/abstract-observation-schema/observingActivity
 
-The System Under Test shall support the concept of an ObservingActivity as described in Figure 6 and Table 7
+The System Under Test shall support the concept of an ObservingActivity as described in Figure 6 and Table 7.
 ```
 
 
