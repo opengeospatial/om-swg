@@ -1,5 +1,6 @@
-# ISO 19156 Requirements classes
-(OGC O&M SWG proposal)
+# ISO 19156 Edition 2 (O&M 3.0) Requirements Classes
+
+Draft OGC O&M SWG proposal
 
 Terminology:
 * System Under Test: data model or information system declaring conformance with or being tested for conformance with a set of requirements
