@@ -3,7 +3,7 @@
 Draft OGC O&M SWG proposal
 
 Terminology:
-* System Under Test: data model or information system declaring conformance with or being tested for conformance with a set of requirements
+* System Under Test: data model or information system declaring conformance with or being tested for conformance with the a set of requirements.
 
 ## X. Abstract Observation Schema
 
@@ -17,12 +17,11 @@ This Requirements Class defines the fundamental abstract concepts for describing
 
 This Requirements Class does not define any particular data encoding or transfer medium to use for implementing data exchange.
 
+*Figure 1: Abstract Observation Schema concepts.*
 
 ### X.1 Observation
 
 Add: Definition of the Observation concept and its associations
-
-*Figure 1: Context Diagram for Observation and its associated concepts.*
 
 *Table 1: Observation attributes*
 
@@ -40,7 +39,6 @@ Add: Definition of the Observation concept and its associations
 | procedure        | |
 | observedProperty | |
 | observer         | |
-| generatedFor     | |
 | result           | |
 
 ```
@@ -50,29 +48,25 @@ The System Under Test shall support the concept of an Observation as described i
 ```
 
 
-### X.2 ObservingProcedure
+### X.2 Procedure
 
-Add: Definition of the ObservingProcedure concept and its associations
+Add: Definition of the Procedure concept and its associations
 
-*Figure 2: Context Diagram for ObservingProcedure and its associated concepts.*
-
-*Table 3: ObservingProcedure attributes*
+*Table 3: Procedure attributes*
 
 | Association role | Description |
 |------------------|------------------------|
 | observation      | |
 
 ```
-Requirement 2: req/abstract-observation-schema/observing-procedure
+Requirement 2: req/abstract-observation-schema/procedure
 
-The System Under Test shall support the concept of an ObservingProcedure as described in Figure 2 and Table 3.
+The System Under Test shall support the concept of a Procedure as described in Figure 1 and Table 3.
 ```
 
 ### X.3 ObservableProperty
 
 Add: Definition of the ObservableProperty concept and its associations
-
-*Figure 3: Context Diagram for ObservableProperty and its associated concepts.*
 
 *Table 4: ObservableProperty attributes*
 
@@ -83,14 +77,12 @@ Add: Definition of the ObservableProperty concept and its associations
 ```
 Requirement 3: req/abstract-observation-schema/observable-property
 
-The System Under Test shall support the concept of an ObservableProperty as described in Figure 3 and Table 4.
+The System Under Test shall support the concept of an ObservableProperty as described in Figure 1 and Table 4.
 ```
 
 ### X.4 Observer
 
 Add: Definition of the Observer concept and its associations
-
-*Figure 4: Context Diagram for Observer and its associated concepts.*
 
 *Table 5: Observer attributes*
 
@@ -99,19 +91,16 @@ Add: Definition of the Observer concept and its associations
 | observation        | |
 | observableProperty | |
 | host               | |
-| partOf             | | 
 
 ```
 Requirement 4: req/abstract-observation-schema/observer
 
-The System Under Test shall support the concept of an Observer as described in Figure 4 and Table 5.
+The System Under Test shall support the concept of an Observer as described in Figure 1 and Table 5.
 ```
 
 ### X.5 Platform
 
 Add: Definition of the Platform concept and its associations
-
-*Figure 5: Context Diagram for Platform and its associated concepts.*
 
 *Table 6: Platform attributes*
 
@@ -122,29 +111,8 @@ Add: Definition of the Platform concept and its associations
 ```
 Requirement 5: req/abstract-observation-schema/platform
 
-The System Under Test shall support the concept of an Platform as described in Figure 5 and Table 6.
+The System Under Test shall support the concept of an Platform as described in Figure 1 and Table 6.
 ```
-
-### X.6 ObservingActivity
-
-Add: Definition of the ObservingActivity concept and its associations
-
-*Figure 6: Context Diagram for ObservingActivity and its associated concepts.*
-
-*Table 7: ObservingActivity attributes*
-
-| Association role   | Description |
-|--------------------|------------------------|
-| observation        | |
-| observer           | |
-
-```
-Requirement 6: req/abstract-observation-schema/observingActivity
-
-The System Under Test shall support the concept of an ObservingActivity as described in Figure 6 and Table 7.
-```
-
-
 
 
 
