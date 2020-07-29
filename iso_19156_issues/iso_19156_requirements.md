@@ -35,7 +35,7 @@ Add: Definition of the Observation concept and its associations
 
 | Association role | Description |
 |------------------|------------------------|
-| objectOfInterest | |
+| featureOfInterest | |
 | procedure        | |
 | observedProperty | |
 | observer         | |
@@ -44,7 +44,7 @@ Add: Definition of the Observation concept and its associations
 ```
 Requirement 1: req/abstract-observation-schema/observation
 
-The System Under Test shall support the concept of an Observation as described in Figure 1 and in Tables 1 and 2.
+The System Under Test shall support a realization of the Observation concept with the associations, attributes and constraints as described in Figure 1 and in Tables 1 and 2.
 ```
 
 
@@ -61,7 +61,7 @@ Add: Definition of the Procedure concept and its associations
 ```
 Requirement 2: req/abstract-observation-schema/procedure
 
-The System Under Test shall support the concept of a Procedure as described in Figure 1 and Table 3.
+The System Under Test shall support a realization of the Procedure concept with the associations and attributes as described in Figure 1 and Table 3.
 ```
 
 ### X.3 ObservableProperty
@@ -77,7 +77,7 @@ Add: Definition of the ObservableProperty concept and its associations
 ```
 Requirement 3: req/abstract-observation-schema/observable-property
 
-The System Under Test shall support the concept of an ObservableProperty as described in Figure 1 and Table 4.
+The System Under Test shall support a realization of the ObservableProperty concept with the associations and attributes as described in Figure 1 and Table 4.
 ```
 
 ### X.4 Observer
@@ -95,7 +95,7 @@ Add: Definition of the Observer concept and its associations
 ```
 Requirement 4: req/abstract-observation-schema/observer
 
-The System Under Test shall support the concept of an Observer as described in Figure 1 and Table 5.
+The System Under Test shall support a realization of the Observer concept with the associations and attributes as described in Figure 1 and Table 5.
 ```
 
 ### X.5 Platform
@@ -111,7 +111,7 @@ Add: Definition of the Platform concept and its associations
 ```
 Requirement 5: req/abstract-observation-schema/platform
 
-The System Under Test shall support the concept of an Platform as described in Figure 1 and Table 6.
+The System Under Test shall support a realization of the Platform concept with the associations and attributes as described in Figure 1 and Table 6.
 ```
 
 
@@ -124,5 +124,5 @@ The System Under Test shall support the concept of an Platform as described in F
 
 ## X. Basic Observations
 
-## X. Sampling Observations
+## X. Sampling
 
