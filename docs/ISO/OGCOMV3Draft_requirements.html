@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+  <title>All Requirements</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    .def {white-space:nowrap}
+    td {border-top:1px solid #999; vertical-align:top;padding:3px;}
+  </style>
+</head>
+<body>
+  <table>
+    <tr><th>definition</th><th>description</th></tr>
+    <tr><td class='def'>/req/obs-basic/DomainFeature/DomainFeature-sem</td><td>A concrete featureType to be utilized as featureOfInterest (ref) of an Observation (ref)</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservableProp/name</td><td>If the name of the ObservableProperty is provided, the attribute name:GenericName  shall be used.</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservationCollection/ObservationCollection-sem</td><td>If the name of the ObservableProperty is provided, the attribute name:GenericName  shall be used.</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservationCollection/collectionType-homogenous</td><td>If collectionType is specified as homogenousObservationCollection from the CollectionTypeByMemberCharacteristicsSemantics Codelist , the following constraints apply to the associated ObservationCharacteristics and all Observation instances referenced via the member association. If an attribute value is provided within the ObservationCharacteristics, this value applies to all contained observations (note: the observations need not contain this attribute as supplied via the ObservationCharacteristics): attribute = nil - no observation within the collection provides this attribute attribute = empty - values may be provided by the observations but is not provided at this level attribute = value - this value applies to all observations within the collection attribute = value set/range - this value set/range applies to all observations within the collection</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservationCollection/collectionType-sem</td><td>If information on the type of ObservationCollection is provided, the attribute collectionType:AbstractObservationCollectionTypeCodeListValue  shall be used.</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservationCollection/collectionType-summarizing</td><td>If collectionType is specified as summarizingObservationCollection from the CollectionTypeByMemberCharacteristicsSemantics Codelist , the following constraints apply to the associated ObservationCharacteristics and all Observation instances referenced via the member association. If multiple values for an attribute are available in the contained observations, ALL values for this attribute (or the range of values contained in all Observations) are provided in the ObservationCharacteristics. An attribute may also be empty in the ObservationCharacteristics - in this case any value can be provided for this attribute within the contained Observations: attribute = nil - no observation within the collection provides this attribute attribute = empty - values may be provided by the observations but is not provided at this level attribute = value - this value applies to all observations within the collection attribute = value set/range - all observations provide a value within this set/range</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservationCollection/member-sem</td><td>If information on the observations contained within the ObservationCollection is provided, the association member shall be used to provide the link to contained Observation instances.</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservationCollection/memberCharacteristics-sem</td><td>If information on the observations contained within the ObservationCollection is provided, the association member shall be used to provide the link to contained Observation instances.</td></tr>
+    <tr><td class='def'>/req/obs-basic/ObservingCapability/ObservingCapability-sem</td><td></td></tr>
+    <tr><td class='def'>/req/obs-basic/gen/link-sem</td><td>If a link to additional descriptive resources pertaining to the featureType is provided, the attribute link:URI  SHALL be used.</td></tr>
+    <tr><td class='def'>/req/obs-basic/gen/location-sem</td><td>If location information pertaining to the featureType is provided, the attribute location:Geometry SHALL be used.</td></tr>
+    <tr><td class='def'>/req/obs-core/Characteristics/Characteristics-sem</td><td>Set of common characteristics used for describing an Observation or a collection of Observations.</td></tr>
+    <tr><td class='def'>/req/obs-core/Characteristics/parameter-card</td><td>The cardinality of the parameter property shall be 0..*.</td></tr>
+    <tr><td class='def'>/req/obs-core/Characteristics/parameter-sem</td><td>The property parameter:NamedValue SHALL be understood as an arbitrary event-specific parameter. This might be an environmental parameter, an instrument setting or input, or an event-specific sampling parameter that is not tightly bound to either the feature-of-interest ( ref ) or to the observation procedure ( ref ). To avoid ambiguity, there shall be no more than one parameter with the same name.</td></tr>
+    <tr><td class='def'>/req/obs-core/Characteristics/resultQuality-card</td><td>The cardinality of the resultQuality property shall be 0..*.</td></tr>
+    <tr><td class='def'>/req/obs-core/Characteristics/resultQuality-sem</td><td>The property resultQuality:ANY SHALL be understood as the quality of the Result ( ref ). This instance-specific description complements the description of the observation Procedure ( ref ), which provides information concerning the quality of all observations using this procedure. The quality of a result may be assessed following the procedures in ISO 19157. Multiple measures may be provided.</td></tr>
+    <tr><td class='def'>/req/obs-core/Characteristics/type-card</td><td>The cardinality of the observationType property shall be 0..*.</td></tr>
+    <tr><td class='def'>/req/obs-core/Characteristics/type-sem</td><td>The property observationType:AbstractObservationTypeCodeListValue   SHALL be understood as providing further detail on the type of Observation the ObservationCharacteristics pertain to.</td></tr>
+    <tr><td class='def'>/req/obs-core/Deployment/Deployment-sem</td><td>The association class Deployment provides additional information on the association between Observer (ref) and Host (ref)</td></tr>
+    <tr><td class='def'>/req/obs-core/Deployment/deploymentReason-sem</td><td>The property deploymentReason :CharacterString SHALL be understood as a human readable description of the reason for deployment of the Observer (ref) to the Host (ref).</td></tr>
+    <tr><td class='def'>/req/obs-core/Deployment/deploymentTime-sem</td><td>The property deploymentTime :TM_Period   SHALL be understood as the time that the Observer (ref) was deployed to the Host (ref).</td></tr>
+    <tr><td class='def'>/req/obs-core/NamedValue/NamedValue-sem</td><td>The class NamedValue provides for a generic soft-typed parameter value. NamedValue shall support two attributes</td></tr>
+    <tr><td class='def'>/req/obs-core/NamedValue/name-sem</td><td>The attribute name:GenericName  shall indicate the meaning of the named value. Its value should be taken from a well-governed source if possible.</td></tr>
+    <tr><td class='def'>/req/obs-core/NamedValue/value-sem</td><td>The attribute value:Any  shall provide the value. The type “Any” should be substituted by a suitable concrete type, such as CI_ResponsibleParty or Measure.</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/FoI-card</td><td>at least one proximateFeatureOfInterest or ultimateFeatureOfInterest shall be given</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/obsProp-card</td><td>The cardinality of the observedProperty association SHALL  be restricted to at least 1.</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/observer-card</td><td>The cardinality of the observer association SHALL  be restricted to exactly 1.</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/pFoI-card</td><td>An Observation SHALL have at least 1 [bq] proximateFeatureOfInterest   and MAY have more than 1 in cases other objects are created with the intention to sample the real-world object The cardinality of the proximateFeatureOfInterest   association SHALL  be 1 at minimum..</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/pFoI-sem</td><td>entity that is ultimately of interest in the act of observing [bp]</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/phenomenonTime-card</td><td>The cardinality of the phenomenonTime property SHALL  be restricted to exactly 1.</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/procedure-card</td><td>The cardinality of the procedure association SHALL  be restricted to exactly 1.</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/result-card</td><td>The cardinality of the result association SHALL  be restricted to exactly 1.</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/resultTime-card</td><td>The cardinality of the resultTime property SHALL  be restricted to exactly 1.</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/uFoI-card</td><td>An Observation SHALL have at least 1 [br]   ultimateFeatureOfInterest   and MAY have more than 1 in cases other objects are created with the intention to sample the real-world object The cardinality of the ultimateFeatureOfInterest   association SHALL  be 1 at minimum..</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/uFoI-sem</td><td>entity that is ultimately of interest in the act of observing</td></tr>
+    <tr><td class='def'>/req/obs-core/Observation/validTime-card</td><td>The cardinality of the validTime property SHALL  be restricted to exactly 1.</td></tr>
+    <tr><td class='def'>/req/obs-core/char/parameter-card</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-core/char/parameter-sem</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-core/char/resultQuality-sem</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-core/char/type-card</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-core/char/type-sem</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-core/gen/metadata</td><td>the association Metadata shall link a featureType to descriptive metadata as commonly understood by communities.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Campaign/Campaign-sem</td><td>a specialization of Host for a formal (non-physical) grouping of Observer s [bl] [bm]</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Host/Host-sem</td><td> a grouping of Observer s   for a specific reason</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Host/observer-sem</td><td>an Observer hosted at this Host .</td></tr>
+    <tr><td class='def'>/req/obs-cpt/ObservableProperty/ObservableProperty-sem</td><td>an observable quality (property, characteristic) of the object of interest [bd]  ( ref ) that may be observed.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/ObservableProperty/observer-sem</td><td>an Observer (ref) capable of observing this ObservableProperty .</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/Observation-sem</td><td>An observation is an act carried out by an Observer (ref) to determine the value of an observable property of an object ( feature OfInterest [ak] [al] ) by using a Procedure (ref) ; the value is provided as the result (ref) .</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/featureOfInterest-card</td><td>An Observation SHALL have at least 1 featureOfInterest and MAY have more than 1 in cases other objects are created with the intention to sample the real-world object The cardinality of the featureOfInterest association SHALL  be 1 at minimum..</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/featureOfInterest-sem</td><td>The association with the role featureOfInterest shall link the Observation to Any object ( ref ) that is the subject of the observation and carries the observedProperty . This object is the real-world object whose properties are under observation, or is an object created with the intention to sample the real-world object , as described in Clause ?  of this International Standard. [ar]  An observation instance serves as a  propertyValueProvider  for its feature-of-interest.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/obsProp-card</td><td>An Observation SHALL only have 1 observedProperty . [ay]</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/obsProp-sem</td><td>The observedProperty  refers to the ObservableProperty ( /req/obs-cpt/ObservableProperty )  describing a characteristic of a FeatureOfInterest  being assayed. The association with the role observedProperty shall link the Observation ( ref ) to the ObservableProperty for which the Observation: result  ( req/conceptual/observation/result ) provides an estimate of its value. The property type has the role observedProperty with respect to the observation. [av] [aw] The observedProperty shall be a phenomenon associated with the featureOfOnterest . [ax]</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/observer-card</td><td>An Observation SHALL only have 1 observer .</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/observer-sem</td><td>The association with the role observer shall link the Observation to the Observer ( ref ) that generated the result . [bb] The Observer shall be suitable for the observedProperty  and shall be capable of carrying out the procedure . As a corollary, details of the observedProperty and procedure are constrained by the Observer deployed.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/phenomenonTime-card</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/phenomenonTime-sem</td><td>The property phenomenonTime :TM_Object   SHALL be understood as the time that the result ( ref [am] ) applies to the property of the featureOfInterest ( ref ). This is often the time of interaction by a sampling Procedure ( ref ) or observation Procedure [an]   ( ref ) with a real-world feature. [ao]</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/procedure-card</td><td>An Observation SHALL only have 1 procedure .</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/procedure-sem</td><td>The association with the role procedure shall link the Observation  to the P rocedure   ( ref ) used to generate the result . A process [ba] might be responsible for more than one generatedObservation . The Procedure shall be suitable for the observedProperty . As a corollary, details of the observedProperty  are constrained by the Procedure  used.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/result-card</td><td>An Observation SHALL only have 1 result .</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/result-sem</td><td>The association with the role result shall link the Observation to the value generated by the procedure. The type of the result is shown as “ Any ”, since it may represent the value of any feature property.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/resultTime-card</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/resultTime-sem</td><td>The property resultTime : TM_Object [ap]   SHALL be understood as the time when the result became available, typically when the Procedure ( ref ) associated with the Observation ( ref ) was completed For some observations this is identical to the phenomenonTime ( ref ) . However, there are important cases where they differ.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/validTime-card</td><td>The cardinality of the validTime property  SHALL be [0..*].</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observation/validTime-sem</td><td>The property validTime :TM_Objec t  SHALL be understood as the time period during which the result is intended to be used.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observer/Observer-sem</td><td>an identifiable entity that may generate Observations  ( ref )   pertaining to an observablePproperty  ( ref ) by implementing a Procedure  ( ref ).</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observer/host-card</td><td>null</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Observer/host-sem</td><td>The association with the role host   shall provide a link to the Host to which the Observer is either physically or organizationally attached.</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Platform/Platform-sem</td><td>a specialization of Host  for an entity (physical) grouping Observer s</td></tr>
+    <tr><td class='def'>/req/obs-cpt/Procedure/Procedure-sem</td><td>the description of steps performed in order to determine the value of an observableProperty  ( ref ) by an Observer  ( ref ).</td></tr>
+    <tr><td class='def'>/req/obs-cpt/gen/relatedObservation</td><td>an Observation ( ref ) that has this ObservableProperty as its observedProperty -> proposal SG : all instances of Classes defined in the Conceptual Observation Schema Model MAY be related to the   Observation when... [ai] [aj]</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sample/Sample-sem</td><td>A Sample is Any object ( ref ) that is the subject of the Observation and may carry a characteristic pertaining to the observedProperty which is intended to be representative of a FeatureOfInterest   on which Observations   may be made.</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sample/preparationStep-sem</td><td>The Procedure (s) applied to prepare the Sample . If Procedures are described they SHALL be referred to using the association preparationStep  role .</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sample/relatedObservation-sem</td><td>The Observation (s) related to the Sample . If Observations are described they SHALL be referred to using the association relatedObservation role .</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sample/sampling-sem</td><td>The Sampling the Sample  is the result of SHALL be referred to using the association sampling. If Samplings are described they SHALL be referred to using the association role sampling .</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampler/Sampler-sem</td><td>A Sampler is a  device, agent (including humans) that is used by, or implements, a Procedure to create or transform one or more Sample (s).</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampler/implementedProcedure-sem</td><td></td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampler/sampling-sem</td><td></td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampling/Sampling-sem</td><td>Sampling is an act applying a (sampling) Procedure to create or transform one or more Sample (s) taken from [bw] a featureOfInterest</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampling/featureOfInterest-sem</td><td>The FeatureOfInterest the Sample  is intended to be representative of. If FeatureOfInterests are described they SHALL be referred to using the association role featureOfInterest .</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampling/sample-sem</td><td>The Sample  generated by the Sampling. If Samples are described they SHALL be referred to using the association role sample .</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampling/sampler-sem</td><td>The Sampler  that made the Sample .</td></tr>
+    <tr><td class='def'>/req/sam-cpt/Sampling/samplingProcedure-sem</td><td></td></tr>
+    <tr><td class='def'>/req/sam-cpt/SamplingProcedure/SamplingProcedure-sem</td><td></td></tr>
+    <tr><td class='def'>/req/sam-cpt/SamplingProcedure/implementation-sem</td><td></td></tr>
+    <tr><td class='def'>/req/sam-cpt/SamplingProcedure/sampling-sem</td><td></td></tr>
+    <tr><td class='def'>/req/{classM}/{reqN}</td><td>null</td></tr>
+    <tr><td class='def'>/req/{classM}/{reqP}</td><td>null</td></tr>
+  </body></html>
