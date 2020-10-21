@@ -6,7 +6,7 @@ The contributor understands that any contributions, if accepted by the OGC Membe
 ## O&M revision target timeline
 Last updated 23 July 2020
 
-| Date        | Event | ISO 19156                     | OMXML | OM-JSON |
+| Date        | Event | ISO 19156                     | OM_JSON | OMXML |
 | ------------|-------|------------------------------ |-------|---------|
 | Mid Nov 2019  | OGC TC in Toulouse | Drafting the OGC Proposed changes to the ISO 19156 ||
 | 2019-12-09    | 19156 meeting at ISO / TC 211 plenary at Omiya, Japan     |Status of the OGC proposed  changes presented||
@@ -14,18 +14,27 @@ Last updated 23 July 2020
 | Jun 2020 | OGC TC ~~in Montreal, Canada~~ virtual | Agreement of finalisation of OGC proposals | |  |
 | Jun 2020   | ISO / TC 211 plenary  | Status of the OGC proposed changes presented |
 | 2020-08-26 | | OGC proposed changes submitted to the 19156 project team|
-| 2020-09-04  | | CD ballot submission deadline |
-| Sept 2020 | OGC Member meeting ~~in Munich, Germany~~ virtual | | OMXML work kicked off |
-| Nov 2020 - Jan 2021 | | Addressing the CD ballot comments |
-| Dec 2020 | OGC MM at Atlanta, USA | | Revision plan for OMXML agreed on |
-| Nov-Dec 2020 | ISO / TC 211 plenary | Review of the comments from the 19156 CD ballot |
-| Jan-Feb 2021 | Online | Editing Committee meeting for 19156 CD ballot comment resolution |
-| Feb-Mar 2021 | OGC MM in ? | |1st full draft of revised OMXML. Validation & testing plan agreed  |OM-JSON standard drafting starts
+| Sept 2020 | OGC Member meeting ~~in Munich, Germany~~ virtual | |  |
+| 2020-10-01  | | CD ballot submission deadline |
+| 2020-10-08 | | CD ballot started |
+| Oct - Nov 2020 | | OAB and OGC-NA review and 30-day public review of the OGC AS Topic 20 (OGC 20-082) |
+| 2020-12-03 | | CD ballot ends |
+| Dec 2020 - Feb 2021 | | Addressing the CD ballot and OGC AS Topic 20 (OGC 20-082) public review comments |
+| Dec 2020 | OGC MM virtual | | Kick-off for OM-JSON implementation standard drafting |
+| Nov-Dec 2020 | ISO / TC 211 plenary | 19156 CD ballot status, editing committee schedule |
+| Feb 2021 | Online | Editing Committee meeting for 19156 CD ballot comment resolution |
+| Feb-Mar 2021 | OGC MM | | General plan agreed on OM-JSON scope and technologies |
 | May 2021 | | Submission deadline for the 19156 DIS version? |
-| Jun 2021 | ISO / TC 211 plenary  | 19156 DIS version publication target date |
-| Jun 2021 | OGC MM in Madrid (TBC) | | Validation & testing| |
-| Oct 2021 | OGC MM in ? | |OMXML submitted for OAB review and vote for starting public comments | 1st full version of OM-JSON. Validation & testing plan agreed|
-| Jun of 2022 | |Target date for the 19156 IS version publication |
-| Mar 2022 | OGC MM in ? | | OMXML comments processed, ready for release | Validation & testing|
-| Jun 2022 | OGC MM in ? ||| OM-JSON submitted for OAB review and vote for starting public comments
-| Oct 2022 | OGC MM in ? ||| OM-JSON comments processed, ready for release
+| Jun 2021 | ISO / TC 211 plenary  | 19156 DIS version publishing target date |
+| Jun 2021 | OGC MM | OGC AS Topic 20 (OGC 20-082) publishing target date | 1st draft version of the specification document available | |
+| Jul - Nov 2021 | | | Validation and testing |
+| Oct 2021 | OGC MM | | Plan agreed for the final version |  |
+| Mar 2022 | OGC MM | | Vote for OM-JSON submission for OAB & OGC-NA review and 30-day public review |  OMXML revision kick-off? |
+| May 2022 | | | OM-JSON comments processed, ready for release | |  
+| Jun 2022 | |Target date for the 19156 IS version publication |
+| Oct 2022 | OGC MM | | | General plan agreed on OMXML revision |
+| Mar 2023 | OGC MM | | | 1st draft version of the specification document available |
+| Apr - Aug 2023 | || | Validation and testing |
+| Jun 2023 | OGC MM | | | Plan agreed for the final version |
+| Oct 2023 | OGC MM | | | Vote for OMXML submission for OAB & OGC-NA review and 30-day public review |
+| Dec 2023 |  | | | OM-XML comments processed, ready for release
