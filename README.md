@@ -29,7 +29,7 @@ Last updated 3 Feb 2021
 | Oct 2021 | OGC MM | | 1st draft version of the specification document available | |
 | Oct 2021 - Mar 2022 | | | Validation and testing |
 | Mar 2022 | OGC MM | | Plan agreed for the final version  | |
-| Apr - May 2022 | | DIS ballot comment resolution, determination of whether FDIS is required | 
+| Mar - Apr 2022 | | DIS ballot comment resolution, determination of whether FDIS is required | 
 | Jun 2022 | OGC MM? | | Vote for OM-JSON submission for OAB & OGC-NA review and 30-day public review |  OMXML revision kick-off? |
 | Oct 2022 | OGC MM | Target date for the 19156 IS version publication | OM-JSON comments processed, ready for release | General plan agreed on OMXML revision |
 | Mar 2023 | OGC MM | | | 1st draft version of the specification document available |
