@@ -32,7 +32,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "In a summarizing Observation collection, the properties provided though the memberCharacteristics provide a full range of the values of the corresponding Observation properties present in any of the collection members."
+        "@value": "In a summarizing Observation collection, the properties provided though the memberCharacteristics provide the full range of the values of the corresponding Observation properties present in any of the collection members."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
