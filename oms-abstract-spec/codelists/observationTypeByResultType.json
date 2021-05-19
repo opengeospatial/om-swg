@@ -1,39 +1,39 @@
 [
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/",
+    "@id": "http://www.opengis.net/def/om/observationTypeByResultType/",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Collection"
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/measurement"
+        "@id": "http://www.opengis.net/def/Measurement"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/categoryObservation"
+        "@id": "http://www.opengis.net/def/CategoryObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/truthObservation"
+        "@id": "http://www.opengis.net/def/TruthObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/countObservation"
+        "@id": "http://www.opengis.net/def/CountObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/temporalObservation"
+        "@id": "http://www.opengis.net/def/TemporalObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/geometryObservation"
+        "@id": "http://www.opengis.net/def/GeometryObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/complexObservation"
+        "@id": "http://www.opengis.net/def/ComplexObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/discreteCoverageObservation"
+        "@id": "http://www.opengis.net/def/DiscreteCoverageObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/discretePointCoverageObservation"
+        "@id": "http://www.opengis.net/def/DiscretePointCoverageObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/tsmlTimeSeriesTVPObservation"
+        "@id": "http://www.opengis.net/def/TimeSeriesObservation"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/measurement",
+    "@id": "http://www.opengis.net/def/Measurement",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/categoryObservation",
+    "@id": "http://www.opengis.net/def/CategoryObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/truthObservation",
+    "@id": "http://www.opengis.net/def/TruthObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -146,7 +146,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/countObservation",
+    "@id": "http://www.opengis.net/def/CountObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/temporalObservation",
+    "@id": "http://www.opengis.net/def/TemporalObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -214,7 +214,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/geometryObservation",
+    "@id": "http://www.opengis.net/def/GeometryObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -248,7 +248,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/complexObservation",
+    "@id": "http://www.opengis.net/def/ComplexObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -260,7 +260,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Observation whose result is an ISO/IEC 11404 Record."
+        "@value": "Observation whose result is an Record in the ISO/IEC 11404 sense."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#exactMatch": [
@@ -282,7 +282,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/discreteCoverageObservation",
+    "@id": "http://www.opengis.net/def/DiscreteCoverageObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -294,7 +294,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Observation whose result is a ISO 19123 CV_DiscreteCoverage."
+        "@value": "Observation whose result is a DiscreteCoverage in the ISO 19123 sense."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#exactMatch": [
@@ -316,7 +316,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/discretePointCoverageObservation",
+    "@id": "http://www.opengis.net/def/DiscretePointCoverageObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -328,7 +328,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Observation whose result is a ISO 19123 CV_DiscretePointCoverage."
+        "@value": "Observation whose result is a DiscretePointCoverage in the ISO 19123 sense."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#exactMatch": [
@@ -353,7 +353,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OMS/3.0/observationTypeByResultType/tsmlTimeSeriesTVPObservation",
+    "@id": "http://www.opengis.net/def/TimeSeriesObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -365,10 +365,10 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Observation whose result is a TimeseriesML 1.2 (OGC 15-042r5) Timeseries encoded as Time-Value Pairs (http://www.opengis.net/spec/timeseriesml/1.2/req/xsd-timeseries-tvp)"
+        "@value": "Observation whose result is a a timeseries (a sequence of data values which are ordered in time) or a piece of a larger time series constrained by the phenomenonTime"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
       {
         "@id": "http://www.opengis.net/def/observation-type/ogc-om/2.0/om_discrete-time-series-observation"
       },
@@ -382,7 +382,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Discrete Time Series Observation"
+        "@value": "Timeseries Observation"
       }
     ]
   }
