@@ -1,0 +1,121 @@
+[
+  {
+    "@id": "http://www.opengis.net/def/om/sampleTypeByGeometryType/",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
+      {
+        "@id": "http://www.opengis.net/def/PointSample"
+      }, 
+      {
+        "@id": "http://www.opengis.net/def/CurveSample"
+      },
+      {
+        "@id": "http://www.opengis.net/def/SurfaceSample"
+      },
+      {
+        "@id": "http://www.opengis.net/def/SolidSample"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "OM&S 3.0 SpatialSample classification based on the geometry type of its shape attribute."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/PointSample",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-05-19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "SpatialSample with a Point geometry as the value of its shape attribute."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Point Sample"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/CurveSample",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-05-19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "SpatialSample with a Curve geometry as the value of its shape attribute."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Curve Sample"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/SurfaceSample",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-05-19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "SpatialSample with a Surface geometry as the value of its shape attribute."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Surface Sample"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/SolidSample",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-05-19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "SpatialSample with a Solid geometry as the value of its shape attribute."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Solid Sample"
+      }
+    ]
+  }
+  
+]
