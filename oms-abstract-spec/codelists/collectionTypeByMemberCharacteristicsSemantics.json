@@ -40,6 +40,12 @@
         "@language": "en",
         "@value": "Summarizing"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Summarizing Observation collection"
+      }
     ]
   },
   {
@@ -62,6 +68,12 @@
       {
         "@language": "en",
         "@value": "Homogenous"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Homogenous Observation collection"
       }
     ]
   }
