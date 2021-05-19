@@ -61,7 +61,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "In a homogenous Observation collection the properties provided though the memberCharacteristics include all values of the corresponding Observation properties that appear or is allowed to appear in the collection."
+        "@value": "In a homogenous Observation collection the properties provided though the memberCharacteristics include all values of the corresponding Observation properties that appear or is allowed to appear in the collection members."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
