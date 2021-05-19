@@ -1,0 +1,69 @@
+[
+  {
+    "@id": "http://www.opengis.net/def/om/collectionTypeByMemberCharacteristicsSemantics/",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
+      {
+        "@id": "http://www.opengis.net/def/SummarizingObservationCollection"
+      },
+      {
+        "@id": "http://www.opengis.net/def/HomogenousObservationCollection"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "OM&S 3.0 ObservationCollection classification based on how the properties of it's MemberCharacteristics relate to the properties of the member Observations of the collection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/SummarizingObservationCollection",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-05-19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "In a summarizing Observation collection, the properties provided though the memberCharacteristics provide a summary or an overview of the values of the corresponding Observation properties of the collection members."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Summarizing"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/HomogenousObservationCollection",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-05-19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "In a homogenous Observation collection the properties provided though the memberCharacteristics include all values of the corresponding Observation properties that appear or is allowed to appear in the collection."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Homogenous"
+      }
+    ]
+  }
+  
+]
