@@ -1,32 +1,37 @@
 [
   {
-    "@id": "http://www.opengis.net/def/om/collectionTypeByMemberCharacteristicsSemantics/",
+    "@id": "http://www.opengis.net/def/codelist/OGC/0/CollectionTypeByMemberCharacteristicsSemantics/",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Collection"
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/SummarizingObservationCollection"
+        "@id": "http://www.opengis.net/def/OGC/0/SummarizingObservationCollection"
       },
       {
-        "@id": "http://www.opengis.net/def/HomogenousObservationCollection"
+        "@id": "http://www.opengis.net/def/OGC/0/HomogenousObservationCollection"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "OM&S 3.0 ObservationCollection classification based on how the properties of it's MemberCharacteristics relate to the properties of the member Observations of the collection"
+        "@value": "OMS 3.0 ObservationCollection classification based on how the properties of it's MemberCharacteristics relate to the properties of the member Observations of the collection"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-06-09"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/SummarizingObservationCollection",
+    "@id": "http://www.opengis.net/def/OGC/0/SummarizingObservationCollection",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -49,13 +54,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/HomogenousObservationCollection",
+    "@id": "http://www.opengis.net/def/OGC/0/HomogenousObservationCollection",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [

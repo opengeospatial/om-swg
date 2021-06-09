@@ -1,56 +1,61 @@
 [
   {
-    "@id": "http://www.opengis.net/def/om/observationTypeByResultType/",
+    "@id": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType/",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Collection"
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/Measurement"
+        "@id": "http://www.opengis.net/def/OGC/0/Measurement"
       },
       {
-        "@id": "http://www.opengis.net/def/CategoryObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/CategoryObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/TruthObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/TruthObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/CountObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/CountObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/TemporalObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/TemporalObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/GeometryObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/GeometryObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/ComplexObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/ComplexObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/DiscreteCoverageObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/DiscreteCoverageObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/DiscretePointCoverageObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/DiscretePointCoverageObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/TimeSeriesObservation"
+        "@id": "http://www.opengis.net/def/OGC/0/TimeSeriesObservation"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "OM&S 3.0 Observation classification based on the type of its result"
+        "@value": "OMS 3.0 Observation classification based on the type of its result"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-06-09"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/Measurement",
+    "@id": "http://www.opengis.net/def/OGC/0/Measurement",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -78,13 +83,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/CategoryObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/CategoryObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -112,13 +117,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/TruthObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/TruthObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -146,13 +151,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/CountObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/CountObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -180,13 +185,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/TemporalObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/TemporalObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -214,13 +219,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/GeometryObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/GeometryObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -248,13 +253,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/ComplexObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/ComplexObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -282,13 +287,13 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/DiscreteCoverageObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/DiscreteCoverageObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -311,18 +316,18 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Discrete Coverage Observation"
+        "@value": "Discrete coverage Observation"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/DiscretePointCoverageObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/PointCoverageObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -340,26 +345,23 @@
       },
       {
         "@id": "http://www.opengis.net/def/observation-type/ogc-om/2.0/om_discrete-point-coverage-observation"
-      },
-      {
-        "@id": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_DiscretePointCoverageObservation"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Discrete Point Coverage Observation"
+        "@value": "Discrete point poverage Observation"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/TimeSeriesObservation",
+    "@id": "http://www.opengis.net/def/OGC/0/TimeSeriesObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2021-05-19"
+        "@value": "2021-06-09"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -373,7 +375,7 @@
         "@id": "http://www.opengis.net/def/observation-type/ogc-om/2.0/om_discrete-time-series-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/ogc-om/OM_DiscreteTimeSeriesObservation"
+        "@id": "http://www.opengis.net/def/ogc-om/OM_TimeSeriesObservation"
       },
       {
         "@id": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_DiscreteTimeSeriesObservation"
