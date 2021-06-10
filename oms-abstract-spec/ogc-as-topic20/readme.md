@@ -1,4 +1,5 @@
-20210610: Adding the Annex C tables
+20210610: Adding the Annex C tables / Ilkka
+
 20210603 : Sylvain
 - issues cross-checked ok : #106, #102, #101, #125, #128, #121, #120, #118, #100, #107, #119, #104, #116
 - issues which cross-check raised question : #89, #105, #127, #117, #124, #134, #110, #98
