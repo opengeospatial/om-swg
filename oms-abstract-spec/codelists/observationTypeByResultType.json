@@ -1,5 +1,22 @@
 [
   {
+    "@id": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "OMS 3.0 Observation classification based on the type of its result"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2021-06-09"
+      }
+    ]
+  },
+  {
     "@id": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType/",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Collection"
@@ -39,7 +56,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "OMS 3.0 Observation classification based on the type of its result"
+        "@value": "Collection of ObservationTypeByResultType codelist member concepts"
       }
     ],
     "http://purl.org/dc/terms/modified": [
@@ -53,6 +70,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -87,6 +105,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -121,6 +140,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -155,6 +175,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -189,6 +210,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -223,6 +245,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -257,6 +280,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -291,6 +315,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -325,6 +350,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -359,6 +385,7 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
