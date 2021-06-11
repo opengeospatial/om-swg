@@ -23,10 +23,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/OGC/0/SummarizingObservationCollection"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/SummarizingObservationCollection"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/HomogenousObservationCollection"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/HomogenousObservationCollection"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/SummarizingObservationCollection",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/SummarizingObservationCollection",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/HomogenousObservationCollection",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/HomogenousObservationCollection",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],

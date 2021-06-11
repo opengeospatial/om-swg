@@ -1,6 +1,6 @@
 [
   {
-    "@id": "http://www.opengis.net/def/OGC/codelist/0/SampleTypeByGeometryType",
+    "@id": "http://www.opengis.net/def/codelist/OGC/0/SampleTypeByGeometryType",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#ConceptScheme"
     ],
@@ -17,22 +17,22 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/codelist/0/SampleTypeByGeometryType/",
+    "@id": "http://www.opengis.net/def/codelist/OGC/0/SampleTypeByGeometryType/",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Collection"
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/OGC/0/PointSample"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/PointSample"
       }, 
       {
-        "@id": "http://www.opengis.net/def/OGC/0/CurveSample"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/CurveSample"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/SurfaceSample"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/SurfaceSample"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/SolidSample"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/SolidSample"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/PointSample",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/PointSample",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -83,7 +83,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/CurveSample",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/CurveSample",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -118,7 +118,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/SurfaceSample",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/SurfaceSample",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -153,7 +153,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/SolidSample",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/SolidSample",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],

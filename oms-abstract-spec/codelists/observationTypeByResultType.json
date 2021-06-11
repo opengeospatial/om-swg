@@ -23,34 +23,34 @@
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/OGC/0/Measurement"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/Measurement"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/CategoryObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/CategoryObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/TruthObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/TruthObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/CountObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/CountObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/TemporalObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/TemporalObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/GeometryObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/GeometryObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/ComplexObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/ComplexObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/DiscreteCoverageObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/DiscreteCoverageObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/DiscretePointCoverageObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/DiscretePointCoverageObservation"
       },
       {
-        "@id": "http://www.opengis.net/def/OGC/0/TimeSeriesObservation"
+        "@id": "http://www.opengis.net/def/concept/OGC/0/TimeSeriesObservation"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -66,7 +66,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/Measurement",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/Measurement",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/CategoryObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/CategoryObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/TruthObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/TruthObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -171,7 +171,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/CountObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/CountObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -206,7 +206,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/TemporalObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/TemporalObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -241,7 +241,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/GeometryObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/GeometryObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -276,7 +276,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/ComplexObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/ComplexObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -311,7 +311,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/DiscreteCoverageObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/DiscreteCoverageObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -346,7 +346,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/PointCoverageObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/PointCoverageObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
@@ -381,7 +381,7 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/OGC/0/TimeSeriesObservation",
+    "@id": "http://www.opengis.net/def/concept/OGC/0/TimeSeriesObservation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
