@@ -7,7 +7,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "OMS 3.0 ObservationCollection classification based on how the properties of its MemberCharacteristics relate to the properties of the member Observations of the collection"
+        "@value": "OMS 3.0 ObservationCollection classification based on how the properties of its memberCharacteristics relate to the properties of the member Observations of the collection"
       }
     ],
     "http://purl.org/dc/terms/modified": [
