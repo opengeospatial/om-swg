@@ -1,0 +1,53 @@
+[
+  {
+    "@id": "http://www.opengis.net/def/observation-collection-type",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Classification scheme for any kind of ObservationCollections"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "ObservationCollection type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ObservationCollection type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2021-06-15"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/observation-collection-type/",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
+      {
+        "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Collection of ObservationCollection classification schemes"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2021-06-09"
+      }
+    ]
+  }
+]

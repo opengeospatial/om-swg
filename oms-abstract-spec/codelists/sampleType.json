@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "http://www.opengis.net/def/sample-type",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Classification scheme for any kind of Samples"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2021-06-09"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/sample-type/",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
+      {
+        "@id": "http://www.opengis.net/def/sample-type/OGC/0/by-geometry-type"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Collection of Sample classification schemes"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2021-06-09"
+      }
+    ]
+  }
+]
