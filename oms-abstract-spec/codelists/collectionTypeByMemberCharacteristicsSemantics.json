@@ -40,10 +40,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/SummarizingObservationCollection"
+        "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics/summarizing"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/HomogenousObservationCollection"
+        "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics/homogenous"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
