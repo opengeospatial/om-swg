@@ -1,56 +1,71 @@
 [
   {
-    "@id": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "OMS 3.0 Observation classification scheme based on the type of its result property."
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "OMS 3.0 Observation classification based on the type of its result"
+        "@value": "Observation by result type"
       }
     ],
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Observation by result type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType/",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Collection"
     ],
     "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/Measurement"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/CategoryObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/measurement"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/TruthObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/category-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/CountObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/truth-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/TemporalObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/count-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/GeometryObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/temporal-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/ComplexObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/geometry-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/DiscreteCoverageObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/complex-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/DiscretePointCoverageObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/discrete-coverage-observation"
       },
       {
-        "@id": "http://www.opengis.net/def/concept/OGC/0/TimeSeriesObservation"
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/discrete-point-coverage-observation"
+      },
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/time-series-observation"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -59,19 +74,62 @@
         "@value": "Collection of ObservationTypeByResultType codelist member concepts"
       }
     ],
-    "http://purl.org/dc/terms/modified": [
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/Measurement",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2021-06-09"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Observation whose result is of type Any"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/ogc-om/2.0/om_observation"
+      },
+      {
+        "@id": "http://www.opengis.net/def/ogc-om/OM_Observation"
+      },
+      {
+        "@id": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Observation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/measurement",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -101,12 +159,16 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/CategoryObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/category-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -136,12 +198,16 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/TruthObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/truth-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -171,12 +237,16 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/CountObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/count-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -206,12 +276,16 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/TemporalObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/temporal-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -241,12 +315,16 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/GeometryObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/geometry-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -276,12 +354,16 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/ComplexObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/complex-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -311,12 +393,21 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/DiscreteCoverageObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/discrete-coverage-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/discrete-point-coverage-observation"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -346,12 +437,21 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/PointCoverageObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/discrete-point-coverage-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/discrete-coverage-observation"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -381,11 +481,15 @@
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/TimeSeriesObservation",
+    "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type/time-series-observation",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/ObservationTypeByResultType",
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      }
+    ],
     "http://purl.org/dc/terms/modified": [
       {
         "@value": "2021-06-09"
@@ -411,7 +515,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Timeseries Observation"
+        "@value": "Time series Observation"
       }
     ]
   }

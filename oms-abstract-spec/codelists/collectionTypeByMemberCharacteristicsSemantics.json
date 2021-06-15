@@ -1,23 +1,35 @@
 [
   {
-    "@id": "http://www.opengis.net/def/codelist/OGC/0/CollectionTypeByMemberCharacteristicsSemantics",
+    "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "OMS 3.0 ObservationCollection classification scheme based on how the properties of its memberCharacteristics relate to the properties of the member Observations of the collection."
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "OMS 3.0 ObservationCollection classification based on how the properties of its memberCharacteristics relate to the properties of the member Observations of the collection"
+        "@value": "Collection type by memberCharacteristics semantics"
       }
     ],
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "2021-06-09"
+        "@language": "en",
+        "@value": "Collection type by memberCharacteristics semantics"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2021-06-15"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/codelist/OGC/0/CollectionTypeByMemberCharacteristicsSemantics/",
+    "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics/",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Collection"
     ],
@@ -32,22 +44,26 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Collection of OMS 3.0 CollectionTypeByMemberCharacteristicsSemantics codelist member concepts"
+        "@value": "Collection of OMS 3.0 Collection type by memberCharacteristics semantics scheme concepts"
       }
     ],
-    "http://purl.org/dc/terms/modified": [
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/SummarizingObservationCollection",
+    "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics/summarizing",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/CollectionTypeByMemberCharacteristicsSemantics",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -55,7 +71,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "In a summarizing Observation collection, the properties provided though the memberCharacteristics provide the full range of the values of the corresponding Observation properties present in any of the collection members."
+        "@value": "In a summarizing ObservationCollection, the properties provided though the memberCharacteristics provide the full range of the values of the corresponding Observation properties present in any of the collection members."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -64,20 +80,30 @@
         "@value": "Summarizing"
       }
     ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Summarizing"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
-        "@value": "Summarizing Observation collection"
+        "@value": "Summarizing ObservationCollection"
       }
     ]
   },
   {
-    "@id": "http://www.opengis.net/def/concept/OGC/0/HomogenousObservationCollection",
+    "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics/homogenous",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": "http://www.opengis.net/def/codelist/OGC/0/CollectionTypeByMemberCharacteristicsSemantics",
-    "http://purl.org/dc/terms/modified": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-collection-type/OGC/0/by-member-characteristics-semantics"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
       {
         "@value": "2021-06-09"
       }
@@ -85,7 +111,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "In a homogenous Observation collection the properties provided though the memberCharacteristics are identical to the corresponding Observation properties of each collection member."
+        "@value": "In a homogenous ObservationCollection the properties provided though the memberCharacteristics are identical to the corresponding Observation properties of each collection member."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -94,10 +120,16 @@
         "@value": "Homogenous"
       }
     ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Homogenous"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
-        "@value": "Homogenous Observation collection"
+        "@value": "Homogenous ObservationCollection"
       }
     ]
   }
