@@ -18,13 +18,13 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Collection type by memberCharacteristics semantics"
+        "@value": "Collection type by the interpretation of its memberCharacteristics"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Collection type by memberCharacteristics semantics"
+        "@value": "Collection type by the interpretation of its memberCharacteristics"
       }
     ],
     "http://purl.org/dc/terms/created": [
@@ -49,7 +49,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Collection of OMS 3.0 Collection type by memberCharacteristics semantics scheme concepts"
+        "@value": "Collection of OMS 3.0 ObservationCollection type by the semantics of its memberCharacteristics"
       }
     ],
     "http://purl.org/dc/terms/created": [
