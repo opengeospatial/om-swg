@@ -4,10 +4,27 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#ConceptScheme"
     ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "OMS 3.0 SpatialSample classification scheme based on the geometry type of its shape attribute"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/sample-type"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "SpatialSample by geometry type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "SpatialSample by geometry type"
       }
     ],
     "http://purl.org/dc/terms/created": [
@@ -38,7 +55,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Collection of SampleTypeByGeometryType codelist member concepts"
+        "@value": "Collection of SpatialSample by geometry type concepts"
       }
     ],
     "http://purl.org/dc/terms/created": [

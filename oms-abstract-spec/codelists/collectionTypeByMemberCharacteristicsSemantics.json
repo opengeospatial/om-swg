@@ -10,6 +10,11 @@
         "@value": "OMS 3.0 ObservationCollection classification scheme based on how the properties of its memberCharacteristics relate to the properties of the member Observations of the collection."
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-collection-type"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",

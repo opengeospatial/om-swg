@@ -4,15 +4,27 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#ConceptScheme"
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Classification scheme for any kind of Sample classification schemes"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Classification scheme for any kind of Samples"
+        "@value": "Sample type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Sample type"
       }
     ],
     "http://purl.org/dc/terms/created": [
       {
-        "@value": "2021-06-09"
+        "@value": "2021-06-15"
       }
     ]
   },

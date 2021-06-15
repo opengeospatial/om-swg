@@ -10,6 +10,11 @@
         "@value": "OMS 3.0 Observation classification scheme based on the type of its result property."
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "http://www.opengis.net/def/observation-type"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
