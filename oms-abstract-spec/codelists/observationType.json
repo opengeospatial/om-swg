@@ -36,6 +36,9 @@
     "http://www.w3.org/2004/02/skos/core#member": [
       {
         "@id": "http://www.opengis.net/def/observation-type/OGC/0/by-result-type"
+      },
+      {
+        "@id": "http://www.opengis.net/def/ogc-omxml"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
