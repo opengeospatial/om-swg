@@ -1,3 +1,4 @@
+20210623: Fixed the codelist vocabulary URIs, added a couple of comments / Ilkka
 20210611: Adding the Annex C tables **Done** / Ilkka
 
 20210603 : Sylvain
