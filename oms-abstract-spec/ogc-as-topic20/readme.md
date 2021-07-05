@@ -1,3 +1,4 @@
+20210705: Added edits from Carl Reed / Kathi
 20210623: Fixed the codelist vocabulary URIs, added a couple of comments / Ilkka
 20210611: Adding the Annex C tables **Done** / Ilkka
 
