@@ -1,3 +1,5 @@
+20210706: Added Sylvain's edits on Annex C / Kathi
+
 20210705: Added edits from Carl Reed / Kathi
 
 20210623: Fixed the codelist vocabulary URIs, added a couple of comments / Ilkka
