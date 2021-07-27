@@ -1,4 +1,6 @@
-20200727: Added a comment to the doc/clause Observation example in clause 9.2.7	Association ultimateFeatureOfInterest
+20200727: Fixed capitalization of "Result" -> "result" everywhere / Ilkka
+
+20200727: Added a comment to the doc/clause Observation example in clause 9.2.7	Association ultimateFeatureOfInterest / Ilkka
 
 20200727: replied to comments in Annex C, discussion needed / Ilkka
 
