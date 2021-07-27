@@ -1,3 +1,5 @@
+20200727: replied to comments in Annex C, discussion needed / Ilkka
+
 20210706: found another recommendation as req, fixed
 
 20210706: Added Sylvain's edits on Annex C / Kathi
