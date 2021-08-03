@@ -1,3 +1,5 @@
+20200803: **In progress**: Adding the SampleByMaterialClass and SamplerClasification codelists as Figures in Annex C
+
 20200727: Fixed capitalization of "Result" -> "result" everywhere / Ilkka
 
 20200727: Added a comment to the doc/clause Observation example in clause 9.2.7	Association ultimateFeatureOfInterest / Ilkka
