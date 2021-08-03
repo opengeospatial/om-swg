@@ -1,4 +1,4 @@
-20200803: **In progress**: Adding the SampleByMaterialClass and SamplerClasification codelists as Figures in Annex C
+20200803: **Done**: Added the SampleByMaterialClass and SamplerClasification codelists as Figures 85 and 86 in Annex C
 
 20200727: Fixed capitalization of "Result" -> "result" everywhere / Ilkka
 
