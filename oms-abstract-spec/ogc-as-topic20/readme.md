@@ -1,3 +1,5 @@
+20210809: Added a comment on the use of "specimen" instead of "MaterialSample" in clause 13.4.3 Attribute size / Ilkka
+
 20210809: PositionalAccuracy -> positional accuracy and VerticalAccuracy -> vertical accuracy in /req/sam-basic/SpatialSample/horizontalPositionalAccuracy-sem and /req/sam-basic/SpatialSample/verticalPositionalAccuracy-sem /Ilkka
 
 20210809: Added a comment on the strictness of the ObservationCollection sem requirement / Ilkka
