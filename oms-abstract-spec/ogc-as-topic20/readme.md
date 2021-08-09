@@ -1,10 +1,12 @@
-20200803: **Done**: Added the SampleByMaterialClass and SamplerClasification codelists as Figures 85 and 86 in Annex C
+20210809: Added a comment on the strictness of the ObservationCollection sem requirement
 
-20200727: Fixed capitalization of "Result" -> "result" everywhere / Ilkka
+20210803: **Done**: Added the SampleByMaterialClass and SamplerClasification codelists as Figures 85 and 86 in Annex C
 
-20200727: Added a comment to the doc/clause Observation example in clause 9.2.7	Association ultimateFeatureOfInterest / Ilkka
+20210727: Fixed capitalization of "Result" -> "result" everywhere / Ilkka
 
-20200727: replied to comments in Annex C, discussion needed / Ilkka
+20210727: Added a comment to the doc/clause Observation example in clause 9.2.7	Association ultimateFeatureOfInterest / Ilkka
+
+20210727: replied to comments in Annex C, discussion needed / Ilkka
 
 20210706: found another recommendation as req, fixed
 
