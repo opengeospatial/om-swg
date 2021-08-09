@@ -1,3 +1,5 @@
+20120809: Edited the sem. requirement text of the /req/sam-basic/PhysicalDimension/dimension-sem to improve readability / Ilkka
+
 20210809: Added a comment on harmonizing the definition of the "member" association between ObservationCollection and SampleCollection / Ilkka
 
 20210809: Added a comment on the note in 13.4.5	Attribute sourceLocation about not requiring sourceLocation when relatedSample already provides this info / Ilkka
