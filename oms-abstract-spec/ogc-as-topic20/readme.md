@@ -1,3 +1,5 @@
+20210809: Added a comment on harmonizing the definition of the "member" association between ObservationCollection and SampleCollection / Ilkka
+
 20210809: Added a comment on the note in 13.4.5	Attribute sourceLocation about not requiring sourceLocation when relatedSample already provides this info / Ilkka
 
 20210809: Added a comment on the use of "specimen" instead of "MaterialSample" in clause 13.4.3 Attribute size / Ilkka
