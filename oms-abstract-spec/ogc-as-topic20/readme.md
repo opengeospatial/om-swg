@@ -1,6 +1,8 @@
-20210809: Added a comment on the strictness of the ObservationCollection sem requirement
+20210809: PositionalAccuracy -> positional accuracy and VerticalAccuracy -> vertical accuracy in /req/sam-basic/SpatialSample/horizontalPositionalAccuracy-sem and /req/sam-basic/SpatialSample/verticalPositionalAccuracy-sem /Ilkka
 
-20210803: **Done**: Added the SampleByMaterialClass and SamplerClasification codelists as Figures 85 and 86 in Annex C
+20210809: Added a comment on the strictness of the ObservationCollection sem requirement / Ilkka
+
+20210803: **Done**: Added the SampleByMaterialClass and SamplerClasification codelists as Figures 85 and 86 in Annex C / Ilkka
 
 20210727: Fixed capitalization of "Result" -> "result" everywhere / Ilkka
 
