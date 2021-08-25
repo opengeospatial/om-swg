@@ -1,0 +1,3768 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<?xml-stylesheet type='text/xsl' href='./html.xsl'?>
+<!--Feature catalogue created using ShapeChange-->
+<FeatureCatalogue xsi:noNamespaceSchemaLocation="FC.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>'OMS schemas'</name>
+  <scope>This feature catalogue ... FIXME</scope>
+  <versionNumber>n/a (each application schema is versioned separately)</versionNumber>
+  <versionDate>2021-08-20</versionDate>
+  <producer>ii</producer>
+  <ApplicationSchema id="_P9876">
+    <name>Abstract Observation core</name>
+    <versionNumber>9.9.9</versionNumber>
+    <taggedValues></taggedValues>
+  </ApplicationSchema>
+  <FeatureType id="_C81433">
+    <name>AbstractDeployment</name>
+    <definition>A FeatureType realization of Conceptual Observation Schema:Deployment intended as a parent class for all Deployment realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_A81433_114920"></characterizedBy>
+    <characterizedBy idref="_A81433_114921"></characterizedBy>
+    <characterizedBy idref="_ATas127537"></characterizedBy>
+    <characterizedBy idref="_ATas127538"></characterizedBy>
+    <characterizedBy idref="_ATas127539"></characterizedBy>
+    <characterizedBy idref="_ATas127542"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81433_114920">
+    <name>deploymentReason</name>
+    <definition>a human readable description of the reason for the Deployment.</definition>
+    <definition></definition>
+    <definition>EXAMPLES</definition>
+    <definition>- A researcher involved in a biodiversity survey campaign assessing the distribution of selected alien species. The deploymentReason describes the fact that this individual was involved in this campaign for the reason of identifying alien species.</definition>
+    <definition>- A sensor is mounted on a building to monitor seismic activities</definition>
+    <definition>A new sensor type is rolled out within a regional or thematic network due to new legal reporting requirements.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65031">CharacterString</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81433_114921">
+    <name>deploymentTime</name>
+    <definition>time that the Deployment pertains to.</definition>
+    <definition></definition>
+    <definition>EXAMPLES</definition>
+    <definition>- A researcher involved in a biodiversity survey campaign assessing the distribution of selected alien species. The deploymentTime provides the time period(s) during which this person carried out this activity in the framework of the campaign.</definition>
+    <definition>A sensor is mounted on a building to monitor seismic activities. The deploymentTime provides the time period(s) during which this sensor is mounted or active.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65714">TM_Object</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127537">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127537"></roles>
+    <roles idref="_ASas127537"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127537">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127537"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127537">
+    <name>role_Sas127537</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81433" category="feature type">AbstractDeployment</FeatureTypeIncluded>
+    <relation idref="__Tas127537"></relation>
+    <InverseRole idref="_ATas127537"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127538">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127538"></roles>
+    <roles idref="_ASas127538"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127538">
+    <name>observer</name>
+    <definition>Observer associated with this Deployment</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Tas127538"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127538">
+    <name>role_Sas127538</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81433" category="feature type">AbstractDeployment</FeatureTypeIncluded>
+    <relation idref="__Tas127538"></relation>
+    <InverseRole idref="_ATas127538"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127539">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127539"></roles>
+    <roles idref="_ASas127539"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127539">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the deployment</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127539"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127539">
+    <name>role_Sas127539</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81433" category="feature type">AbstractDeployment</FeatureTypeIncluded>
+    <relation idref="__Tas127539"></relation>
+    <InverseRole idref="_ATas127539"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127542">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127542"></roles>
+    <roles idref="_ASas127542"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127542">
+    <name>host</name>
+    <definition>Host to which this Deployment pertains</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81504" category="feature type">Host</FeatureTypeIncluded>
+    <relation idref="__Tas127542"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127542">
+    <name>role_Sas127542</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81433" category="feature type">AbstractDeployment</FeatureTypeIncluded>
+    <relation idref="__Tas127542"></relation>
+    <InverseRole idref="_ATas127542"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81437">
+    <name>AbstractHost</name>
+    <definition>A FeatureType realization of Conceptual Observation Schema:Host</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127531"></characterizedBy>
+    <characterizedBy idref="_ATas127528"></characterizedBy>
+    <characterizedBy idref="_ATas127529"></characterizedBy>
+    <characterizedBy idref="_ATas127530"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127531">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127531"></roles>
+    <roles idref="_ASas127531"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127531">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127531"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127531">
+    <name>role_Sas127531</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81437" category="feature type">AbstractHost</FeatureTypeIncluded>
+    <relation idref="__Tas127531"></relation>
+    <InverseRole idref="_ATas127531"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127528">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127528"></roles>
+    <roles idref="_ASas127528"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127528">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the host</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127528"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127528">
+    <name>role_Sas127528</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81437" category="feature type">AbstractHost</FeatureTypeIncluded>
+    <relation idref="__Tas127528"></relation>
+    <InverseRole idref="_ATas127528"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127529">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127529"></roles>
+    <roles idref="_ASas127529"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127529">
+    <name>relatedHost</name>
+    <definition>Another Host the context Host is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81504" category="feature type">Host</FeatureTypeIncluded>
+    <relation idref="__Tas127529"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127529">
+    <name>role_Sas127529</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81437" category="feature type">AbstractHost</FeatureTypeIncluded>
+    <relation idref="__Tas127529"></relation>
+    <InverseRole idref="_ATas127529"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127530">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127530"></roles>
+    <roles idref="_ASas127530"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127530">
+    <name>deployment</name>
+    <definition>Deployment at this Host</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81502" category="feature type">Deployment</FeatureTypeIncluded>
+    <relation idref="__Tas127530"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127530">
+    <name>role_Sas127530</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81437" category="feature type">AbstractHost</FeatureTypeIncluded>
+    <relation idref="__Tas127530"></relation>
+    <InverseRole idref="_ATas127530"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81428">
+    <name>AbstractObservableProperty</name>
+    <definition>A FeatureType realization of Conceptual Observation Schema:ObservableProperty intended as a parent class for all ObservableProperty realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127556"></characterizedBy>
+    <characterizedBy idref="_ATas127554"></characterizedBy>
+    <characterizedBy idref="_ATas127558"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127556">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127556"></roles>
+    <roles idref="_ASas127556"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127556">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127556"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127556">
+    <name>role_Sas127556</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81428" category="feature type">AbstractObservableProperty</FeatureTypeIncluded>
+    <relation idref="__Tas127556"></relation>
+    <InverseRole idref="_ATas127556"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127554">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127554"></roles>
+    <roles idref="_ASas127554"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127554">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the observable property</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127554"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127554">
+    <name>role_Sas127554</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81428" category="feature type">AbstractObservableProperty</FeatureTypeIncluded>
+    <relation idref="__Tas127554"></relation>
+    <InverseRole idref="_ATas127554"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127558">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127558"></roles>
+    <roles idref="_ASas127558"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127558">
+    <name>observer</name>
+    <definition>Observer capable of observing this ObservableProperty</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Tas127558"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127558">
+    <name>role_Sas127558</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81428" category="feature type">AbstractObservableProperty</FeatureTypeIncluded>
+    <relation idref="__Tas127558"></relation>
+    <InverseRole idref="_ATas127558"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81432">
+    <name>AbstractObservation</name>
+    <definition>A FeatureType realization of Conceptual Observation Schema:Observation intended as a parent class for all Observation realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <subtypeOf idref="_C81427">AbstractObservationCharacteristics</subtypeOf>
+    <characterizedBy idref="_ATas127545"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>at least one proximateFeatureOfInterest or ultimateFeatureOfInterest shall be given</name>
+    </constraint>
+    <constraint>
+      <name>attribute and association values shall be aligned with the observationType</name>
+    </constraint>
+    <constraint>
+      <name>exactly one observedProperty shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one observingProcedure shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one phenomenonTime shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one result shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one resultTime shall be given</name>
+    </constraint>
+    <constraint>
+      <name>observedProperty should be a phenomenon associated with the ultimateFeatureOfInterest or the proximateFeatureOfInterest</name>
+    </constraint>
+    <constraint>
+      <name>parameter.name shall not appear more than once</name>
+    </constraint>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the observationType attribute value</name>
+    </constraint>
+    <constraint>
+      <name>resultTime shall be of type TM_Instant</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127545">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127545"></roles>
+    <roles idref="_ASas127545"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127545">
+    <name>relatedObservation</name>
+    <definition>Another Observation related to the context Observation</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127545"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127545">
+    <name>role_Sas127545</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81432" category="feature type">AbstractObservation</FeatureTypeIncluded>
+    <relation idref="__Tas127545"></relation>
+    <InverseRole idref="_ATas127545"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81427">
+    <name>AbstractObservationCharacteristics</name>
+    <definition>set of common characteristics used for describing an Observation or a collection of Observations.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_A81427_114914"></characterizedBy>
+    <characterizedBy idref="_A81427_114915"></characterizedBy>
+    <characterizedBy idref="_A81427_114916"></characterizedBy>
+    <characterizedBy idref="_A81427_114917"></characterizedBy>
+    <characterizedBy idref="_A81427_114918"></characterizedBy>
+    <characterizedBy idref="_A81427_114919"></characterizedBy>
+    <characterizedBy idref="_ATas127559"></characterizedBy>
+    <characterizedBy idref="_ATas127565"></characterizedBy>
+    <characterizedBy idref="_ATas127566"></characterizedBy>
+    <characterizedBy idref="_ATas127568"></characterizedBy>
+    <characterizedBy idref="_ATas127560"></characterizedBy>
+    <characterizedBy idref="_ATas127561"></characterizedBy>
+    <characterizedBy idref="_ATas127564"></characterizedBy>
+    <characterizedBy idref="_ATas127567"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81427_114914">
+    <name>observationType</name>
+    <definition>Information providing further detail on the type of Observations being described.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType category="code list">AbstractObservationType</ValueDataType>
+    <ValueDomainType>1</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81427_114915">
+    <name>parameter</name>
+    <definition>arbitrary event-specific parameter relevant to one or more Observations.</definition>
+    <definition></definition>
+    <definition>NOTE		This might be an environmental parameter, an instrument setting or input, or an event-specific sampling parameter that is not tightly bound to either the feature-of-interest or to the observation procedure.</definition>
+    <definition>NOTE		Parameters that are tightly bound to the procedure can be recorded as part of the procedure description.</definition>
+    <definition>The AbstractObservingProcedure is a generic or standard procedure, rather than an event-specific process. In this context, parameters bound to the observation act, such as instrument settings, calibrations or inputs, local position, detection limits, asset identifier, operator, may augment the description of a standard procedure.</definition>
+    <definition>EXAMPLE	A time sequence of observations of water quality in a well might be made at variable depths within the well. While these can be associated with specimens taken from the well at this depth as the features-of-interest, a more common approach is to identify the well itself as the feature-of-interest, and add a “samplingDepth” parameter to the observation. The sampling depth is of secondary interest compared to the temporal variation of water quality at the site.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81435" category="data type">NamedValue</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81427_114916">
+    <name>phenomenonTime</name>
+    <definition>time that the Result applies to the characteristic of the FeatureOfInterest being observed.</definition>
+    <definition></definition>
+    <definition>NOTE 1	The phenomenonTime is often the time the Sample has been taken.</definition>
+    <definition>NOTE 2	This is often the time of interaction by a sampling Procedure or observation Procedure with a real-world feature.</definition>
+    <definition>NOTE 3	If the result is the average of multiple samples taken at different times, then the phenomenonTime is the time interval over which these measurements were taken.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65714">TM_Object</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81427_114917">
+    <name>resultTime</name>
+    <definition>instant of time when the result of the Observation became available.</definition>
+    <definition></definition>
+    <definition>EXAMPLE 1	The resultTime typically corresponds to when the Procedure associated with the Observation was completed. For some observations this is identical to the phenomenonTime. However, there are important cases where they differ.</definition>
+    <definition>EXAMPLE 2	Where a measurement is made on a specimen in a laboratory, the phenomenonTime is the time the specimen was retrieved from its host, while the resultTime is the time the laboratory procedure was applied.</definition>
+    <definition>EXAMPLE 3	The resultTime also supports disambiguation of repeat measurements made of the same property of a feature using the same procedure.</definition>
+    <definition>EXAMPLE 4	Where sensor observation results are post-processed, the resultTime is the post-processing time, while the phenomenonTime is the time of initial interaction with the world.</definition>
+    <definition>EXAMPLE 5	Simulations may be used to estimate the values for phenomena in the future or past. The phenomenonTime is the time that the result applies to, while the resultTime is the time that the simulation was executed.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65714">TM_Object</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81427_114918">
+    <name>resultQuality</name>
+    <definition>Information pertaining to the data quality of the result</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65067">Any</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81427_114919">
+    <name>validTime</name>
+    <definition>The time interval during which the result is assumed to be applicable for use.</definition>
+    <definition></definition>
+    <definition>NOTE		This attribute is commonly required in forecasting applications.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65720">TM_Period</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127559">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127559"></roles>
+    <roles idref="_ASas127559"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127559">
+    <name>result</name>
+    <definition>result of the Observation or a collection of Observations described</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127559"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127559">
+    <name>role_Sas127559</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127559"></relation>
+    <InverseRole idref="_ATas127559"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127565">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127565"></roles>
+    <roles idref="_ASas127565"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127565">
+    <name>ultimateFeatureOfInterest</name>
+    <definition>entity that is ultimately of interest in the act of observing captured by the Observation or a collection of Observations described.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127565"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127565">
+    <name>role_Sas127565</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127565"></relation>
+    <InverseRole idref="_ATas127565"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127566">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127566"></roles>
+    <roles idref="_ASas127566"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127566">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127566"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127566">
+    <name>role_Sas127566</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127566"></relation>
+    <InverseRole idref="_ATas127566"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127568">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127568"></roles>
+    <roles idref="_ASas127568"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127568">
+    <name>proximateFeatureOfInterest</name>
+    <definition>entity that is directly of interest in the act of observing captured by the Observation or a collection of Observations described.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127568"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127568">
+    <name>role_Sas127568</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127568"></relation>
+    <InverseRole idref="_ATas127568"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127560">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127560"></roles>
+    <roles idref="_ASas127560"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127560">
+    <name>observer</name>
+    <definition>Observer that is involved in the creation of  Observation or a collection of Observations described</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Tas127560"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127560">
+    <name>role_Sas127560</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127560"></relation>
+    <InverseRole idref="_ATas127560"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127561">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127561"></roles>
+    <roles idref="_ASas127561"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127561">
+    <name>observedProperty</name>
+    <definition>ObservableProperty that is the subject of the Observation or a collection of Observations described</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81500" category="feature type">ObservableProperty</FeatureTypeIncluded>
+    <relation idref="__Tas127561"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127561">
+    <name>role_Sas127561</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127561"></relation>
+    <InverseRole idref="_ATas127561"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127564">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127564"></roles>
+    <roles idref="_ASas127564"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127564">
+    <name>observingProcedure</name>
+    <definition>ObservingProcedure used by the Observation or a collection of Observations described to determine the value of the ObservableProperty provided by the result.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81503" category="feature type">ObservingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127564"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127564">
+    <name>role_Sas127564</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127564"></relation>
+    <InverseRole idref="_ATas127564"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127567">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127567"></roles>
+    <roles idref="_ASas127567"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127567">
+    <name>host</name>
+    <definition>Host that is involved in the creation of the Observation or a collection of Observations described</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81504" category="feature type">Host</FeatureTypeIncluded>
+    <relation idref="__Tas127567"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127567">
+    <name>role_Sas127567</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81427" category="feature type">AbstractObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Tas127567"></relation>
+    <InverseRole idref="_ATas127567"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81431">
+    <name>AbstractObservationType</name>
+    <definition>an empty codelist parent class for Observation classification schemes. All codelists used for classifying Observations SHALL be specialized from this class.</definition>
+    <isAbstract>1</isAbstract>
+    <package idref="_P9876"></package>
+    <type>Code List Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81429">
+    <name>AbstractObserver</name>
+    <definition>A FeatureType realization of Conceptual Observation Schema:Observer intended as a parent class for all Observer realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127553"></characterizedBy>
+    <characterizedBy idref="_ATas127547"></characterizedBy>
+    <characterizedBy idref="_ATas127548"></characterizedBy>
+    <characterizedBy idref="_ATas127550"></characterizedBy>
+    <characterizedBy idref="_ATas127551"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127553">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127553"></roles>
+    <roles idref="_ASas127553"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127553">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127553"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127553">
+    <name>role_Sas127553</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81429" category="feature type">AbstractObserver</FeatureTypeIncluded>
+    <relation idref="__Tas127553"></relation>
+    <InverseRole idref="_ATas127553"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127547">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127547"></roles>
+    <roles idref="_ASas127547"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127547">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the observer</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127547"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127547">
+    <name>role_Sas127547</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81429" category="feature type">AbstractObserver</FeatureTypeIncluded>
+    <relation idref="__Tas127547"></relation>
+    <InverseRole idref="_ATas127547"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127548">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127548"></roles>
+    <roles idref="_ASas127548"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127548">
+    <name>deployment</name>
+    <definition>Deployment to which this Observer is either physically or organizationally attached.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81502" category="feature type">Deployment</FeatureTypeIncluded>
+    <relation idref="__Tas127548"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127548">
+    <name>role_Sas127548</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81429" category="feature type">AbstractObserver</FeatureTypeIncluded>
+    <relation idref="__Tas127548"></relation>
+    <InverseRole idref="_ATas127548"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127550">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127550"></roles>
+    <roles idref="_ASas127550"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127550">
+    <name>observableProperty</name>
+    <definition>ObservableProperty that this Observer can observe</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81500" category="feature type">ObservableProperty</FeatureTypeIncluded>
+    <relation idref="__Tas127550"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127550">
+    <name>role_Sas127550</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81429" category="feature type">AbstractObserver</FeatureTypeIncluded>
+    <relation idref="__Tas127550"></relation>
+    <InverseRole idref="_ATas127550"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127551">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127551"></roles>
+    <roles idref="_ASas127551"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127551">
+    <name>observingProcedure</name>
+    <definition>An ObservingProcedure that this Observer can perform</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81503" category="feature type">ObservingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127551"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127551">
+    <name>role_Sas127551</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81429" category="feature type">AbstractObserver</FeatureTypeIncluded>
+    <relation idref="__Tas127551"></relation>
+    <InverseRole idref="_ATas127551"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81436">
+    <name>AbstractObservingProcedure</name>
+    <definition>A FeatureType realization of Conceptual Observation Schema:ObservingProcedure intended as a parent class for all :ObservingProcedure realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127534"></characterizedBy>
+    <characterizedBy idref="_ATas127535"></characterizedBy>
+    <characterizedBy idref="_ATas127536"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127534">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127534"></roles>
+    <roles idref="_ASas127534"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127534">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127534"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127534">
+    <name>role_Sas127534</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81436" category="feature type">AbstractObservingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127534"></relation>
+    <InverseRole idref="_ATas127534"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127535">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127535"></roles>
+    <roles idref="_ASas127535"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127535">
+    <name>observer</name>
+    <definition>Observer capable of performing this ObservingProcedure.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Tas127535"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127535">
+    <name>role_Sas127535</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81436" category="feature type">AbstractObservingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127535"></relation>
+    <InverseRole idref="_ATas127535"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127536">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127536"></roles>
+    <roles idref="_ASas127536"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127536">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the observing procedure</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127536"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127536">
+    <name>role_Sas127536</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81436" category="feature type">AbstractObservingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127536"></relation>
+    <InverseRole idref="_ATas127536"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81435">
+    <name>NamedValue</name>
+    <definition>The class NamedValue provides for a generic soft-typed parameter value. NamedValue shall support two attributes.</definition>
+    <characterizedBy idref="_A81435_114922"></characterizedBy>
+    <characterizedBy idref="_A81435_114923"></characterizedBy>
+    <package idref="_P9876"></package>
+    <type>Data Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81435_114922">
+    <name>name</name>
+    <definition>the meaning of the named value. Value should be taken from a well-governed source if possible.</definition>
+    <definition></definition>
+    <definition>EXAMPLES	When used as the value of an Observation:;parameter, the name might take values like ‘procedureOperator’, ‘detectionLimit’, ‘amplifierGain’, ‘samplingDepth’.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65066">GenericName</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81435_114923">
+    <name>value</name>
+    <definition>the value of the parameter. The type Any should be substituted by a suitable concrete type, such as CI_ResponsibleParty or Measure.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65067">Any</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <ApplicationSchema id="_P9877">
+    <name>Abstract Sample core</name>
+    <versionNumber>9.9.9</versionNumber>
+    <taggedValues></taggedValues>
+  </ApplicationSchema>
+  <FeatureType id="_C81447">
+    <name>AbstractPreparationProcedure</name>
+    <definition>A FeatureType realization of Conceptual Sample Schema:PreparationProcedure intended as a parent class for all PreparationProcedure realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127510"></characterizedBy>
+    <characterizedBy idref="_ATas127508"></characterizedBy>
+    <package idref="_P9877"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127510">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127510"></roles>
+    <roles idref="_ASas127510"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127510">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127510"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127510">
+    <name>role_Sas127510</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81447" category="feature type">AbstractPreparationProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127510"></relation>
+    <InverseRole idref="_ATas127510"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127508">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127508"></roles>
+    <roles idref="_ASas127508"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127508">
+    <name>samplePreparationStep</name>
+    <definition>provides information on the PreparationSteps where this procedure has been used</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81510" category="feature type">PreparationStep</FeatureTypeIncluded>
+    <relation idref="__Tas127508"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127508">
+    <name>role_Sas127508</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81447" category="feature type">AbstractPreparationProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127508"></relation>
+    <InverseRole idref="_ATas127508"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81452">
+    <name>AbstractPreparationStep</name>
+    <definition>A FeatureType realization of Conceptual Sample Schema:PreparationStep intended as a parent class for all PreparationStep realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_A81452_114930"></characterizedBy>
+    <characterizedBy idref="_A81452_114931"></characterizedBy>
+    <characterizedBy idref="_ATas127487"></characterizedBy>
+    <characterizedBy idref="_ATas127489"></characterizedBy>
+    <characterizedBy idref="_ATas127490"></characterizedBy>
+    <package idref="_P9877"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81452_114930">
+    <name>description</name>
+    <definition>description of the preparationStep</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65031">CharacterString</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81452_114931">
+    <name>time</name>
+    <definition>time of the preparationStep</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65714">TM_Object</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127487">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127487"></roles>
+    <roles idref="_ASas127487"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127487">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127487"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127487">
+    <name>role_Sas127487</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81452" category="feature type">AbstractPreparationStep</FeatureTypeIncluded>
+    <relation idref="__Tas127487"></relation>
+    <InverseRole idref="_ATas127487"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127489">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127489"></roles>
+    <roles idref="_ASas127489"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127489">
+    <name>processingDetails</name>
+    <definition>PreparationProcedure step performed on the Sample the PreparationStep pertains to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81509" category="feature type">PreparationProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127489"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127489">
+    <name>role_Sas127489</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81452" category="feature type">AbstractPreparationStep</FeatureTypeIncluded>
+    <relation idref="__Tas127489"></relation>
+    <InverseRole idref="_ATas127489"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127490">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127490"></roles>
+    <roles idref="_ASas127490"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127490">
+    <name>preparedSample</name>
+    <definition>Sample on which the PreparationProcedure is performed</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127490"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127490">
+    <name>role_Sas127490</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81452" category="feature type">AbstractPreparationStep</FeatureTypeIncluded>
+    <relation idref="__Tas127490"></relation>
+    <InverseRole idref="_ATas127490"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81446">
+    <name>AbstractSample</name>
+    <definition>A FeatureType realization of Conceptual Sample Schema:Sample intended as a parent class for all Sample realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_A81446_114925"></characterizedBy>
+    <characterizedBy idref="_A81446_114926"></characterizedBy>
+    <characterizedBy idref="_ATas127513"></characterizedBy>
+    <characterizedBy idref="_ATas127514"></characterizedBy>
+    <characterizedBy idref="_ATas127511"></characterizedBy>
+    <characterizedBy idref="_ATas127516"></characterizedBy>
+    <characterizedBy idref="_ATas127517"></characterizedBy>
+    <characterizedBy idref="_ATas127519"></characterizedBy>
+    <package idref="_P9877"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the sampleType attribute value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81446_114925">
+    <name>sampleType</name>
+    <definition>type of Sample according to a community agreed typology.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType category="code list">AbstractSampleType</ValueDataType>
+    <ValueDomainType>1</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81446_114926">
+    <name>parameter</name>
+    <definition>arbitrary event-specific parameter relevant to the Sample</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81435" category="data type">NamedValue</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127513">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127513"></roles>
+    <roles idref="_ASas127513"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127513">
+    <name>sampledFeature</name>
+    <definition>the feature the Sample is intended to be representative of.</definition>
+    <definition></definition>
+    <definition>NOTE The sampled feature is usually a real-world feature from an application domain.</definition>
+    <cardinality>1..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127513"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127513">
+    <name>role_Sas127513</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81446" category="feature type">AbstractSample</FeatureTypeIncluded>
+    <relation idref="__Tas127513"></relation>
+    <InverseRole idref="_ATas127513"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127514">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127514"></roles>
+    <roles idref="_ASas127514"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127514">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127514"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127514">
+    <name>role_Sas127514</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81446" category="feature type">AbstractSample</FeatureTypeIncluded>
+    <relation idref="__Tas127514"></relation>
+    <InverseRole idref="_ATas127514"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127511">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127511"></roles>
+    <roles idref="_ASas127511"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127511">
+    <name>relatedSample</name>
+    <definition>Another Sample the context Sample is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127511"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127511">
+    <name>role_Sas127511</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81446" category="feature type">AbstractSample</FeatureTypeIncluded>
+    <relation idref="__Tas127511"></relation>
+    <InverseRole idref="_ATas127511"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127516">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127516"></roles>
+    <roles idref="_ASas127516"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127516">
+    <name>sampling</name>
+    <definition>Sampling the Sample is the result of</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127516"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127516">
+    <name>role_Sas127516</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81446" category="feature type">AbstractSample</FeatureTypeIncluded>
+    <relation idref="__Tas127516"></relation>
+    <InverseRole idref="_ATas127516"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127517">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127517"></roles>
+    <roles idref="_ASas127517"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127517">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the sample</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127517"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127517">
+    <name>role_Sas127517</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81446" category="feature type">AbstractSample</FeatureTypeIncluded>
+    <relation idref="__Tas127517"></relation>
+    <InverseRole idref="_ATas127517"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127519">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127519"></roles>
+    <roles idref="_ASas127519"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127519">
+    <name>preparationStep</name>
+    <definition>PreparationStep(s) applied to prepare the Sample</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81510">PreparationStep</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127519">
+    <name>role_Sas127519</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81446" category="feature type">AbstractSample</FeatureTypeIncluded>
+    <relation idref="__Tas127519"></relation>
+    <InverseRole idref="_ATas127519"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81451">
+    <name>AbstractSampleType</name>
+    <definition>an empty codelist parent class for Sample classification schemes. All codelists used for classifying Samples SHALL be specialized from this class.</definition>
+    <isAbstract>1</isAbstract>
+    <package idref="_P9877"></package>
+    <type>Code List Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81445">
+    <name>AbstractSampler</name>
+    <definition>A FeatureType realization of Conceptual Sample Schema:Sampler intended as a parent class for all Sampler realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_A81445_114924"></characterizedBy>
+    <characterizedBy idref="_ATas127522"></characterizedBy>
+    <characterizedBy idref="_ATas127521"></characterizedBy>
+    <characterizedBy idref="_ATas127524"></characterizedBy>
+    <package idref="_P9877"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the samplerType attribute value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81445_114924">
+    <name>samplerType</name>
+    <definition>type of Sampler according to a community agreed typology</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType category="code list">AbstractSamplerType</ValueDataType>
+    <ValueDomainType>1</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127522">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127522"></roles>
+    <roles idref="_ASas127522"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127522">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127522"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127522">
+    <name>role_Sas127522</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81445" category="feature type">AbstractSampler</FeatureTypeIncluded>
+    <relation idref="__Tas127522"></relation>
+    <InverseRole idref="_ATas127522"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127521">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127521"></roles>
+    <roles idref="_ASas127521"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127521">
+    <name>sampling</name>
+    <definition>Sampling act performed by the Sampler</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127521"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127521">
+    <name>role_Sas127521</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81445" category="feature type">AbstractSampler</FeatureTypeIncluded>
+    <relation idref="__Tas127521"></relation>
+    <InverseRole idref="_ATas127521"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127524">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127524"></roles>
+    <roles idref="_ASas127524"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127524">
+    <name>samplingProcedure</name>
+    <definition>Procedure implemented by the Sampler</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81512" category="feature type">SamplingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127524"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127524">
+    <name>role_Sas127524</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81445" category="feature type">AbstractSampler</FeatureTypeIncluded>
+    <relation idref="__Tas127524"></relation>
+    <InverseRole idref="_ATas127524"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81448">
+    <name>AbstractSamplerType</name>
+    <definition>an empty codelist parent class for Sampler classification schemes. All codelists used for classifying Samplers SHALL be specialized from this class.</definition>
+    <isAbstract>1</isAbstract>
+    <package idref="_P9877"></package>
+    <type>Code List Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81449">
+    <name>AbstractSampling</name>
+    <definition>A FeatureType realization of Conceptual Sample Schema:Sampling intended as a parent class for all Sampling realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_A81449_114927"></characterizedBy>
+    <characterizedBy idref="_A81449_114928"></characterizedBy>
+    <characterizedBy idref="_A81449_114929"></characterizedBy>
+    <characterizedBy idref="_ATas127499"></characterizedBy>
+    <characterizedBy idref="_ATas127504"></characterizedBy>
+    <characterizedBy idref="_ATas127498"></characterizedBy>
+    <characterizedBy idref="_ATas127502"></characterizedBy>
+    <characterizedBy idref="_ATas127503"></characterizedBy>
+    <characterizedBy idref="_ATas127505"></characterizedBy>
+    <package idref="_P9877"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81449_114927">
+    <name>samplingLocation</name>
+    <definition>location information pertaining to the Sampling</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C77453">Geometry</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81449_114928">
+    <name>time</name>
+    <definition>time of the Sampling</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65714">TM_Object</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81449_114929">
+    <name>parameter</name>
+    <definition>arbitrary event-specific parameter relevant to the Sampling</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81435" category="data type">NamedValue</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127499">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127499"></roles>
+    <roles idref="_ASas127499"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127499">
+    <name>featureOfInterest</name>
+    <definition>The concept, real-world object or phenomenon (feature-of-interest) the Sample(s) of the Sampling represent</definition>
+    <cardinality>1..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127499"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127499">
+    <name>role_Sas127499</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81449" category="feature type">AbstractSampling</FeatureTypeIncluded>
+    <relation idref="__Tas127499"></relation>
+    <InverseRole idref="_ATas127499"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127504">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127504"></roles>
+    <roles idref="_ASas127504"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127504">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127504"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127504">
+    <name>role_Sas127504</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81449" category="feature type">AbstractSampling</FeatureTypeIncluded>
+    <relation idref="__Tas127504"></relation>
+    <InverseRole idref="_ATas127504"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127498">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127498"></roles>
+    <roles idref="_ASas127498"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127498">
+    <name>sample</name>
+    <definition>Sample generated by the Sampling</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127498"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127498">
+    <name>role_Sas127498</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81449" category="feature type">AbstractSampling</FeatureTypeIncluded>
+    <relation idref="__Tas127498"></relation>
+    <InverseRole idref="_ATas127498"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127502">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127502"></roles>
+    <roles idref="_ASas127502"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127502">
+    <name>relatedSampling</name>
+    <definition>Another Sampling the context Sampling is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127502"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127502">
+    <name>role_Sas127502</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81449" category="feature type">AbstractSampling</FeatureTypeIncluded>
+    <relation idref="__Tas127502"></relation>
+    <InverseRole idref="_ATas127502"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127503">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127503"></roles>
+    <roles idref="_ASas127503"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127503">
+    <name>sampler</name>
+    <definition>Sampler that performed the Sampling</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81506" category="feature type">Sampler</FeatureTypeIncluded>
+    <relation idref="__Tas127503"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127503">
+    <name>role_Sas127503</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81449" category="feature type">AbstractSampling</FeatureTypeIncluded>
+    <relation idref="__Tas127503"></relation>
+    <InverseRole idref="_ATas127503"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127505">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127505"></roles>
+    <roles idref="_ASas127505"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127505">
+    <name>samplingProcedure</name>
+    <definition>SamplingProcedure used by the Sampling</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81512" category="feature type">SamplingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127505"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127505">
+    <name>role_Sas127505</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81449" category="feature type">AbstractSampling</FeatureTypeIncluded>
+    <relation idref="__Tas127505"></relation>
+    <InverseRole idref="_ATas127505"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81450">
+    <name>AbstractSamplingProcedure</name>
+    <definition>A FeatureType realization of Conceptual Sample Schema:SamplingProcedure intended as a parent class for all SamplingProcedure realizations based on General Feature Model as defined in ISO 19109</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127497"></characterizedBy>
+    <characterizedBy idref="_ATas127493"></characterizedBy>
+    <characterizedBy idref="_ATas127494"></characterizedBy>
+    <package idref="_P9877"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127497">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127497"></roles>
+    <roles idref="_ASas127497"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127497">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127497"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127497">
+    <name>role_Sas127497</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81450" category="feature type">AbstractSamplingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127497"></relation>
+    <InverseRole idref="_ATas127497"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127493">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127493"></roles>
+    <roles idref="_ASas127493"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127493">
+    <name>sampler</name>
+    <definition>provides information on the Sampler that implements this procedure</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81506" category="feature type">Sampler</FeatureTypeIncluded>
+    <relation idref="__Tas127493"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127493">
+    <name>role_Sas127493</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81450" category="feature type">AbstractSamplingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127493"></relation>
+    <InverseRole idref="_ATas127493"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127494">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127494"></roles>
+    <roles idref="_ASas127494"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127494">
+    <name>sampling</name>
+    <definition>provides information on the Sampling where this procedure has been used</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127494"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127494">
+    <name>role_Sas127494</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81450" category="feature type">AbstractSamplingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127494"></relation>
+    <InverseRole idref="_ATas127494"></InverseRole>
+  </RelationshipRole>
+  <ApplicationSchema id="_P9878">
+    <name>Basic Observations</name>
+    <versionNumber>9.9.9</versionNumber>
+    <taggedValues></taggedValues>
+  </ApplicationSchema>
+  <FeatureType id="_C81454">
+    <name>AbstractObservationCollectionType</name>
+    <definition>an empty codelist parent class for ObservationCollection classification schemes. All codelists used for classifying ObservationCollections SHALL be specialized from this class.</definition>
+    <isAbstract>1</isAbstract>
+    <package idref="_P9878"></package>
+    <type>Code List Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81463">
+    <name>CollectionTypeByMemberCharacteristicsSemantics</name>
+    <definition>ObservationCollection classification scheme based on how the properties of the ObservationCharacteristics associated with role memberCharacteristics shall be related to the corresponding properties of the Observations associated with role member</definition>
+    <subtypeOf idref="_C81454">AbstractObservationCollectionType</subtypeOf>
+    <package idref="_P9878"></package>
+    <type>Code List Type</type>
+    <constraint>
+      <name>/req/obs-basic/CollectionTypeByMemberCharacteristicsSemantics/homogenous-con</name>
+      <expression>If the value "homogenous" is used, the following constraints apply to the ObservationCharacteristics instance and all Observation instances associated with the ObservationCollection with roles memberCharacterics and member:&#xD;&#xA;&#xD;&#xA;For each property of the associated ObservationCharacteristics, the following constraints apply to the corresponding property of each Observation member:&#xD;&#xA;	- Property not provided: varying values may be provided for the corresponding property by the member Observations.&#xD;&#xA;	- Property provided but with no content: none of the Observation members  shall contain a value for the corresponding property.&#xD;&#xA;	- Property has other value: the same value applies to the corresponding property of all Observation members even if no value is provided in the particular member.&#xD;&#xA;&#xD;&#xA;NOTE: The mechanism for providing a property with no content is implementation specific. Examples include providing a special "null" or "nil" value.</expression>
+    </constraint>
+    <constraint>
+      <name>/req/obs-basic/CollectionTypeByMemberCharacteristicsSemantics/summarizing-con</name>
+      <expression>If the value "summarizing" is used, the following constraints apply to the ObservationCharacteristics instance and all Observation instances associated with the ObservationCollection with roles memberCharacterics and member:&#xD;&#xA;&#xD;&#xA;For each property of the associated ObservationCharacteristics instance, the following constraints apply to the corresponding property of each Observation member:&#xD;&#xA;	- Property not provided: varying values may be provided for the corresponding property by the Observation members and no summary is provided at the collection level.&#xD;&#xA;	- Property provided but with no content: none of the Observation members shall contain a value for the corresponding property.&#xD;&#xA;	- Property contains a single, non-range value: the same value applies to the corresponding property of all Observation members even if no value is provided in the particular member.&#xD;&#xA;	- Property contains a value set or range value: all Observation members shall contain a value for the corresponding property that is within the provided value set or range.&#xD;&#xA;&#xD;&#xA;NOTE: The mechanism for providing a property with no content is implementation specific. Examples include providing a special "null" or "nil" value.</expression>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81460">
+    <name>Deployment</name>
+    <definition>Concrete class for expressing a realization of Conceptual Observation Schema:Deployment interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81433">AbstractDeployment</subtypeOf>
+    <characterizedBy idref="_A81460_114936"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81460_114936">
+    <name>link</name>
+    <definition>Additional descriptive resources pertaining to a feature.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65076">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81458">
+    <name>GenericDomainFeature</name>
+    <definition>A concrete featureType to be utilized as featureOfInterest of an Observation.</definition>
+    <definition></definition>
+    <definition>NOTE: This type is foreseen as a placeholder for specialized domain features in order to enable rapid prototyping.</definition>
+    <characterizedBy idref="_A81458_114933"></characterizedBy>
+    <characterizedBy idref="_A81458_114934"></characterizedBy>
+    <characterizedBy idref="_ATas127481"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81458_114933">
+    <name>link</name>
+    <definition>Additional descriptive resources pertaining to a feature.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65076">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81458_114934">
+    <name>location</name>
+    <definition>Location information pertaining to a feature.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C77453">Geometry</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127481">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127481"></roles>
+    <roles idref="_ASas127481"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127481">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the domain feature</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127481"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127481">
+    <name>role_Sas127481</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81458" category="feature type">GenericDomainFeature</FeatureTypeIncluded>
+    <relation idref="__Tas127481"></relation>
+    <InverseRole idref="_ATas127481"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81462">
+    <name>Host</name>
+    <definition>Concrete class for expressing a realization of Conceptual Observation Schema:Host interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81437">AbstractHost</subtypeOf>
+    <characterizedBy idref="_A81462_114937"></characterizedBy>
+    <characterizedBy idref="_A81462_114938"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81462_114937">
+    <name>link</name>
+    <definition>Additional descriptive resources pertaining to a feature.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65076">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81462_114938">
+    <name>location</name>
+    <definition>Location information pertaining to a feature.</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C77453">Geometry</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81457">
+    <name>ObservableProperty</name>
+    <definition>Concrete class for expressing a realization of Conceptual Observation Schema:ObservableProperty interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81428">AbstractObservableProperty</subtypeOf>
+    <characterizedBy idref="_A81457_114932"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81457_114932">
+    <name>link</name>
+    <definition>Additional descriptive resources pertaining to a feature.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65076">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81455">
+    <name>Observation</name>
+    <definition>Concrete class for expressing a realization of Conceptual Observation Schema:Observation interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81432">AbstractObservation</subtypeOf>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>at least one proximateFeatureOfInterest or ultimateFeatureOfInterest shall be given</name>
+    </constraint>
+    <constraint>
+      <name>attribute and association values shall be aligned with the observationType</name>
+    </constraint>
+    <constraint>
+      <name>exactly one observedProperty shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one observingProcedure shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one phenomenonTime shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one result shall be given</name>
+    </constraint>
+    <constraint>
+      <name>exactly one resultTime shall be given</name>
+    </constraint>
+    <constraint>
+      <name>observedProperty should be a phenomenon associated with the ultimateFeatureOfInterest or the proximateFeatureOfInterest</name>
+    </constraint>
+    <constraint>
+      <name>parameter.name shall not appear more than once</name>
+    </constraint>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the observationType attribute value</name>
+    </constraint>
+    <constraint>
+      <name>resultTime shall be of type TM_Instant</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81465">
+    <name>ObservationCharacteristics</name>
+    <definition>set of common characteristics used for describing one or more Observation</definition>
+    <subtypeOf idref="_C81427">AbstractObservationCharacteristics</subtypeOf>
+    <characterizedBy idref="_ASas127480"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Sas127480">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127480"></roles>
+    <roles idref="_ATas127480"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127480">
+    <name>collection</name>
+    <definition>TODO</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81459" category="feature type">ObservationCollection</FeatureTypeIncluded>
+    <relation idref="__Sas127480"></relation>
+    <InverseRole idref="_ATas127480"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127480">
+    <name>memberCharacteristics</name>
+    <definition>Information on ObservationCharacteristics of Observations contained within the ObservationCollection</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81465" category="feature type">ObservationCharacteristics</FeatureTypeIncluded>
+    <relation idref="__Sas127480"></relation>
+    <InverseRole idref="_ASas127480"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81459">
+    <name>ObservationCollection</name>
+    <definition>A collection of Observations</definition>
+    <characterizedBy idref="_A81459_114935"></characterizedBy>
+    <characterizedBy idref="_ATas127477"></characterizedBy>
+    <characterizedBy idref="_ATas127478"></characterizedBy>
+    <characterizedBy idref="_ATas127479"></characterizedBy>
+    <characterizedBy idref="_ATas127480"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>properties of both the ObservationCharacteristics associated with role memberCharacteristics and of the Observations associated with role member shall comply with the constraints defined in the class of the used collectionType value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81459_114935">
+    <name>collectionType</name>
+    <definition>information on the type of the ObservationCollection</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType category="code list">AbstractObservationCollectionType</ValueDataType>
+    <ValueDomainType>1</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127477">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127477"></roles>
+    <roles idref="_ASas127477"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127477">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127477"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127477">
+    <name>role_Sas127477</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81459" category="feature type">ObservationCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127477"></relation>
+    <InverseRole idref="_ATas127477"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127478">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127478"></roles>
+    <roles idref="_ASas127478"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127478">
+    <name>member</name>
+    <definition>an Observation that is part of this ObservationCollection</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127478"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127478">
+    <name>role_Sas127478</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81459" category="feature type">ObservationCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127478"></relation>
+    <InverseRole idref="_ATas127478"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127479">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127479"></roles>
+    <roles idref="_ASas127479"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127479">
+    <name>relatedCollection</name>
+    <definition>Another ObservationCollection the context ObservationCollection is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81459" category="feature type">ObservationCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127479"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127479">
+    <name>role_Sas127479</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81459" category="feature type">ObservationCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127479"></relation>
+    <InverseRole idref="_ATas127479"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81461">
+    <name>ObservationTypeByResultType</name>
+    <definition>Observation classification scheme based on the type of its result property</definition>
+    <subtypeOf idref="_C81431">AbstractObservationType</subtypeOf>
+    <package idref="_P9878"></package>
+    <type>Code List Type</type>
+    <constraint>
+      <name>/req/obs-basic/ObservationTypeByResultType-con</name>
+      <expression>The following constraints shall be applied to the value of the result association of the Observation based on the codelist value used: &#xD;&#xA;	- If the value "measurement" is used, the value of the result shall be of type Measure.&#xD;&#xA;	- If the value "category-observation" is used the value of the result shall be of type ScopedName.&#xD;&#xA;	- If the value "truth-observation" is used, the value of result shall be a truth value.&#xD;&#xA;	- If the value "count-observation" is used, the value of the result shall be of type Integer.&#xD;&#xA;	- If the value "temporal-observation" is used, the value of the result shall be of type TM_Object.&#xD;&#xA;	- If the value "geometry-observation" is used, the value of the result shall be of type Geometry&#xD;&#xA;	- If the value "complex-observation" is used, the value of the result shall be of type Record.&#xD;&#xA;	- If the value "discrete-coverage-observation" is used, the value of the result shall be of type DiscreteCoverage.&#xD;&#xA;	- If the value "discrete-point-coverage" is used, the value of the result shall be of type DiscretePointCoverage.&#xD;&#xA;	- If the value "timeseries-observation" is used, the value of the result shall be a timeseries (a sequence of data values which are ordered in time) constrained by the phenomenonTime.</expression>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81466">
+    <name>Observer</name>
+    <definition>Concrete class for expressing a realization of Conceptual Observation Schema:Observer interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81429">AbstractObserver</subtypeOf>
+    <characterizedBy idref="_A81466_114940"></characterizedBy>
+    <characterizedBy idref="_A81466_114941"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81466_114940">
+    <name>link</name>
+    <definition>Additional descriptive resources pertaining to a feature.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65076">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81466_114941">
+    <name>location</name>
+    <definition>Location information pertaining to a feature.</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C77453">Geometry</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81456">
+    <name>ObservingCapability</name>
+    <definition>Information on Observation(s) that could potentially be provided.</definition>
+    <subtypeOf idref="_C81465">ObservationCharacteristics</subtypeOf>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>no result shall be given</name>
+    </constraint>
+    <constraint>
+      <name>no resultTime shall be given</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81464">
+    <name>ObservingProcedure</name>
+    <definition>Concrete class for expressing a realization of Conceptual Observation Schema:ObservingProcedure interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81436">AbstractObservingProcedure</subtypeOf>
+    <characterizedBy idref="_A81464_114939"></characterizedBy>
+    <package idref="_P9878"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81464_114939">
+    <name>link</name>
+    <definition>Additional descriptive resources pertaining to a feature.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65076">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <ApplicationSchema id="_P9879">
+    <name>Basic Samples</name>
+    <versionNumber>9.9.9</versionNumber>
+    <taggedValues></taggedValues>
+  </ApplicationSchema>
+  <FeatureType id="_C81486">
+    <name>MaterialSample</name>
+    <definition>A MaterialSample is a physical, tangible Sample.</definition>
+    <definition></definition>
+    <definition>NOTE 1 	MaterialSamples that are curated and preserved are sometimes known as 'specimens'.</definition>
+    <definition>NOTE 2 	MaterialSamples can be destroyed in connexion with the observation act.</definition>
+    <definition>NOTE 3	A MaterialSample is a physical Sample of a FeatureOfInterest, obtained for Observation(s) normally carried out ex-situ, sometimes in a laboratory.</definition>
+    <subtypeOf idref="_C81478">Sample</subtypeOf>
+    <characterizedBy idref="_A81486_114947"></characterizedBy>
+    <characterizedBy idref="_A81486_114948"></characterizedBy>
+    <characterizedBy idref="_A81486_114949"></characterizedBy>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the sampleType attribute value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81486_114947">
+    <name>size</name>
+    <definition>a physical extent of the MaterialSample</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81491" category="data type">PhysicalDimension</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81486_114948">
+    <name>storageLocation</name>
+    <definition>location of a MaterialSample.</definition>
+    <definition></definition>
+    <definition>NOTE		The storageLocation may be a location such as a shelf in a warehouse or a drawer in a museum.</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81489" category="data type">NamedLocation</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81486_114949">
+    <name>sourceLocation</name>
+    <definition>location from where the MaterialSample was obtained.</definition>
+    <definition></definition>
+    <definition>TODO: Note text in spec</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C77453">Geometry</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81489">
+    <name>NamedLocation</name>
+    <definition>A location identified by its name, address, spatial geometry or a combination of any of these three</definition>
+    <characterizedBy idref="_A81489_114951"></characterizedBy>
+    <characterizedBy idref="_A81489_114952"></characterizedBy>
+    <characterizedBy idref="_A81489_114953"></characterizedBy>
+    <package idref="_P9879"></package>
+    <type>Data Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81489_114951">
+    <name>name</name>
+    <definition>A name used for identifying a NamedLocation.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65066">GenericName</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81489_114952">
+    <name>representativeGeometry</name>
+    <definition>A geometry used for providing a representative spatial location of a NamedLocation</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C77453">Geometry</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81489_114953">
+    <name>address</name>
+    <definition>An address used for identifying a NamedLocation</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65067">Any</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81491">
+    <name>PhysicalDimension</name>
+    <definition>A dataType for the provision of various size quantities</definition>
+    <characterizedBy idref="_A81491_114954"></characterizedBy>
+    <characterizedBy idref="_A81491_114955"></characterizedBy>
+    <package idref="_P9879"></package>
+    <type>Data Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81491_114954">
+    <name>dimension</name>
+    <definition>name of the PhysicalDimension about which a value is provided.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C76018">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81491_114955">
+    <name>value</name>
+    <definition>The value of the PhysicalDimension.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65102">Measure</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81482">
+    <name>PreparationProcedure</name>
+    <definition>Concrete class for expressing a realization of Conceptual Sample Schema:PreparationProcedure interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81447">AbstractPreparationProcedure</subtypeOf>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81479">
+    <name>PreparationStep</name>
+    <definition>Concrete class for expressing a realization of Conceptual Sample Schema:PreparationStep interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81452">AbstractPreparationStep</subtypeOf>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81478">
+    <name>Sample</name>
+    <definition>Concrete class for expressing a realization of Conceptual Sample Schema:Sample interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81446">AbstractSample</subtypeOf>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the sampleType attribute value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81487">
+    <name>SampleCollection</name>
+    <definition>A collection of Samples</definition>
+    <characterizedBy idref="_ATas127473"></characterizedBy>
+    <characterizedBy idref="_ATas127471"></characterizedBy>
+    <characterizedBy idref="_ATas127472"></characterizedBy>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127473">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127473"></roles>
+    <roles idref="_ASas127473"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127473">
+    <name>metadata</name>
+    <definition>link to descriptive metadata as commonly understood by communities.</definition>
+    <definition></definition>
+    <definition>NOTE	Attention should be given not to reinvent semantic that is explicitly modelled in the OMS model.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127473"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127473">
+    <name>role_Sas127473</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81487" category="feature type">SampleCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127473"></relation>
+    <InverseRole idref="_ATas127473"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127471">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127471"></roles>
+    <roles idref="_ASas127471"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127471">
+    <name>relatedCollection</name>
+    <definition>Another SampleCollection the context SampleCollection is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81487" category="feature type">SampleCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127471"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127471">
+    <name>role_Sas127471</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81487" category="feature type">SampleCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127471"></relation>
+    <InverseRole idref="_ATas127471"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127472">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127472"></roles>
+    <roles idref="_ASas127472"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127472">
+    <name>member</name>
+    <definition>A Sample that is part of this SampleCollection</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127472"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127472">
+    <name>role_Sas127472</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81487" category="feature type">SampleCollection</FeatureTypeIncluded>
+    <relation idref="__Tas127472"></relation>
+    <InverseRole idref="_ATas127472"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81481">
+    <name>SampleTypeByGeometryType</name>
+    <definition>SpatialSample classification scheme based on the geometry type of its shape attribute</definition>
+    <subtypeOf idref="_C81451">AbstractSampleType</subtypeOf>
+    <package idref="_P9879"></package>
+    <type>Code List Type</type>
+    <constraint>
+      <name>/req/sam-basic/SampleTypeByGeometryType-con</name>
+      <expression>The following constraints shall be applied to the value of the shape attribute of the SpatialSample based on the codelist value used: &#xD;&#xA;	- If value "point" is used, the value of the shape shall be of type Point.&#xD;&#xA;	- If value "curve" is used, the value of the shape shall be of type Curve.&#xD;&#xA;	- If value "surface" is used, the value of the shape shall be of type Surface.&#xD;&#xA;	- If value "solid" is used, the value of the shape shall be of type Solid.</expression>
+    </constraint>
+    <constraint>
+      <name>this codelist shall only be used for classifying SpatialSamples</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81490">
+    <name>Sampler</name>
+    <definition>Concrete class for expressing a realization of Conceptual Sample Schema:Sampler interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81445">AbstractSampler</subtypeOf>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the samplerType attribute value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81485">
+    <name>Sampling</name>
+    <definition>Concrete class for expressing a realization of Conceptual Sample Schema:Sampling interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81449">AbstractSampling</subtypeOf>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81480">
+    <name>SamplingProcedure</name>
+    <definition>Concrete class for expressing a realization of Conceptual Sample Schema:SamplingProcedure interface based on General Feature Model as defined in ISO 19109</definition>
+    <subtypeOf idref="_C81450">AbstractSamplingProcedure</subtypeOf>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81484">
+    <name>SpatialSample</name>
+    <definition>a geospatial Sample.</definition>
+    <definition></definition>
+    <definition>NOTE 		When observations are made to estimate properties of a geospatial feature, in particular where the value of a property varies within the scope of the feature, a SpatialSample is used. Depending on accessibility and on the nature of the expected property variation, the SpatialSample may be extensive in one, two or three spatial dimensions.</definition>
+    <definition>EXAMPLE</definition>
+    <definition>- Typically an Observation ‘site’ or 'station' connotes the 'world in the vicinity of the site (or station)', so the observed properties relate to the physical medium at the station, and not to any physical artifact such as a mooring, buoy, benchmark, monument, well, etc.</definition>
+    <definition>- Some common names for SpatialSample used in various application domains include Borehole, Flightline, Interval, Lidar Cloud, Map Horizon, Microscope Slide, Mine Level, Mine, Observation Well, Profile, Pulp, Quadrat, Scene, Section, ShipsTrack, Spot, Station, Swath, Trajectory, Traverse, etc.</definition>
+    <subtypeOf idref="_C81478">Sample</subtypeOf>
+    <characterizedBy idref="_A81484_114944"></characterizedBy>
+    <characterizedBy idref="_A81484_114945"></characterizedBy>
+    <characterizedBy idref="_A81484_114946"></characterizedBy>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the sampleType attribute value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81484_114944">
+    <name>shape</name>
+    <definition>Geometry of the SpatialSample.</definition>
+    <definition></definition>
+    <definition>NOTE 		The shape of the SpatialSample is the context for domain decomposition.</definition>
+    <definition>EXAMPLE 	Logs of different properties along a well or borehole might use different intervals, and sub-samples might be either spatially instantaneous, or averaged in some way over an interval. The position of the samples can be conveniently described in terms of offsets in a linear coordinate reference system that is defined by the shape of the well axis.</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C77453">Geometry</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81484_114945">
+    <name>horizontalPositionalAccuracy</name>
+    <definition>The positional accuracy of the horizontal component of the Geometry of the SpatialSample.</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65067">Any</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81484_114946">
+    <name>verticalPositionalAccuracy</name>
+    <definition>The positional accuracy of the vertical component of the Geometry of the SpatialSample</definition>
+    <cardinality>0..1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65067">Any</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81483">
+    <name>StatisticalClassification</name>
+    <definition>a dataType for the provision of information on statistical classifications.</definition>
+    <characterizedBy idref="_A81483_114942"></characterizedBy>
+    <characterizedBy idref="_A81483_114943"></characterizedBy>
+    <package idref="_P9879"></package>
+    <type>Data Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81483_114942">
+    <name>concept</name>
+    <definition>The concept by which a StatisticalClassification is to be performed.</definition>
+    <definition></definition>
+    <definition>EXAMPLE	The concept for a statistical classification could be age, gender, color, size etc.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C76018">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81483_114943">
+    <name>classification</name>
+    <definition>The explicit classification class pertaining to the classification concept described by the StatisticalClassification.</definition>
+    <definition></definition>
+    <definition>EXAMPLE	The classification for a statistical classification could be:</definition>
+    <definition>- Age Brackets: [0-10], [10-20]</definition>
+    <definition>- Genders: Male, Female, Other</definition>
+    <definition>- Color: Red, Green, Blue</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C76018">URI</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureType id="_C81488">
+    <name>StatisticalSample</name>
+    <definition>a statistical subset of a feature-of-interest, defined for the purpose of creating Observation(s).</definition>
+    <definition></definition>
+    <definition>NOTE 1 	StatisticalSamples usually apply to populations or other sets, of which certain subset may be of specific interest.</definition>
+    <definition>EXAMPLE	The male or female subset of a population.</definition>
+    <subtypeOf idref="_C81478">Sample</subtypeOf>
+    <characterizedBy idref="_A81488_114950"></characterizedBy>
+    <package idref="_P9879"></package>
+    <type>Feature Type</type>
+    <constraint>
+      <name>property values shall comply with the constraints defined in the class of the sampleType attribute value</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81488_114950">
+    <name>classification</name>
+    <definition>a criterion by which the subset was defined</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81483" category="data type">StatisticalClassification</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <ApplicationSchema id="_P9880">
+    <name>Conceptual Observation schema</name>
+    <versionNumber>9.9.9</versionNumber>
+    <taggedValues></taggedValues>
+  </ApplicationSchema>
+  <FeatureType id="_C81502">
+    <name>Deployment</name>
+    <definition>information on the assignment of an Observer to a Host.</definition>
+    <definition></definition>
+    <definition>NOTE	Examples of deployment are</definition>
+    <definition>- information regarding a sensor being attached to a pole</definition>
+    <definition>- the monitoring facilities pertaining to an environmental monitoring network</definition>
+    <definition>- the description of a ship cruise linking a research vessel with a marine network</definition>
+    <definition>- the participation of a citizen in a citizen-science project involving crowd sensing.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ASas127470"></characterizedBy>
+    <characterizedBy idref="_ATas127463"></characterizedBy>
+    <characterizedBy idref="_ASas127455"></characterizedBy>
+    <package idref="_P9880"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Sas127470">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127470"></roles>
+    <roles idref="_ATas127470"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127470">
+    <name>observer</name>
+    <definition>Observer associated with this Deployment</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Sas127470"></relation>
+    <InverseRole idref="_ATas127470"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127470">
+    <name>deployment</name>
+    <definition>Deployment to which this Observer is either physically or organizationally attached.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81502" category="feature type">Deployment</FeatureTypeIncluded>
+    <relation idref="__Sas127470"></relation>
+    <InverseRole idref="_ASas127470"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127463">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127463"></roles>
+    <roles idref="_ASas127463"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127463">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the Deployment</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127463"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127463">
+    <name>role_Sas127463</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81502" category="feature type">Deployment</FeatureTypeIncluded>
+    <relation idref="__Tas127463"></relation>
+    <InverseRole idref="_ATas127463"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Sas127455">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127455"></roles>
+    <roles idref="_ATas127455"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127455">
+    <name>host</name>
+    <definition>Host to which this Deployment pertains</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81504" category="feature type">Host</FeatureTypeIncluded>
+    <relation idref="__Sas127455"></relation>
+    <InverseRole idref="_ATas127455"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127455">
+    <name>deployment</name>
+    <definition>Deployment at this Host</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81502" category="feature type">Deployment</FeatureTypeIncluded>
+    <relation idref="__Sas127455"></relation>
+    <InverseRole idref="_ASas127455"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81504">
+    <name>Host</name>
+    <definition>a grouping of Observers for a specific reason.</definition>
+    <definition></definition>
+    <definition>NOTES:</definition>
+    <definition>- In many use cases, the Host is the environmental monitoring facility</definition>
+    <definition>- The Host can be a platform that hosts a set of sensors</definition>
+    <definition>- An alternative usage could pertain to a biodiversity survey campaign; in this scenario, the team performing the survey would be modelled as observers whereas the entire survey campaign can be represented as a Host.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127461"></characterizedBy>
+    <characterizedBy idref="_ATas127455"></characterizedBy>
+    <characterizedBy idref="_ATas127454"></characterizedBy>
+    <package idref="_P9880"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127461">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127461"></roles>
+    <roles idref="_ASas127461"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127461">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the Host</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127461"></relation>
+    <InverseRole idref="_ASas127461"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127461">
+    <name>host</name>
+    <definition>Host that is involved in the creation of this Observation</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81504" category="feature type">Host</FeatureTypeIncluded>
+    <relation idref="__Tas127461"></relation>
+    <InverseRole idref="_ATas127461"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127454">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127454"></roles>
+    <roles idref="_ASas127454"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127454">
+    <name>relatedHost</name>
+    <definition>Another Host the context Host is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81504" category="feature type">Host</FeatureTypeIncluded>
+    <relation idref="__Tas127454"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127454">
+    <name>role_Sas127454</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81504" category="feature type">Host</FeatureTypeIncluded>
+    <relation idref="__Tas127454"></relation>
+    <InverseRole idref="_ATas127454"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81500">
+    <name>ObservableProperty</name>
+    <definition>An observable quality (property, characteristic) of the feature of interest that can be observed.</definition>
+    <definition></definition>
+    <definition>EXAMPLE 1 	The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.</definition>
+    <definition>EXAMPLE 2	Groundwater Level</definition>
+    <definition>On a groundwater well we</definition>
+    <definition>- monitor Groundwater Level (1 observable property)</definition>
+    <definition>- with an automated probe (that remains in the ground all year, constituting 1 procedure).</definition>
+    <definition>Then we have physical campaigns where we revisit the groundwater well and</definition>
+    <definition>- measure the Groundwater Level (still the same observable property as above)</definition>
+    <definition>- but with a manual probe, this is a different procedure.</definition>
+    <definition>This allows to check whether the probe needs recalibration.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ASas127468"></characterizedBy>
+    <characterizedBy idref="_ASas127462"></characterizedBy>
+    <package idref="_P9880"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Sas127468">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127468"></roles>
+    <roles idref="_ATas127468"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127468">
+    <name>observer</name>
+    <definition>Observer capable of observing this ObservableProperty</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Sas127468"></relation>
+    <InverseRole idref="_ATas127468"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127468">
+    <name>observableProperty</name>
+    <definition>ObservableProperty that this Observer can observe</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81500" category="feature type">ObservableProperty</FeatureTypeIncluded>
+    <relation idref="__Sas127468"></relation>
+    <InverseRole idref="_ASas127468"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Sas127462">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127462"></roles>
+    <roles idref="_ATas127462"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127462">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the ObservableProperty</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Sas127462"></relation>
+    <InverseRole idref="_ATas127462"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127462">
+    <name>observedProperty</name>
+    <definition>ObservableProperty that is the subject of the Observation.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81500" category="feature type">ObservableProperty</FeatureTypeIncluded>
+    <relation idref="__Sas127462"></relation>
+    <InverseRole idref="_ASas127462"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81499">
+    <name>Observation</name>
+    <definition>an act carried out by an observer to determine the value of an observable property of an object (feature of interest) by using a procedure; the value is provided as the result.</definition>
+    <definition></definition>
+    <definition>NOTE	It is important to note that the terms ‘observation’, ‘interpretation’, ‘forecast’, ‘simulation’ do correspond to this definition. This aspect is further clarified in Clause 7.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_A81499_114956"></characterizedBy>
+    <characterizedBy idref="_A81499_114957"></characterizedBy>
+    <characterizedBy idref="_A81499_114958"></characterizedBy>
+    <characterizedBy idref="_ATas127464"></characterizedBy>
+    <characterizedBy idref="_ATas127465"></characterizedBy>
+    <characterizedBy idref="_ATas127469"></characterizedBy>
+    <characterizedBy idref="_ATas127459"></characterizedBy>
+    <characterizedBy idref="_ATas127460"></characterizedBy>
+    <characterizedBy idref="_ASas127461"></characterizedBy>
+    <characterizedBy idref="_ATas127462"></characterizedBy>
+    <package idref="_P9880"></package>
+    <type>Object Type</type>
+    <constraint>
+      <name>at least one of either observer or host should be provided</name>
+    </constraint>
+    <constraint>
+      <name>observedProperty should be a phenomenon associated with the featureOfInterest</name>
+    </constraint>
+    <constraint>
+      <name>observingProcedure should be suitable for the associated observedProperty</name>
+    </constraint>
+    <constraint>
+      <name>result type should be suitable for the associated observedProperty</name>
+    </constraint>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureAttribute id="_A81499_114956">
+    <name>phenomenonTime</name>
+    <definition>time that the Result applies to the characteristic of the FeatureOfInterest being observed.</definition>
+    <definition></definition>
+    <definition>NOTE 1	The phenomenonTime is often the time the Sample has been taken.</definition>
+    <definition>NOTE 2	This is often the time of interaction by a sampling Procedure or observation Procedure with a real-world feature.</definition>
+    <definition>NOTE 3	If the result is the average of multiple samples taken at different times, then the phenomenonTime is the time interval over which these measurements were taken.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65714">TM_Object</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81499_114957">
+    <name>resultTime</name>
+    <definition>instant of time when the result of the Observation became available.</definition>
+    <definition></definition>
+    <definition>EXAMPLE 1	The resultTime typically corresponds to when the Procedure associated with the Observation was completed. For some observations this is identical to the phenomenonTime. However, there are important cases where they differ.</definition>
+    <definition>EXAMPLE 2	Where a measurement is made on a specimen in a laboratory, the phenomenonTime is the time the specimen was retrieved from its host, while the resultTime is the time the laboratory procedure was applied.</definition>
+    <definition>EXAMPLE 3	The resultTime also supports disambiguation of repeat measurements made of the same property of a feature using the same procedure.</definition>
+    <definition>EXAMPLE 4	Where sensor observation results are post-processed, the resultTime is the post-processing time, while the phenomenonTime is the time of initial interaction with the world.</definition>
+    <definition>EXAMPLE 5	Simulations may be used to estimate the values for phenomena in the future or past. The phenomenonTime is the time that the result applies to, while the resultTime is the time that the simulation was executed.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65714">TM_Object</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureAttribute id="_A81499_114958">
+    <name>validTime</name>
+    <definition>The time interval during which the result is assumed to be applicable for use.</definition>
+    <definition></definition>
+    <definition>NOTE		This attribute is commonly required in forecasting applications.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C65720">TM_Period</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </FeatureAttribute>
+  <FeatureRelationship id="__Tas127464">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127464"></roles>
+    <roles idref="_ASas127464"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127464">
+    <name>result</name>
+    <definition>result of the Observation</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127464"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127464">
+    <name>role_Sas127464</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127464"></relation>
+    <InverseRole idref="_ATas127464"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127465">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127465"></roles>
+    <roles idref="_ASas127465"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127465">
+    <name>featureOfInterest</name>
+    <definition>subject of the Observation.</definition>
+    <cardinality>1..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127465"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127465">
+    <name>role_Sas127465</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127465"></relation>
+    <InverseRole idref="_ATas127465"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127469">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127469"></roles>
+    <roles idref="_ASas127469"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127469">
+    <name>observer</name>
+    <definition>Observer that is involved in the creation of this Observation</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Tas127469"></relation>
+    <InverseRole idref="_ASas127469"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127469">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the Observer</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127469"></relation>
+    <InverseRole idref="_ATas127469"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127459">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127459"></roles>
+    <roles idref="_ASas127459"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127459">
+    <name>relatedObservation</name>
+    <definition>Another Observation the context Observation is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127459"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127459">
+    <name>role_Sas127459</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127459"></relation>
+    <InverseRole idref="_ATas127459"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127460">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127460"></roles>
+    <roles idref="_ASas127460"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127460">
+    <name>observingProcedure</name>
+    <definition>ObservingProcedure used by the Observation to determine the value of the ObservableProperty provided by the result.</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81503" category="feature type">ObservingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127460"></relation>
+    <InverseRole idref="_ASas127460"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127460">
+    <name>relatedObservation</name>
+    <definition>Observation related to the ObservingProcedure</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127460"></relation>
+    <InverseRole idref="_ATas127460"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81498">
+    <name>Observer</name>
+    <definition>identifiable entity that can generate Observations pertaining to an observableProperty by implementing a Procedure.</definition>
+    <definition></definition>
+    <definition>NOTES</definition>
+    <definition>- Different Observers can follow the same (reusable) observing Procedure for the creation of different Observations.</definition>
+    <definition>- The Observer is the entity instance, not the entity type. Pertaining to sensors, the Observer would reference the explicit sensor, while the Procedure would reference the methodology utilized by that sensor type.</definition>
+    <definition>- An Observer is closely linked with an observableProperty that it generates results for.</definition>
+    <definition>- An Observer can be hosted by one or more Host.</definition>
+    <definition>- The Observer is an instance of a sensor, instrument, implementation of an algorithm or a being such as a person.</definition>
+    <definition>An Observer responds to a stimulus, e.g., a change in the environment, or input data composed from the Results of prior Observations, and generates a Result.</definition>
+    <definition>EXAMPLE	Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Observers that are typically mounted on a modern smartphone (which acts as Host). Other examples of Sensors include the human eyes.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127467"></characterizedBy>
+    <characterizedBy idref="_ATas127468"></characterizedBy>
+    <characterizedBy idref="_ASas127469"></characterizedBy>
+    <characterizedBy idref="_ATas127470"></characterizedBy>
+    <package idref="_P9880"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127467">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127467"></roles>
+    <roles idref="_ASas127467"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127467">
+    <name>observingProcedure</name>
+    <definition>An ObservingProcedure that this Observer can perform</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81503" category="feature type">ObservingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127467"></relation>
+    <InverseRole idref="_ASas127467"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127467">
+    <name>observer</name>
+    <definition>Observer capable of performing this ObservingProcedure.</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81498" category="feature type">Observer</FeatureTypeIncluded>
+    <relation idref="__Tas127467"></relation>
+    <InverseRole idref="_ATas127467"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81503">
+    <name>ObservingProcedure</name>
+    <definition>description of steps performed in order to determine the value of an observableProperty by an Observer.</definition>
+    <definition></definition>
+    <definition>NOTES:</definition>
+    <definition>- Depending on the complexity of the use case, the procedure will be more or less explicitly described. Especially pertaining to historical data, there may be very little or no information available - this information should also be provided.</definition>
+    <definition>- The recipe that the observer (cook) follows to generate the observation.</definition>
+    <definition>- The procedure is often referred to as the method.</definition>
+    <definition>- Different observers can follow the same (reusable) procedure for the creation of different observations.</definition>
+    <definition>- The procedure is a workflow, protocol, plan, algorithm, or computational method specifying how to make an observation.</definition>
+    <definition>- the observing procedure cannot describe a sensor instance, but it can describe the sensor type.</definition>
+    <definition>NOTE		The term process that was used in ISO 19156:2011 has been purposely dropped in this version to avoid unnecessary confusion between the terms procedure and process.</definition>
+    <definition>EXAMPLE	An instance of Procedure is a description of the process utilized by an observer, this could be a chemical analysis method, a protocol for measuring an object, but could also be a checklist utilized by a human observer during a biodiversity campaign. It could further describe the algorithms behind simulators or models used to generate a result from other inputs.</definition>
+    <isAbstract>1</isAbstract>
+    <subtypeOf idref="_C81501">Procedure</subtypeOf>
+    <characterizedBy idref="_ASas127467"></characterizedBy>
+    <characterizedBy idref="_ASas127460"></characterizedBy>
+    <package idref="_P9880"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureType id="_C81501">
+    <name>Procedure</name>
+    <definition>description of steps performed.</definition>
+    <definition></definition>
+    <definition>NOTE	Procedure is an abstract concept that is then further specialized in the various procedure types defined in this document. All share the commonality of describing a defined series of steps to a specific purpose.</definition>
+    <definition>NOTE The term process that was used in ISO 19156:2011 has been purposely dropped in this version to avoid unnecessary confusion between the terms procedure and process.</definition>
+    <isAbstract>1</isAbstract>
+    <package idref="_P9880"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <ApplicationSchema id="_P9881">
+    <name>Conceptual Sample schema</name>
+    <versionNumber>9.9.9</versionNumber>
+    <taggedValues></taggedValues>
+  </ApplicationSchema>
+  <FeatureType id="_C81509">
+    <name>PreparationProcedure</name>
+    <definition>description of preparation steps performed on a Sample.</definition>
+    <isAbstract>1</isAbstract>
+    <subtypeOf idref="_C81501">Procedure</subtypeOf>
+    <characterizedBy idref="_ASas127443"></characterizedBy>
+    <package idref="_P9881"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Sas127443">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127443"></roles>
+    <roles idref="_ATas127443"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127443">
+    <name>samplePreparationStep</name>
+    <definition>provides information on the PreparationSteps where this procedure has been used</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81510" category="feature type">PreparationStep</FeatureTypeIncluded>
+    <relation idref="__Sas127443"></relation>
+    <InverseRole idref="_ATas127443"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127443">
+    <name>processingDetails</name>
+    <definition>PreparationProcedure step performed on the Sample the PreparationStep pertains to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81509" category="feature type">PreparationProcedure</FeatureTypeIncluded>
+    <relation idref="__Sas127443"></relation>
+    <InverseRole idref="_ASas127443"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81510">
+    <name>PreparationStep</name>
+    <definition>an individual step pertaining to a PreparationProcedure.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ASas127446"></characterizedBy>
+    <characterizedBy idref="_ATas127443"></characterizedBy>
+    <package idref="_P9881"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Sas127446">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127446"></roles>
+    <roles idref="_ATas127446"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127446">
+    <name>preparedSample</name>
+    <definition>Sample on which the PreparationProcedure is performed</definition>
+    <cardinality>1</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Sas127446"></relation>
+    <InverseRole idref="_ATas127446"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127446">
+    <name>preparationStep</name>
+    <definition>PreparationStep(s) applied to prepare the Sample</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <ValueDataType idref="_C81510">PreparationStep</ValueDataType>
+    <ValueDomainType>0</ValueDomainType>
+  </RelationshipRole>
+  <FeatureType id="_C81508">
+    <name>Sample</name>
+    <definition>an object that is representative of a concept, real-world object or phenomenon.</definition>
+    <definition></definition>
+    <definition>NOTE</definition>
+    <definition>- The way the sample is taken is typically guided by a sampling strategy. Samples are often artefacts of an observational strategy, and have often no significant function outside of their role in the observation process (although ‘specimen preservation could be considered a specific activity per se’).</definition>
+    <definition>- The physical characteristics of the features themselves are of little interest, except perhaps to the manager of a sampling campaign.</definition>
+    <definition>- Typically, the Sample is a Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made. As such, it may carry a characteristic pertaining to the observedProperty being evaluated by the Observation.</definition>
+    <definition>EXAMPLE 1	A profile typically samples a water- or atmospheric-column; a well samples the water in an aquifer; a tissue specimen samples a part of an organism.</definition>
+    <definition>EXAMPLE 2	A statistical sample is often designed to be characteristic of an entire population, so that Observations can be made regarding the sample that provide a good estimate of the properties of the population.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127445"></characterizedBy>
+    <characterizedBy idref="_ATas127466"></characterizedBy>
+    <characterizedBy idref="_ATas127449"></characterizedBy>
+    <characterizedBy idref="_ATas127446"></characterizedBy>
+    <characterizedBy idref="_ATas127447"></characterizedBy>
+    <package idref="_P9881"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127445">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127445"></roles>
+    <roles idref="_ASas127445"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127445">
+    <name>sampledFeature</name>
+    <definition>the feature the Sample is intended to be representative of.</definition>
+    <definition></definition>
+    <definition>NOTE The sampled feature is usually a real-world feature from an application domain.</definition>
+    <cardinality>1..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127445"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127445">
+    <name>role_Sas127445</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127445"></relation>
+    <InverseRole idref="_ATas127445"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127466">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127466"></roles>
+    <roles idref="_ASas127466"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127466">
+    <name>relatedObservation</name>
+    <definition>An Observation related to the Sample</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81499" category="feature type">Observation</FeatureTypeIncluded>
+    <relation idref="__Tas127466"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127466">
+    <name>role_Sas127466</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127466"></relation>
+    <InverseRole idref="_ATas127466"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127449">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127449"></roles>
+    <roles idref="_ASas127449"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127449">
+    <name>sampling</name>
+    <definition>Sampling the Sample is the result of</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127449"></relation>
+    <InverseRole idref="_ASas127449"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127449">
+    <name>sample</name>
+    <definition>Sample generated by the Sampling</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127449"></relation>
+    <InverseRole idref="_ATas127449"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127447">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127447"></roles>
+    <roles idref="_ASas127447"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127447">
+    <name>relatedSample</name>
+    <definition>Another Sample the context Sample is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127447"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127447">
+    <name>role_Sas127447</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81508" category="feature type">Sample</FeatureTypeIncluded>
+    <relation idref="__Tas127447"></relation>
+    <InverseRole idref="_ATas127447"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81506">
+    <name>Sampler</name>
+    <definition>a device or entity (including humans) that is used by, or implements, a SamplingProcedure to create or transform one or more Sample(s).</definition>
+    <definition></definition>
+    <definition>EXAMPLES</definition>
+    <definition>- A ball mill, diamond drill, hammer,</definition>
+    <definition>- hypodermic syringe and needle,</definition>
+    <definition>- image sensor, a soil auger,</definition>
+    <definition>- a human being.</definition>
+    <definition>NOTE 		All the examples above can act as sampling devices (i.e., be Samplers). However, sometimes the distinction between the Sampler and the Sensor is not evident, as they are packaged as a unit. A Sampler need not be a physical device.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127452"></characterizedBy>
+    <characterizedBy idref="_ASas127453"></characterizedBy>
+    <package idref="_P9881"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127452">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127452"></roles>
+    <roles idref="_ASas127452"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127452">
+    <name>samplingProcedure</name>
+    <definition>Procedure implemented by the Sampler</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81512" category="feature type">SamplingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127452"></relation>
+    <InverseRole idref="_ASas127452"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127452">
+    <name>sampler</name>
+    <definition>provides information on the Sampler that implements this procedure</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81506" category="feature type">Sampler</FeatureTypeIncluded>
+    <relation idref="__Tas127452"></relation>
+    <InverseRole idref="_ATas127452"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Sas127453">
+    <name>(unbestimmt)</name>
+    <roles idref="_ASas127453"></roles>
+    <roles idref="_ATas127453"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ASas127453">
+    <name>sampling</name>
+    <definition>Sampling act performed by the Sampler</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Sas127453"></relation>
+    <InverseRole idref="_ATas127453"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ATas127453">
+    <name>sampler</name>
+    <definition>Sampler that performed the Sampling</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81506" category="feature type">Sampler</FeatureTypeIncluded>
+    <relation idref="__Sas127453"></relation>
+    <InverseRole idref="_ASas127453"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81507">
+    <name>Sampling</name>
+    <definition>an act applying a SamplingProcedure to create or transform one or more Sample(s).</definition>
+    <definition></definition>
+    <definition>EXAMPLES</definition>
+    <definition>- Crushing a rock sample in a ball mill,</definition>
+    <definition>- Digging a pit through a soil sequence,</definition>
+    <definition>- Dividing a field site into quadrants,</definition>
+    <definition>- Drawing blood from a patient,</definition>
+    <definition>- Extracting water from an observation well,</definition>
+    <definition>- Extracting a sample from a defined environmental monitoring station,</definition>
+    <definition>- Registering an image of the landscape,</definition>
+    <definition>- Sieving a powder to separate the subset finer than 100-mesh,</definition>
+    <definition>- Selecting a subset of a population,</definition>
+    <definition>- Splitting a piece of drill-core to create two new samples,</definition>
+    <definition>- Taking a diamond-drill core from a rock outcrop.</definition>
+    <isAbstract>1</isAbstract>
+    <characterizedBy idref="_ATas127450"></characterizedBy>
+    <characterizedBy idref="_ATas127453"></characterizedBy>
+    <characterizedBy idref="_ATas127448"></characterizedBy>
+    <characterizedBy idref="_ASas127449"></characterizedBy>
+    <characterizedBy idref="_ATas127451"></characterizedBy>
+    <package idref="_P9881"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+  <FeatureRelationship id="__Tas127450">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127450"></roles>
+    <roles idref="_ASas127450"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127450">
+    <name>featureOfInterest</name>
+    <definition>The concept, real-world object or phenomenon (feature-of-interest) the Sample(s) of the Sampling represent</definition>
+    <cardinality>1..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C65067" category="feature type">Any</FeatureTypeIncluded>
+    <relation idref="__Tas127450"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127450">
+    <name>role_Sas127450</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127450"></relation>
+    <InverseRole idref="_ATas127450"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127448">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127448"></roles>
+    <roles idref="_ASas127448"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127448">
+    <name>samplingProcedure</name>
+    <definition>SamplingProcedure used by the Sampling</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81512" category="feature type">SamplingProcedure</FeatureTypeIncluded>
+    <relation idref="__Tas127448"></relation>
+    <InverseRole idref="_ASas127448"></InverseRole>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127448">
+    <name>sampling</name>
+    <definition>provides information on the Sampling where this procedure has been used</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127448"></relation>
+    <InverseRole idref="_ATas127448"></InverseRole>
+  </RelationshipRole>
+  <FeatureRelationship id="__Tas127451">
+    <name>(unbestimmt)</name>
+    <roles idref="_ATas127451"></roles>
+    <roles idref="_ASas127451"></roles>
+  </FeatureRelationship>
+  <RelationshipRole id="_ATas127451">
+    <name>relatedSampling</name>
+    <definition>Another Sampling the context Sampling is related to</definition>
+    <cardinality>0..*</cardinality>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127451"></relation>
+  </RelationshipRole>
+  <RelationshipRole id="_ASas127451">
+    <name>role_Sas127451</name>
+    <cardinality>1</cardinality>
+    <isNavigable>false</isNavigable>
+    <taggedValues></taggedValues>
+    <voidable>false</voidable>
+    <orderIndicator>0</orderIndicator>
+    <uniquenessIndicator>1</uniquenessIndicator>
+    <FeatureTypeIncluded idref="_C81507" category="feature type">Sampling</FeatureTypeIncluded>
+    <relation idref="__Tas127451"></relation>
+    <InverseRole idref="_ATas127451"></InverseRole>
+  </RelationshipRole>
+  <FeatureType id="_C81512">
+    <name>SamplingProcedure</name>
+    <definition>description of steps performed by a Sampler in order to extract a Sample from its sampledFeature in the frame of a Sampling.</definition>
+    <isAbstract>1</isAbstract>
+    <subtypeOf idref="_C81501">Procedure</subtypeOf>
+    <characterizedBy idref="_ASas127452"></characterizedBy>
+    <characterizedBy idref="_ASas127448"></characterizedBy>
+    <package idref="_P9881"></package>
+    <type>Object Type</type>
+    <taggedValues></taggedValues>
+  </FeatureType>
+</FeatureCatalogue>

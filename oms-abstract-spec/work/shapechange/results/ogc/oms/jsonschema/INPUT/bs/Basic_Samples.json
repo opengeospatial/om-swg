@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://fixme/oms/bs/Basic_Samples.json",
+  "$defs": {
+    "MaterialSample": {
+      "allOf": [
+        {
+          "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "size": {
+              "type": "array",
+              "items": {
+                "$ref": "http://fixme/oms/bs/Basic_Samples.json#/$defs/PhysicalDimension"
+              },
+              "uniqueItems": true
+            },
+            "storageLocation": {
+              "$ref": "http://fixme/oms/bs/Basic_Samples.json#/$defs/NamedLocation"
+            },
+            "sourceLocation": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "$ref": "https://geojson.org/schema/Geometry.json"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "NamedLocation": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "representativeGeometry": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "https://geojson.org/schema/Geometry.json"
+            }
+          ]
+        },
+        "address": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "PhysicalDimension": {
+      "type": "object",
+      "properties": {
+        "dimension": {
+          "type": "string",
+          "format": "uri"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "dimension",
+        "value"
+      ]
+    },
+    "SampleCollection": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedCollection": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://fixme/oms/bs/Basic_Samples.json#/$defs/SampleCollection"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "member": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "SampleTypeByGeometryType": {
+      "type": "string"
+    },
+    "SpatialSample": {
+      "allOf": [
+        {
+          "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "shape": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "$ref": "https://geojson.org/schema/Geometry.json"
+                }
+              ]
+            },
+            "horizontalPositionalAccuracy": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+                }
+              ]
+            },
+            "verticalPositionalAccuracy": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "StatisticalClassification": {
+      "type": "object",
+      "properties": {
+        "concept": {
+          "type": "string",
+          "format": "uri"
+        },
+        "classification": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "classification",
+        "concept"
+      ]
+    },
+    "StatisticalSample": {
+      "allOf": [
+        {
+          "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "classification": {
+              "type": "array",
+              "items": {
+                "$ref": "http://fixme/oms/bs/Basic_Samples.json#/$defs/StatisticalClassification"
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      ]
+    }
+  }
+}

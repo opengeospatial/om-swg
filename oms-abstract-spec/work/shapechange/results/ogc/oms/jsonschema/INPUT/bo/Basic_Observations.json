@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://fixme/oms/bo/Basic_Observations.json",
+  "$defs": {
+    "AbstractObservationCollectionType": {
+      "type": "string"
+    },
+    "CollectionTypeByMemberCharacteristicsSemantics": {
+      "type": "string"
+    },
+    "GenericDomainFeature": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "uniqueItems": true
+        },
+        "location": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://geojson.org/schema/Geometry.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedObservation": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "ObservationCharacteristics": {
+      "allOf": [
+        {
+          "$ref": "http://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservationCharacteristics"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "collection": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  {
+                    "$ref": "http://fixme/oms/bo/Basic_Observations.json#/$defs/ObservationCollection"
+                  }
+                ]
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      ]
+    },
+    "ObservationCollection": {
+      "type": "object",
+      "properties": {
+        "collectionType": {
+          "type": "array",
+          "items": {
+            "$ref": "http://fixme/oms/bo/Basic_Observations.json#/$defs/AbstractObservationCollectionType"
+          },
+          "uniqueItems": true
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "member": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedCollection": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://fixme/oms/bo/Basic_Observations.json#/$defs/ObservationCollection"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "memberCharacteristics": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "http://fixme/oms/bo/Basic_Observations.json#/$defs/ObservationCharacteristics"
+            }
+          ]
+        }
+      }
+    },
+    "ObservationTypeByResultType": {
+      "type": "string"
+    },
+    "ObservingCapability": {
+      "allOf": [
+        {
+          "$ref": "http://fixme/oms/bo/Basic_Observations.json#/$defs/ObservationCharacteristics"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    }
+  }
+}

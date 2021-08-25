@@ -1,0 +1,590 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://fixme/oms/aoc/Abstract_Observation_core.json",
+  "$defs": {
+    "AbstractDeployment": {
+      "type": "object",
+      "properties": {
+        "deploymentReason": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "deploymentTime": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/TM_Object.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observer": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObserver"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedObservation": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "host": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractHost"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "AbstractHost": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedObservation": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedHost": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractHost"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "deployment": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractDeployment"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "AbstractObservableProperty": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedObservation": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observer": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObserver"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "AbstractObservation": {
+      "allOf": [
+        {
+          "$ref": "http://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservationCharacteristics"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "relatedObservation": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  {
+                    "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+                  }
+                ]
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      ]
+    },
+    "AbstractObservationCharacteristics": {
+      "type": "object",
+      "properties": {
+        "observationType": {
+          "type": "array",
+          "items": {
+            "$ref": "http://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservationType"
+          },
+          "uniqueItems": true
+        },
+        "parameter": {
+          "type": "array",
+          "items": {
+            "$ref": "http://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/NamedValue"
+          },
+          "uniqueItems": true
+        },
+        "phenomenonTime": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/TM_Object.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "resultTime": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/TM_Object.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "resultQuality": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "validTime": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/TM_Period.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "result": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "ultimateFeatureOfInterest": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "proximateFeatureOfInterest": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observer": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObserver"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observedProperty": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservableProperty"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observingProcedure": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservingProcedure"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "host": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractHost"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "AbstractObservationType": {
+      "type": "string"
+    },
+    "AbstractObserver": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedObservation": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "deployment": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractDeployment"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observableProperty": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservableProperty"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observingProcedure": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservingProcedure"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "AbstractObservingProcedure": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "observer": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObserver"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedObservation": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "NamedValue": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "value"
+      ]
+    }
+  }
+}

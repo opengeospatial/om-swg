@@ -1,0 +1,458 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://fixme/oms/asc/Abstract_Sample_core.json",
+  "$defs": {
+    "AbstractPreparationProcedure": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "samplePreparationStep": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractPreparationStep"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "AbstractPreparationStep": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "time": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "http://www.opengis.net/to/be/determined/TM_Object.json"
+            }
+          ]
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "processingDetails": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractPreparationProcedure"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "preparedSample": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample"
+            }
+          ]
+        }
+      },
+      "required": [
+        "preparedSample"
+      ]
+    },
+    "AbstractSample": {
+      "type": "object",
+      "properties": {
+        "sampleType": {
+          "type": "array",
+          "items": {
+            "$ref": "http://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampleType"
+          },
+          "uniqueItems": true
+        },
+        "parameter": {
+          "type": "array",
+          "items": {
+            "$ref": "http://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/NamedValue"
+          },
+          "uniqueItems": true
+        },
+        "sampledFeature": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedSample": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "sampling": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampling"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedObservation": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "preparationStep": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractPreparationStep"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "sampledFeature"
+      ]
+    },
+    "AbstractSampleType": {
+      "type": "string"
+    },
+    "AbstractSampler": {
+      "type": "object",
+      "properties": {
+        "samplerType": {
+          "type": "array",
+          "items": {
+            "$ref": "http://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSamplerType"
+          },
+          "uniqueItems": true
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "sampling": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampling"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "samplingProcedure": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSamplingProcedure"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "AbstractSamplerType": {
+      "type": "string"
+    },
+    "AbstractSampling": {
+      "type": "object",
+      "properties": {
+        "samplingLocation": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "https://geojson.org/schema/Geometry.json"
+            }
+          ]
+        },
+        "time": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "http://www.opengis.net/to/be/determined/TM_Object.json"
+            }
+          ]
+        },
+        "parameter": {
+          "type": "array",
+          "items": {
+            "$ref": "http://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/NamedValue"
+          },
+          "uniqueItems": true
+        },
+        "featureOfInterest": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "sample": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "relatedSampling": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampling"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "sampler": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampler"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "samplingProcedure": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSamplingProcedure"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "featureOfInterest"
+      ]
+    },
+    "AbstractSamplingProcedure": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "http://www.opengis.net/to/be/determined/Any.json"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "sampler": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampler"
+              }
+            ]
+          },
+          "uniqueItems": true
+        },
+        "sampling": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampling"
+              }
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

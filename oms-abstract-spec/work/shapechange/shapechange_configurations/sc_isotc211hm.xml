@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeChangeConfiguration
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1"
+	xmlns:sc="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1 src/main/resources/schema/ShapeChangeConfiguration.xsd">
+	<input id="INPUT">
+		<parameter name="inputModelType" value="SCXML" />
+		<parameter name="repositoryFileNameOrConnectionString"
+			value="src/test/resources/ogc/oms/isotc211hm.xml" />
+		<parameter name="appSchemaNamespaceRegex"
+			value=".*fixme/oms.*" />
+		<parameter name="publicOnly" value="true" />
+		<parameter name="checkingConstraints" value="enabled" />
+		<parameter name="sortedSchemaOutput" value="true" />
+		<parameter name="addTaggedValues" value="*" />
+		<parameter name="addStereotypes" value="*" />
+		<!-- <parameter name="applyDescriptorSourcesWhenLoadingScxml" value="true" 
+			/> -->
+		<xi:include
+			href="src/main/resources/config/StandardAliases.xml" />
+		<packages>
+			<PackageInfo packageName="Abstract Observation core"
+				ns="https://fixme/oms/aoc" nsabr="aoc" xsdDocument="aoc.xsd"
+				version="9.9.9" />
+			<PackageInfo packageName="Abstract Sample core"
+				ns="https://fixme/oms/asc" nsabr="asc" xsdDocument="asc.xsd"
+				version="9.9.9" />
+			<PackageInfo packageName="Basic Observations"
+				ns="https://fixme/oms/bo" nsabr="bo" xsdDocument="bo.xsd"
+				version="9.9.9" />
+			<PackageInfo packageName="Basic Samples"
+				ns="https://fixme/oms/bs" nsabr="bs" xsdDocument="bs.xsd"
+				version="9.9.9" />
+			<PackageInfo packageName="Conceptual Observation schema"
+				ns="https://fixme/oms/cos" nsabr="cos" xsdDocument="cos.xsd"
+				version="9.9.9" />
+			<PackageInfo packageName="Conceptual Sample schema"
+				ns="https://fixme/oms/css" nsabr="css" xsdDocument="css.xsd"
+				version="9.9.9" />
+		</packages>
+	</input>
+	<log>
+		<parameter name="reportLevel" value="INFO" />
+		<parameter name="logFile" value="results/ogc/oms/log.xml" />
+	</log>
+	<transformers>
+		<Transformer
+			class="de.interactive_instruments.ShapeChange.Transformation.Identity.IdentityTransform"
+			input="INPUT" id="IDENTITY" mode="enabled" />
+	</transformers>
+	<targets>
+
+		<Target
+			class="de.interactive_instruments.ShapeChange.Target.FeatureCatalogue.FeatureCatalogue"
+			mode="enabled">
+			<targetParameter name="outputDirectory"
+				value="results/ogc/oms/featurecatalogue" />
+			<targetParameter name="outputFilename" value="oms" />
+			<targetParameter name="package" value="" />
+			<targetParameter name="inheritedProperties"
+				value="false" />
+			<targetParameter name="outputFormat" value="HTML" />
+			<targetParameter name="name" value="'OMS schemas'" />
+			<targetParameter name="scope"
+				value="This feature catalogue ... FIXME" />
+			<targetParameter name="versionNumber"
+				value="n/a (each application schema is versioned separately)" />
+			<targetParameter name="versionDate"
+				value="2021-08-20" />
+			<targetParameter name="producer" value="ii" />
+			<!-- <targetParameter name="xsltPath" value="https://shapechange.net/resources/xslt"/> -->
+			<!-- <targetParameter name="xslhtmlFile" value="html.xsl"/> -->
+			<!-- <targetParameter name="featureTerm" value="Spatial Object"/> -->
+		</Target>
+
+		<Target
+			class="de.interactive_instruments.ShapeChange.Target.JSON.JsonSchemaTarget"
+			mode="enabled">
+
+			<targetParameter name="appSchemaNameRegex"
+				value="Abstract Observation core|Abstract Sample core|Basic Observations|Basic Samples" />
+
+			<!-- NOTE: association classes apparently not used by OMS schemas -->
+
+			<targetParameter name="outputDirectory"
+				value="results/ogc/oms/jsonschema" />
+			<targetParameter name="sortedOutput" value="true" />
+			<targetParameter name="jsonSchemaVersion"
+				value="2019-09" />
+			<targetParameter name="jsonBaseUri"
+				value="http://fixme/oms" />
+<!-- 			<targetParameter name="entityTypeName" value="type" /> -->
+			<targetParameter name="inlineOrByReferenceDefault"
+				value="inlineOrByReference" />
+<!-- 			<targetParameter name="writeMapEntries" value="true" /> -->
+			<targetParameter name="defaultEncodingRule"
+				value="omsJsonSchemaRule" />
+
+<!-- 			<targetParameter -->
+<!-- 				name="baseJsonSchemaDefinitionForFeatureTypes" -->
+<!-- 				value="https://geojson.org/schema/Feature.json" /> -->
+<!-- 			<targetParameter -->
+<!-- 				name="baseJsonSchemaDefinitionForObjectTypes" -->
+<!-- 				value="https://geojson.org/schema/Feature.json" /> -->
+
+			<rules>
+				<EncodingRule name="omsJsonSchemaRule">
+<!-- 					<rule -->
+<!-- 						name="rule-json-cls-defaultGeometry-singleGeometryProperty" /> -->
+<!-- 					<rule name="rule-json-cls-ignoreIdentifier" /> -->
+<!-- 					<rule name="rule-json-cls-name-as-anchor" /> -->
+<!-- 					<rule name="rule-json-cls-nestedProperties" /> -->
+<!-- 					<rule name="rule-json-cls-virtualGeneralization" /> -->
+					<rule name="rule-json-prop-initialValueAsDefault" />
+					<!-- NOTE: unions apparently not used by OMS schemas -->
+<!-- 					<rule name="rule-json-cls-name-as-entityType" /> -->
+				</EncodingRule>
+			</rules>
+			<xi:include
+				href="src/main/resources/config/StandardMapEntries_JSON.xml" />
+			<mapEntries>
+				<MapEntry type="GenericName" rule="*" targetType="string"
+					param="" />
+				<MapEntry type="Geometry" rule="*"
+					targetType="https://geojson.org/schema/Geometry.json"
+					param="geometry" />
+				<MapEntry type="TM_Object" rule="*"
+					targetType="http://www.opengis.net/to/be/determined/TM_Object.json"
+					param="" />
+				<MapEntry type="TM_Period" rule="*"
+					targetType="http://www.opengis.net/to/be/determined/TM_Period.json"
+					param="" />
+				<!-- ISO/TS 19156 Interfaces -->
+				<MapEntry type="Deployment" rule="*"
+					targetType="https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractDeployment" param="" />
+				<MapEntry type="Host" rule="*"
+					targetType="https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractHost" param="" />
+				<MapEntry type="ObservableProperty" rule="*"
+					targetType="https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservableProperty"
+					param="" />
+				<MapEntry type="Observation" rule="*"
+					targetType="https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservation"
+					param="" />
+				<MapEntry type="Observer" rule="*"
+					targetType="https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObserver" param="" />
+				<MapEntry type="ObservingProcedure" rule="*"
+					targetType="https://fixme/oms/aoc/Abstract_Observation_core.json#/$defs/AbstractObservingProcedure"
+					param="" />
+				<!-- <MapEntry type="Procedure" rule="*" -->
+				<!-- targetType="https://fixme/oms//.json" -->
+				<!-- param="" /> -->
+				<MapEntry type="PreparationProcedure" rule="*"
+					targetType="https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractPreparationProcedure"
+					param="" />
+				<MapEntry type="PreparationStep" rule="*"
+					targetType="https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractPreparationStep"
+					param="" />
+				<MapEntry type="Sample" rule="*"
+					targetType="https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSample" param="" />
+				<MapEntry type="Sampler" rule="*"
+					targetType="https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampler" param="" />
+				<MapEntry type="Sampling" rule="*"
+					targetType="https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSampling" param="" />
+				<MapEntry type="SamplingProcedure" rule="*"
+					targetType="https://fixme/oms/asc/Abstract_Sample_core.json#/$defs/AbstractSamplingProcedure"
+					param="" />
+			</mapEntries>
+		</Target>
+	</targets>
+</ShapeChangeConfiguration>
