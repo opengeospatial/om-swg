@@ -1,4 +1,6 @@
-20120809: Edited the sem. requirement text of the /req/sam-basic/PhysicalDimension/dimension-sem to improve readability / Ilkka
+20211010: Kathi Editing
+
+20210809: Edited the sem. requirement text of the /req/sam-basic/PhysicalDimension/dimension-sem to improve readability / Ilkka
 
 20210809: Added a comment on harmonizing the definition of the "member" association between ObservationCollection and SampleCollection / Ilkka
 
