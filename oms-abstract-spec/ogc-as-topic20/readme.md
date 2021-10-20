@@ -1,3 +1,5 @@
+20211020: Editing!!!
+
 20211010: All agreed issues updated, to my view only bits open pertain to the UML diagrams / Kathi 
 
 20210809: Edited the sem. requirement text of the /req/sam-basic/PhysicalDimension/dimension-sem to improve readability / Ilkka
