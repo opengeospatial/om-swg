@@ -1,3 +1,6 @@
+20210603 : Sylvain
+- issues cross-checked ok : #103, #126, #132, #141, #110, #98
+
 20211020: Quiet for a while, issues sorted, just have to sort the req structure later / Kathi
 
 20211010: All agreed issues updated, to my view only bits open pertain to the UML diagrams / Kathi 
