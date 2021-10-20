@@ -1,3 +1,5 @@
+20211020: **UNFROZEN** Do NOT use https://github.com/opengeospatial/om-swg/blob/master/oms-abstract-spec/iso-19156/iso-19156-dis-draft.docx for finalizing the ISO/DIS 19156
+
 20211020: **FREEZED, please only use** https://github.com/opengeospatial/om-swg/blob/master/oms-abstract-spec/iso-19156/iso-19156-dis-draft.docx for finalizing the ISO/DIS 19156
 
 20211010: All agreed issues updated, to my view only bits open pertain to the UML diagrams / Kathi 
