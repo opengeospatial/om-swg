@@ -1,5 +1,6 @@
-20210603 : Sylvain
-- issues cross-checked ok : #103, #126, #132, #141, #110, #98
+20211021 : giving a try at bibliography / Sylvain
+
+20210603 : issues cross-checked ok : #103, #126, #132, #141, #110, #98 / Sylvain
 
 20211020: Quiet for a while, issues sorted, just have to sort the req structure later / Kathi
 
