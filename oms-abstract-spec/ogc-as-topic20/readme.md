@@ -1,4 +1,4 @@
-20211021 : giving a try at bibliography / Sylvain
+20211021 : seems bibliography is ok, this deserves a commmit/ Sylvain
 
 20210603 : issues cross-checked ok : #103, #126, #132, #141, #110, #98 / Sylvain
 
