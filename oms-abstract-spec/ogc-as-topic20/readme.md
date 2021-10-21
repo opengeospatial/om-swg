@@ -1,3 +1,5 @@
+20211021 : Kathi - next pass at fixing requirements links
+
 20211021 : Sylvain
 - issues cross-checked ok : #150, #56, #97
 - issues which cross-check raised question : #133, #140
