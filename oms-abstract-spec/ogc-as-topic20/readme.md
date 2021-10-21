@@ -1,3 +1,7 @@
+20211021 : Sylvain
+- issues cross-checked ok : #150, #56, #97
+- issues which cross-check raised question : #133, #140
+
 20211021 : seems bibliography is ok, this deserves a commmit/ Sylvain
 
 20210603 : issues cross-checked ok : #103, #126, #132, #141, #110, #98 / Sylvain
