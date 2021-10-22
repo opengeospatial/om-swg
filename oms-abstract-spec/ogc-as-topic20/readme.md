@@ -1,4 +1,7 @@
-20211022 : Sylvain - editing !
+20211022 : Sylvain
+- issues cross-checked ok: #148, #133, #142, #143, #147, #145
+- issues awaiting schema edit in the doc: #139, #144
+- issues which cross-check raised question: #140, #114, #146
 
 20211021 : Kathi - next pass at fixing requirements links
 
