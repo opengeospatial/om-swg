@@ -1,7 +1,8 @@
-20211027 : Kathi still editing
+20211027 : Kathi 
 - fixed abstract codelist texts
 - stripped req diagrams
 - switched order of clauses 4&5
+- merged definitions, fixed formulation (removed preceding article as Reese requested)
 - other bits
 
 20211022 : Sylvain
