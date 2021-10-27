@@ -1,3 +1,5 @@
+Ilkka editing: recalculating the Figure numbering
+
 20211027 : Kathi 
 - fixed abstract codelist texts
 - stripped req diagrams
