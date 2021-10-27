@@ -1,4 +1,4 @@
-20211027 : Kathi 
+20211027 : Kathi still editing
 - fixed abstract codelist texts
 - stripped req diagrams
 - switched order of clauses 4&5
