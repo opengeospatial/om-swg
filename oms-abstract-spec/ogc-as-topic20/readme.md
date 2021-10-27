@@ -1,3 +1,5 @@
+Ilkka editing: Changing the Annex D figure numbering to follow the main spec numbering (D.1 - D.5 -> 32 - 36)
+
 20211027 : Ilkka: Had the Word to update all fields (figures, tables, TOC). No other changes. 
 
 20211027 : Kathi 
