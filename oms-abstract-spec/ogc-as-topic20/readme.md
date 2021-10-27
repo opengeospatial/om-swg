@@ -1,4 +1,4 @@
-Ilkka editing: recalculating the Figure numbering
+20211027 : Ilkka: Had the Word to update all fields (figures, tables, TOC). No other changes. 
 
 20211027 : Kathi 
 - fixed abstract codelist texts
