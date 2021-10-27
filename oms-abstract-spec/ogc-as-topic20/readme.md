@@ -1,6 +1,7 @@
-20211027 : Kathi Still editing!!!
+20211027 : Kathi 
 - fixed abstract codelist texts
 - stripped req diagrams
+- switched order of clauses 4&5
 - other bits
 
 20211022 : Sylvain
