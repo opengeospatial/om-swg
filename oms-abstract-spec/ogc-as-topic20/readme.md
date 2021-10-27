@@ -1,4 +1,7 @@
+20211027: Sylvain grabbing the baton
+
 20211027 : Ilkka: fixed the reference to the Annex D Figure 32
+
 
 20211027 : Ilkka: Changed the Annex D figure numbering to follow the main spec numbering (D.1 - D.5 -> 32 - 36). Corrected the figure caption format fot Figure 2
 
