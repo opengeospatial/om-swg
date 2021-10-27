@@ -1,5 +1,5 @@
 20211027: Sylvain
-- issues cross-checked ok: #146, #154, #114, #140
+- issues cross-checked ok: #146, #154, #114, #140, #155
 
 20211027 : Ilkka: fixed the reference to the Annex D Figure 32
 
