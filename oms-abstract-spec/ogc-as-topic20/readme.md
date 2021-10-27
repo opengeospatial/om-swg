@@ -1,3 +1,5 @@
+20211027 : Kathi Editing
+
 20211022 : Sylvain
 - issues cross-checked ok: #148, #133, #142, #143, #147, #145
 - issues awaiting schema edit in the doc: #139, #144
