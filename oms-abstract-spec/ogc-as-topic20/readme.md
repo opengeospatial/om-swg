@@ -1,4 +1,7 @@
-20211027 : Kathi Editing
+20211027 : Kathi 
+- fixed abstract codelist texts
+- stripped req diagrams
+- other bits
 
 20211022 : Sylvain
 - issues cross-checked ok: #148, #133, #142, #143, #147, #145
