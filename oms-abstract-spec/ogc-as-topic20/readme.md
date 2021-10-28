@@ -1,5 +1,7 @@
 
-20211027 : Kathi Editing!
+20211027 : Kathi 
+- fixed last req struct glitches
+- updated all the UML Figures. Still a few bits missing, see comments in #157
 
 20211027: Sylvain
 - issue cross-checked ok: #156
