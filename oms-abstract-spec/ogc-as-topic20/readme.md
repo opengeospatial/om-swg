@@ -1,3 +1,5 @@
+Ilkka editing: adding placeholder figures for the new (split-up) diagrams
+
 20211027: Sylvain
 - issues cross-checked ok: #146, #154, #114, #140, #155
 
