@@ -1,4 +1,4 @@
-Ilkka editing: adding placeholder figures for the new (split-up) diagrams
+20121028 : Ilkka: Added placeholder figures for the new (split-up) diagrams 20,21 and 28. Updated figure number fields.
 
 20211027: Sylvain
 - issues cross-checked ok: #146, #154, #114, #140, #155
