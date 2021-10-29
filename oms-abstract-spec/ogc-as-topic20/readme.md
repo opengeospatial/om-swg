@@ -1,5 +1,7 @@
 20211029: Sylvain
-editor token
+- issue cross-checked ok: #159, #123
+- contribution to issues: #157, #134, #152
+editor token released
 
 20211028 : Kathi 
 - fixed last req struct glitches
