@@ -1,4 +1,5 @@
-Ilkka: about to fix the clause 13.5 heading
+20211029 : Ilkka
+- Fixed the clause 13.5 heading: the note regarding the sourceLocation had been turned into a heading replacing "StatisticalSample"
 
 20211029: Sylvain
 - issue cross-checked ok: #159, #123
