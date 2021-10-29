@@ -1,9 +1,11 @@
+20211029: Sylvain
+editor token
 
-20211027 : Kathi 
+20211028 : Kathi 
 - fixed last req struct glitches
 - updated all the UML Figures. Still a few bits missing, see comments in #157
 
-20211027: Sylvain
+20211028: Sylvain
 - issue cross-checked ok: #156
 
 20121028 : Ilkka: Added placeholder figures for the new (split-up) diagrams 20,21 and 28. Updated figure number fields.
