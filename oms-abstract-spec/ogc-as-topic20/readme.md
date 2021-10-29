@@ -1,3 +1,5 @@
+Ilkka: about to fix the clause 13.5 heading
+
 20211029: Sylvain
 - issue cross-checked ok: #159, #123
 - contribution to issues: #157, #134, #152
