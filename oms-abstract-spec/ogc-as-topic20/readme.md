@@ -1,3 +1,5 @@
+20211031 : Ilkka editing: resolving all the remaining comments, small fixes
+
 20211031 : Ilkka
  - Fixed the captions for Figures 32, 33 and 43, were still copy-paste from the old requirements dependency diagrams. Updated all Figure fields, the ones in Annexes were not up-to-date.
 
