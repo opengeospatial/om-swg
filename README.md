@@ -4,7 +4,7 @@ This is a drafting repository for the OGC O&amp;M SWG
 The contributor understands that any contributions, if accepted by the OGC Membership, shall be incorporated into OGC standards documents and that all copyright and intellectual property shall be vested to the OGC.
 
 ## O&M revision target timeline
-Last updated 3 Feb 2021
+Last updated 23 Feb 2022
 
 ### OMS Abstract Specification
 * Mid Nov 2019, OGC TC in Toulouse: Drafting the OGC Proposed changes to the ISO 19156
