@@ -1,0 +1,117 @@
+11.02Piotr Zaborowski (OGC) to Everyone
+Please log your attendance: https://portal.ogc.org/?m=projects&a=view&project_id=292&tab=7
+
+11.04Sylvain Grellet (BRGM) to Everyone
+same here
+
+11.11Kathi Schleidt (DataCove) to Everyone
+Registration Reminder:
+
+11.11Kathi Schleidt (DataCove) to Everyone
+https://portal.ogc.org/?m=projects&a=view&project_id=292&tab=7
+
+11.16Linda van den Brink (Geonovum) to Everyone
+We have a testbed at Geonovum around OGC API where linked data encodings for spatial data APIs is one of the research topics.
+
+11.18Sylvain Grellet (BRGM) to Everyone
+We set up services (OGC API Feature) for both OGC ELFIE/SELFIE and also INSPIRE OGC API - Features group. 
+But we face the same issue as Clemens mentionned : lack of resolvable URIs to ontologies
+
+11.19Clemens Portele (interactive instruments) to Everyone
+I think we are already in the last agenda item - the discussion :)
+
+11.20Hylke van der Schaaf (Fraunhofer IOSB) to Everyone
+Directly skip to the important part! :D
+
+11.20Me to Everyone
+Indeed, le's get back to agenda
+
+11.33Simon Cox to Everyone
+PhenomenonTime is usually the most useful
+
+11.34Simon Cox to Everyone
+do I understand that 'when' is a keyword
+
+11.43Sylvain Grellet (BRGM) to Everyone
+On the Pattern 2/3 : we discussed it a lot in ELFIE/SELFIE JSON-LD will use different keys (? may need to accomodate something ? ) Ex: "@id": "https://opengeospatial.github.io/ELFIE/FR/Aquifer/sgsr/507AC00", 
+"@type": "GW_HydrogeoUnit", 
+"name": "Complément de l'entité NV2 : Formations plio-quaternaires de la Dombes"
+
+11.43Clemens Portele (interactive instruments) to Everyone
+@Simon: Yes, it is the key of a JSON member. Just like "geometry" in GeoJSON. We may eventually change the key to something else then "when"...
+
+11.44Simon Cox to Everyone
+Need 'sub-properties' of 'when' ;-)
+
+11.47Hylke van der Schaaf (Fraunhofer IOSB) to Everyone
+Which version of JSON Schema? There are a lot...
+
+11.51Clemens Portele (interactive instruments) to Everyone
+@Hylke: CityJSON currently uses draft 07
+
+11.51Sylvain Grellet (BRGM) to Everyone
+Question : are you sure that by 'simplifying' the model you still respect the initial intent of it (the semantics ) ?
+
+11.52Kathi Schleidt (DataCove) to Everyone
+Why "attributes" instead of "properties"?
+
+11.57Kathi Schleidt (DataCove) to Everyone
+IDs are only internal?
+
+11.58Kathi Schleidt (DataCove) to Everyone
+Is the compression mentioned only due to the lack of XML baggage, or also compressing the geometries?
+
+11.59Clemens Portele (interactive instruments) to Everyone
+Yes, the solids in JSON-FG also support "holes" / inner boundaries.
+
+12.01Clemens Portele (interactive instruments) to Everyone
+@Kathi, it is both - XML overhead and the OBJ sturcture including quantisation of coordinates
+
+12.01Simon Cox to Everyone
+Strict types comes from 'application schemas' - ISO 19109 and OGC architecture ... Communication requires a shared language ...
+
+12.04Simon Cox to Everyone
+syntactic validation
+
+12.08Simon Cox to Everyone
+Excellent Hugo
+
+12.09Hylke van der Schaaf (Fraunhofer IOSB) to Everyone
+After draft 7 came Draft 2019-09 and Draft 2020-12
+
+12.09Rob Atkinson to Everyone
+What a lot of options for schema patterns JSON offers... maybe we should focus on being able to declare transformability between them and publishing resources to perform these conversions.
+
+12.11Rob Atkinson to Everyone
+SOSA is a manual rebuild of O&M using simplified ontology patterns. For standards this is not that high an overhead.
+
+12.12Simon Cox to Everyone
+@rob also note that there are a very small number of classes involved, so manual is tractable, and also allows some specific patterns to be introduced
+
+12.13Rob Atkinson to Everyone
+@simon - modularity is the key for that benefit
+
+12.16Linda van den Brink (Geonovum) to Everyone
+My takeaways are: 1) do the JSON enoding manually, 2) have a body of developers (like Hugo's students) to test, 3) have a roundtrip convertor to confirm.
+
+12.18Sylvain Grellet (BRGM) to Everyone
+step 3 is crucial here 
+side example: Hylke's validator for the OMSS rec/req structure saved us many headache
+
+12.18Clemens Portele (interactive instruments) to Everyone
+I don't think it has to be done manually, but it is key to have an idea how the resulting encoding should look first.
+
+12.19Rob Atkinson to Everyone
+Manual is difficult to scale for applications.
+
+12.19Rob Atkinson to Everyone
+But in GML we had manually build GML base supporting MDA for application schemas
+
+12.19Simon Cox to Everyone
+I am certainly discouraged from the sheer amont of hard work the O&M SWG have had to do to satisfy TC211's UML requirements. I'm not sure if that effort will pay off, compared with getting stuck into a JSON schema or SHACL shapes implementation much much earlier ...
+
+12.21Simon Cox to Everyone
+(typing while eating dinner sorry for typos)
+
+12.27Sylvain Grellet (BRGM) to Everyone
+we should start basin JSON related work on the basic level.
