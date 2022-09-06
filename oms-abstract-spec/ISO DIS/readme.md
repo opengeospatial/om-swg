@@ -1,5 +1,8 @@
 # Updated version reformated by ISO
 
+## 06.09.22 IR
+Locked "ISO_DIS 19156 ed.2 - id.82463 Enquiry Trackchange Word KS.docx" for Figure updates.
+
 ## 13.08.22 KS
 FIXED
 - [WATERMARKED Version!!! #201](https://github.com/opengeospatial/om-swg/issues/201)
