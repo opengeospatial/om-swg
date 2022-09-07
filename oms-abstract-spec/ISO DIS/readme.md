@@ -1,7 +1,11 @@
 # Updated version reformated by ISO
 
-## 06.09.22 IR
-Locked "ISO_DIS 19156 ed.2 - id.82463 Enquiry Trackchange Word KS.docx" for Figure updates.
+## 07.09.22 IR
+- Added revised Figures in EMF format, [issue #164](https://github.com/opengeospatial/om-swg/issues/164) 
+- Moved diagram notes from UML to Figure notes in text.
+- Added new Annex E with big package UML diagrams.
+- Added missing AbstractDeployment context diagram as Figure 15, Figures renumbered from Figure 15 onwards
+- Added new Clause 4.8 explaining the pruned association visibility in context diagrams, [issue #209](https://github.com/opengeospatial/om-swg/issues/209)
 
 ## 13.08.22 KS
 FIXED
