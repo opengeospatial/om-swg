@@ -1,5 +1,8 @@
 # Updated version reformated by ISO
 
+## 08.09.22 SG
+- issue cross-checked ok: #199, #191, #205, #182, #168, #172, #202
+
 ## 07.09.22 IR
 - Added revised Figures in EMF format, [issue #164](https://github.com/opengeospatial/om-swg/issues/164) 
 - Moved diagram notes from UML to Figure notes in text.
