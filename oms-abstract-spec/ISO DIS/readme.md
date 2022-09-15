@@ -1,5 +1,10 @@
 # Updated version reformated by ISO
 
+## 15.09.22 SG
+- issue cross-checked ok: [#192](https://github.com/opengeospatial/om-swg/issues/192),[#203](https://github.com/opengeospatial/om-swg/issues/203), [#175](https://github.com/opengeospatial/om-swg/issues/175), [#178](https://github.com/opengeospatial/om-swg/issues/178), [#183](https://github.com/opengeospatial/om-swg/issues/183), [#174](https://github.com/opengeospatial/om-swg/issues/174), [#171](https://github.com/opengeospatial/om-swg/issues/171), [#176](https://github.com/opengeospatial/om-swg/issues/176), [#197](https://github.com/opengeospatial/om-swg/issues/197), [#173](https://github.com/opengeospatial/om-swg/issues/173), [#177](https://github.com/opengeospatial/om-swg/issues/177)
+- issue raising question : [#169](https://github.com/opengeospatial/om-swg/issues/169)
+
+
 ## 08.09.22 SG
 - issue cross-checked ok: [#199](https://github.com/opengeospatial/om-swg/issues/199), [#191](https://github.com/opengeospatial/om-swg/issues/191), [#205](https://github.com/opengeospatial/om-swg/issues/205), [#182](https://github.com/opengeospatial/om-swg/issues/182), [#168](https://github.com/opengeospatial/om-swg/issues/168), [#172](https://github.com/opengeospatial/om-swg/issues/172), [#202](https://github.com/opengeospatial/om-swg/issues/202)
 
