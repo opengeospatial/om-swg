@@ -1,5 +1,9 @@
 # Updated version reformated by ISO
 
+## 16.09.22 KS
+- Fixed source for sensor definition [JOINT COMMITTEE FOR GUIDES IN METROLOGY Terms #169](https://github.com/opengeospatial/om-swg/issues/169)
+#169#169 
+
 ## 15.09.22 SG
 - issue cross-checked ok: [#192](https://github.com/opengeospatial/om-swg/issues/192),[#203](https://github.com/opengeospatial/om-swg/issues/203), [#175](https://github.com/opengeospatial/om-swg/issues/175), [#178](https://github.com/opengeospatial/om-swg/issues/178), [#183](https://github.com/opengeospatial/om-swg/issues/183), [#174](https://github.com/opengeospatial/om-swg/issues/174), [#171](https://github.com/opengeospatial/om-swg/issues/171), [#176](https://github.com/opengeospatial/om-swg/issues/176), [#197](https://github.com/opengeospatial/om-swg/issues/197), [#173](https://github.com/opengeospatial/om-swg/issues/173), [#177](https://github.com/opengeospatial/om-swg/issues/177)
 - issue raising question : [#169](https://github.com/opengeospatial/om-swg/issues/169)
