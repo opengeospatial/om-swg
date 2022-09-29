@@ -13,6 +13,7 @@ Please put your name under the diagram version you prefer
 
 ### Observation Abstract KS
 Kathi
+Hylke
 
 ## Observation Basic
 
@@ -20,6 +21,7 @@ Kathi
 
 ### Observation Abstract KS
 Kathi
+Hylke
 
 ## Sampling Abstract
 
@@ -27,6 +29,7 @@ Kathi
 
 ### Sampling Abstract KS
 Kathi
+Hylke
 
 ## Sampling Basic
 
@@ -34,3 +37,4 @@ Kathi
 
 ### Sampling Abstract KS
 Kathi
+Hylke
