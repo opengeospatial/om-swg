@@ -4,6 +4,14 @@
 - Counter Check on [Normative Text in Examples & Notes #186](https://github.com/opengeospatial/om-swg/issues/186)
   - confirmed additional may->can change in 13.5.3 Attribute classification
   - adjusted NOTE in -050 Normative text in Notes
+- [Typos #187](https://github.com/opengeospatial/om-swg/issues/187)
+  - Added a , after all e.g.
+- [Model conformance rules from 19109 #185](https://github.com/opengeospatial/om-swg/issues/185)
+  - Added citation to bib under 4.2 Schema language (first mention of 19109 after terminology citations)
+- [Normative reference vs. Bibliography #167](https://github.com/opengeospatial/om-swg/issues/167)
+  - Same as for #185 above
+- [Capitalization of Terms #184](https://github.com/opengeospatial/om-swg/issues/184)
+  - Added `respectively under GW_Well, GW_Aquifer and GW_FluidBody` To the text under 7.3.2	
 
 ## 05.10.22 SG
 - issue cross-checked ok: [#201](https://github.com/opengeospatial/om-swg/issues/201), [#165](https://github.com/opengeospatial/om-swg/issues/165), [#211](https://github.com/opengeospatial/om-swg/issues/211)
