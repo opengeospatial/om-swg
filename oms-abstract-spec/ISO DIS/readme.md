@@ -12,6 +12,8 @@
   - Same as for #185 above
 - [Capitalization of Terms #184](https://github.com/opengeospatial/om-swg/issues/184)
   - Added `respectively under GW_Well, GW_Aquifer and GW_FluidBody` To the text under 7.3.2	
+- [Observation Collection #2](https://github.com/opengeospatial/om-swg/issues/2)
+  - (think) I did all the necessary edits, please check!
 
 ## 05.10.22 SG
 - issue cross-checked ok: [#201](https://github.com/opengeospatial/om-swg/issues/201), [#165](https://github.com/opengeospatial/om-swg/issues/165), [#211](https://github.com/opengeospatial/om-swg/issues/211)
