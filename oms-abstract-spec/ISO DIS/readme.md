@@ -1,5 +1,10 @@
 # Updated version reformated by ISO
 
+## 17.10.22 KS
+- Counter Check on [Normative Text in Examples & Notes #186](https://github.com/opengeospatial/om-swg/issues/186)
+  - confirmed additional may->can change in 13.5.3 Attribute classification
+  - adjusted NOTE in -050 Normative text in Notes
+
 ## 05.10.22 SG
 - issue cross-checked ok: [#201](https://github.com/opengeospatial/om-swg/issues/201), [#165](https://github.com/opengeospatial/om-swg/issues/165), [#211](https://github.com/opengeospatial/om-swg/issues/211)
 - issue raising question: [#186](https://github.com/opengeospatial/om-swg/issues/186), [#184](https://github.com/opengeospatial/om-swg/issues/184), [#166](https://github.com/opengeospatial/om-swg/issues/166)
