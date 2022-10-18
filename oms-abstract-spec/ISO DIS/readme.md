@@ -1,5 +1,9 @@
 # Updated version reformated by ISO
 
+## 19.10.22 SG
+- issue cross-checked ok: [#186](https://github.com/opengeospatial/om-swg/issues/186), [#187](https://github.com/opengeospatial/om-swg/issues/187), [#185](https://github.com/opengeospatial/om-swg/issues/185), [#167](https://github.com/opengeospatial/om-swg/issues/167), [#184](https://github.com/opengeospatial/om-swg/issues/184), [#213](https://github.com/opengeospatial/om-swg/issues/213)
+- issue raising question: [#164](https://github.com/opengeospatial/om-swg/issues/164)
+
 ## 17.10.22 KS
 - [Observation Collection #2](https://github.com/opengeospatial/om-swg/issues/2)
   - Fixes that Ilkka caught
