@@ -1,6 +1,10 @@
 # Updated version reformated by ISO
 
 ## 17.10.22 KS
+- [Observation Collection #2](https://github.com/opengeospatial/om-swg/issues/2)
+  - Fixes that Ilkka caught
+  
+## 17.10.22 KS
 - Counter Check on [Normative Text in Examples & Notes #186](https://github.com/opengeospatial/om-swg/issues/186)
   - confirmed additional may->can change in 13.5.3 Attribute classification
   - adjusted NOTE in -050 Normative text in Notes
