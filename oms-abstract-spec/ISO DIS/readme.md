@@ -1,5 +1,8 @@
 # Updated version reformated by ISO
 
+## 25.10.22 IR
+- Checked out for Figure update and renumbering.
+
 ## 20.10.22 SG
 - issue raising questions [#164](https://github.com/opengeospatial/om-swg/issues/164), [#2](https://github.com/opengeospatial/om-swg/issues/2)
 ## 19.10.22 SG
