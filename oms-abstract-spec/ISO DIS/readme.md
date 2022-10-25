@@ -3,6 +3,8 @@
 ## 25.10.22 IR
 - Updated the Figures based on cross-check findings, added new Figure 16 for AbstractObservationCollection, renumbered Figures 16-37.
 - Adjusted forced pagebreaks and missing spaces between tables and the following headings.
+- Added new clause A.2.10 Abstract Observation Core – AbstractObservationCollection with a table for Conformance Class /conf/obs-core/AbstractObservationCollection
+- Add a new row in Table 2 — Abstract Observation Core conformance classes for /conf/obs-core/AbstractObservationCollection
 
 ## 20.10.22 SG
 - issue raising questions [#164](https://github.com/opengeospatial/om-swg/issues/164), [#2](https://github.com/opengeospatial/om-swg/issues/2)
