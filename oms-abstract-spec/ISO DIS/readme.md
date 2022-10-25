@@ -1,7 +1,8 @@
 # Updated version reformated by ISO
 
 ## 25.10.22 IR
-- Checked out for Figure update and renumbering.
+- Updated the Figures based on cross-check findings, added new Figure 16 for AbstractObservationCollection, renumbered Figures 16-37.
+- Adjusted forced pagebreaks and missing spaces between tables and the following headings.
 
 ## 20.10.22 SG
 - issue raising questions [#164](https://github.com/opengeospatial/om-swg/issues/164), [#2](https://github.com/opengeospatial/om-swg/issues/2)
