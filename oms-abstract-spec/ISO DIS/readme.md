@@ -1,5 +1,14 @@
 # Updated version reformated by ISO
 
+## 25.10.22 KS
+- accepted all changes
+- went through the entire doc
+  - fixed a few minor bits without comments (e.g., adding commas)
+  - listed quite a bit of fixes in [Final Check Glitches #215](https://github.com/opengeospatial/om-swg/issues/215)
+  - most fixes are in track changes mode, for somebody else to counter-check (a few I had to accept to assure correct formatting)
+  - even fixed the bib references!
+- in a new document ISO_DIS 19156 ed.2 - id.82463 Enquiry Word (en) - PreFINAL.docx
+
 ## 25.10.22 IR
 - Updated the Figures based on cross-check findings, added new Figure 16 for AbstractObservationCollection, renumbered Figures 16-37.
 - Adjusted forced pagebreaks and missing spaces between tables and the following headings.
