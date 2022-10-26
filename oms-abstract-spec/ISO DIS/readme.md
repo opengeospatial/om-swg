@@ -1,5 +1,8 @@
 # Updated version reformated by ISO
 
+## 26.10.22 IR
+- Fixed "Potentially Observations" to "Potential to create Observations" as the decsription of the ObservingCapability concept in Clause C.2
+
 ## 25.10.22 KS
 - accepted all changes
 - went through the entire doc
