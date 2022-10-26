@@ -2,6 +2,7 @@
 
 ## 26.10.22 IR
 - Fixed "Potentially Observations" to "Potential to create Observations" as the decsription of the ObservingCapability concept in Clause C.2
+- Fixed wrong image file for Figure D.4 (was identical to D.5)
 
 ## 25.10.22 KS
 - accepted all changes
