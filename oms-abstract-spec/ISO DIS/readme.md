@@ -1,5 +1,8 @@
 # Updated version reformated by ISO
 
+## 27.10.22 IR
+- Added commnents to ISO CS regarding Annex E URL placeholders.
+- Ready for IS Submission. 
 
 ## 27.10.22 KS
 - checked and resolved all changes left in document
