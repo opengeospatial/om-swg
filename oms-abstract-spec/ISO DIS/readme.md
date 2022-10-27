@@ -1,6 +1,7 @@
 # Updated version reformated by ISO
 
 ## 27.10.22 IR
+- Cross-checked and accepted Kathi's edits from 25th Oct, fixed one more bibliography referecen number to UCUM on page 33. 
 - Fix for Clause C.6 text about the Observation collection implementation, see issue [Final Check Glitches #215, comment 1293101988](https://github.com/opengeospatial/om-swg/issues/215#issuecomment-1293101988).
 - Final styling: Added empty lines after (framed) tables consistently in cases where they were immediately followed by a heading. Adjusted page breaks.
 
