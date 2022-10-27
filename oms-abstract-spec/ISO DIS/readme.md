@@ -1,5 +1,12 @@
 # Updated version reformated by ISO
 
+
+## 27.10.22 KS
+- checked and resolved all changes left in document
+- Comments still in document, 2 types:
+  - Comments from Alison - all marked as resolved
+  - Feedback to ISO Central, mostly on "Abby's car"
+
 ## 27.10.22 IR
 - Cross-checked and accepted Kathi's edits from 25th Oct, fixed one more bibliography referecen number to UCUM on page 33. 
 - Fix for Clause C.6 text about the Observation collection implementation, see issue [Final Check Glitches #215, comment 1293101988](https://github.com/opengeospatial/om-swg/issues/215#issuecomment-1293101988).
