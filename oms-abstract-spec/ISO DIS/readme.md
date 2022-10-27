@@ -1,7 +1,8 @@
 # Updated version reformated by ISO
 
 ## 27.10.22 IR
-- Checked-out for final styling cross-check
+- Fix for Clause C.6 text about the Observation collection implementation, see issue [Final Check Glitches #215, comment 1293101988](https://github.com/opengeospatial/om-swg/issues/215#issuecomment-1293101988).
+- Final styling: Added empty lines after (framed) tables consistently in cases where they were immediately followed by a heading. Adjusted page breaks.
 
 ## 26.10.22 IR
 - Fixed "Potentially Observations" to "Potential to create Observations" as the decsription of the ObservingCapability concept in Clause C.2
