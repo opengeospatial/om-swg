@@ -1,5 +1,8 @@
 # Updated version reformated by ISO
 
+## 27.10.22 IR
+- Checked-out for final styling cross-check
+
 ## 26.10.22 IR
 - Fixed "Potentially Observations" to "Potential to create Observations" as the decsription of the ObservingCapability concept in Clause C.2
 - Fixed wrong image file for Figure D.4 (was identical to D.5)
