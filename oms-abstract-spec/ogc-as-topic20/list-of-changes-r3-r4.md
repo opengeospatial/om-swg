@@ -1,4 +1,4 @@
-# Changes applied across the docuemnt
+# Changes applied across the document
 
 - All UML Figures have been redrawn to improve readability.
 - Minor editorial fixes.
