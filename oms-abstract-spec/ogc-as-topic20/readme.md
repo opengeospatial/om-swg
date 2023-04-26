@@ -1,3 +1,10 @@
+2023-04-26: Ilkka
+- Replaced the "20-082r3-draft.docx" with the "20-082r3_OGC_Abstract_Specification_Topic_20_Observations_Measurements_and_Samples.docx" as downloaded from the OGC Pending documents folder.
+- Replaced the "20-082r4-draft.docx" with the "20-082r4_OGC_Abstract_Specification_Topic_20_Observations_measurements_and_samples.docx" created from the final ISO 19156:2023(E) as provided by Alison on 26th Apr 2023
+- In 20-082r4: fixed the Figure and Table heading styles so that they are no longer inherited from the base heading style, and thus not shown in the Word navigation / heading pane. Also fixed Annex sub-clause heading levels.
+- Added Jörg Klausen / WMO into the table of Contributors to the Standard on page iii
+- Corrected the title of Annex C: ISO 19156:2022 -> ISO 19156:2023
+
 20211031 : Ilkka
 - Resolved all the remaining comments and accepted changes, small fixes
 
