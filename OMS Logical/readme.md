@@ -1,5 +1,8 @@
 # Requirement for OMS Logical Model
-v0.0 / 2024-12-12 / OMS SWG
+v1.0 / 2025-07-07 / OMS SWG
+
+[Original Source](https://docs.google.com/document/d/1ei3FlyeAw-7jtjM7giwS_-eNcTaC0G3RaVW16zceFIs/edit?tab=t.0#heading=h.bk37jvkhduse)
+
 ## Synopsis
 The approved OMS model with its three modeling layers creates undue overhead for the implementation of domain models. It is therefore proposed to formalize a logical model layer compliant with the OMS model that provides all necessary associations. This model should be published alongside the existing approved OMS model.
 
