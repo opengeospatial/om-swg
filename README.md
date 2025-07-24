@@ -1,6 +1,8 @@
 # OGC Observations and measurements Standard Working Group (O&M SWG)
 This is a drafting repository for the OGC O&amp;M SWG
 
+[Minutes and Meeting Info](https://docs.google.com/document/d/1HtbrQrcbnIHBvh7su0G0gvofCWK0yQrtVe7UqjVU01I/edit?tab=t.0)
+
 The contributor understands that any contributions, if accepted by the OGC Membership, shall be incorporated into OGC standards documents and that all copyright and intellectual property shall be vested to the OGC.
 
 ## O&M revision target timeline
