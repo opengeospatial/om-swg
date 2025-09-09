@@ -1,3 +1,7 @@
+# Extension to OMS Charter for OMS Logical Model and I-ADOPT.
+Doc # 25-025 
+Agreed at OMS SWG meeting on July 29th, 2025
+
 ### OMS Logical Model
 Creation of a logical model for OMS as described in [Requirement for OMS Logical Model](https://github.com/opengeospatial/om-swg/blob/master/OMS%20Logical/readme.md)
 - August 2025: Logical Model ready for review
