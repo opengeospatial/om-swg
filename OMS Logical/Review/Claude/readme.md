@@ -15,8 +15,8 @@ Second set of review files, this time Claude was also given the underlying OMS s
 
 ### Feedback
 Feedback to Claude review. 2 columns added:
-- Comment KS: Feedback on the issue
-- KS: classification of responses as:
+- **Comment KS**: Feedback on the issue
+- **KS**: classification of responses as:
   - Accept (38): Accepted, fixed in doc and/or UML
   - Reject (31): Rejected 
   - Final Doc (11): Either things to be done when finalizing the doc, or issues in OGC templates
@@ -24,4 +24,5 @@ Feedback to Claude review. 2 columns added:
   - URI (1): Issues with URIs
   - ??? (2): Guidance from OAB required
 
+Feedback file:
 - [OGC-26-019_OMS-Logical-Model_review-comments_Feedback.xlsx](https://github.com/opengeospatial/om-swg/blob/master/OMS%20Logical/Review/Claude/OGC-26-019_OMS-Logical-Model_review-comments_Feedback.xlsx)
